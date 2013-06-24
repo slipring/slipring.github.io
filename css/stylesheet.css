@@ -1,0 +1,275 @@
+/** { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}*/
+
+.hidden { display: none; }
+
+.coordinate { visibility:hidden; }
+
+#coordinates {
+    position: fixed;
+    z-index: 42;
+    right: 57px;
+    bottom: 55px;
+    background:rgba(0,0,0,.0); 
+}
+
+
+#coord{
+    color: #eeeeee;
+          font-family: "League Gothic", Impact, sans-serif;
+          line-height: 0.1em;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+          text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+}
+
+#zoomO{
+    position: fixed;
+    z-index: 34;
+    right: 11px;
+    bottom: 11px;
+}
+
+
+#toggler {
+    position: absolute; 
+/*  bottom: 38px;*/
+    bottom: 26px;
+    left: 20px;
+    z-index: 21;
+    border-radius:30px;
+    background:rgba(0,0,0,.2); 
+    padding:6px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+}
+
+#toggler:hover {
+    border-style:solid;
+    border-width:2px;
+    border-color:#13daec;
+}
+
+
+.withborder {
+    border-style:solid;
+    border-width:2px;
+    border-color:#13daec;
+}
+
+
+#toggleme {
+    color:rgba(255,255,255,.9)
+}
+
+
+#narration {
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+    left: 0%;
+    margin-left:18.5%;
+    margin-right:15%;
+    z-index: 20;
+    border-radius:10px;
+    background:rgba(0,0,0,.1);
+    padding:8px;
+    width: 60%;
+     box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+     -moz-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    /*    max-height: 9999px;*/
+}
+
+
+#headliner {
+    /*color:rgba(255,255,255,.9);*/
+    color: #eeeeee;
+          font-family: "League Gothic", Impact, sans-serif;
+          line-height: 0.9em;
+          letter-spacing: 0.02em;
+/*          text-transform: uppercase;*/
+          text-shadow: 0px 0px 6px rgba(105, 225, 231, 0.8);
+}
+
+#contented {color:white;}
+
+
+/* INFO CURSORS */
+img, img:hover { cursor: pointer;
+                 cursor: hand; }
+.UXemphatic {cursor: url(bcursor.png), auto;}
+.corotating {cursor: url(bcursor.png), auto;}
+.inertial {cursor: url(bcursor.png), auto;}
+
+
+
+
+
+
+
+
+.proxys	{
+	/*margin-left:0px;*/
+	padding:0px;
+	background:none;
+	box-shadow:none;
+}
+
+
+
+
+
+
+#grouper {
+    position: relative;
+    height: 100%;
+    width:100%;
+    min-height: 640px;
+}
+
+#groupee {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#groupeer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+#temponav {
+    position: absolute; 
+    top: -10px;
+    left: 6px;
+    z-index: 21;
+    border-radius:10px;
+    background:rgba(0,0,0,.0); 
+    padding:1px;
+}
+
+
+#backlink {
+/*    color:#13daec;
+    text-shadow: 2px 2px #ff0000;*/
+}
+
+
+#toggleyou {
+    position: absolute; 
+    /*top: 95px;*/
+    top:26px;
+    left: 10px;
+    z-index: 20;
+    border-radius:4px;
+    background:rgba(0,0,0,.6); 
+    padding:2px;
+    -moz-box-shadow: inset 0 0 3px 3px #888;
+    -webkit-box-shadow: inset 0 0 3px 3px #888;
+    box-shadow: inset 0 0 3px 3px #888;
+}
+
+#selector {
+    position: absolute; 
+    /*top: 95px;*/
+    top:100px;
+    left: 10px;
+    width: 88px;
+    height: 64px;
+    z-index: 20;
+    border-radius:4px;
+    background:rgba(0,0,0,.6); 
+    padding:2px;
+    -moz-box-shadow: inset 0 0 3px 3px #888;
+    -webkit-box-shadow: inset 0 0 3px 3px#888;
+    box-shadow: inset 0 0 3px 3px #888;
+}
+
+
+
+
+
+
+
+
+#infobar {
+    position: absolute; 
+    margin-right:20px;
+    top: 5px;
+    right: 20px;
+    z-index: 21;
+    border-radius:35px;
+    background:rgba(255,255,255,.0); 
+    padding:6px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+}
+
+
+
+
+
+
+
+figcaption { display: block; }
+
+
+#theorytxt { font-family:Arvo, Monaco, serif; }
+
+
+
+
+
+
+
+#hotmap {
+    position: fixed; 
+    bottom: 144px;
+    left: 144px;
+    z-index: 32;
+}
+
+
+
+
+
+
+/*#exit {
+    background: url(prevupi.png) no-repeat;
+    height: 600px;
+    width: 600px;
+}
+
+#exit:hover {
+    background: url(prevup.png)  no-repeat;
+}*/
+
+
+/*.onhover {
+ul, ol {margin:4px 0 4px 26px;padding:1px 0 1px 0;}
+ul li, ol li{font-size:13px;margin:0;list-style-image:url(cursors/di.png);clear:both;margin-bottom:3px;word-wrap:break-word;}
+ul li.hover{list-style-image:url(cursors/d.png);}
+ul a.link, ol a.link{font-size:13px;line-height:17px;color:#646c6f;}
+ul a.link:hover, ol a.link:hover{color:#8bba47;}
+ol li{list-style-image:none;color:#8bba47;}
+ol li span{color:#9e9e9e;}
+ol li.hover{color:#646c6f;}
+}
+*/
