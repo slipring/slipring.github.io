@@ -1,17 +1,19 @@
 
-		Reveal.addEventListener( 'intro', function() {
-			console.log( '"intro" has fired' );
-/*		   		document.getElementById('LtoS').src='flux/JITTER5.gif';*/
+
+
+
+		Reveal.addEventListener( 'splash', function() {
+			console.log( '"splash" has fired' );
+		   	document.getElementById('M2m').src='trigger/splash.gif';
 		} );
 
 		Reveal.addEventListener( 'regimes', function() {
 			console.log( '"regimes" has fired' );
-		
-/*			   document.getElementById('hadleyio').src='flux/peartankscape15w.gif';
-			   document.getElementById('worldio').src='flux/pearworldapart15w.gif';
-		   	   document.getElementById('eddio').src='flux/peartankeddy15w.gif';*/
-/*	  		   document.getElementById('LtoS').src='cursors/cloud.png';
-*/		} );
+			document.getElementById('M2m').src='trigger/splash.png';
+		/*	document.getElementById('hadleyio').src='trigger/tankspin_horizn.gif';
+			document.getElementById('worldio').src='trigger/worldspin_trans.gif';
+			document.getElementById('eddio').src='trigger/tankspin_eddy.gif';*/
+		} );
 
 		Reveal.addEventListener( 'pretracers', function() {
 			console.log( '"pretracers" has fired' );
@@ -69,3 +71,5 @@
 		/*$('.swap').click(function(){ 
     		$(this).attr('src','new/path/to/img.jpg');
 		});*/
+
+		/* document.getElementById("img").src = img.src.replace(".gif", ".png");*/

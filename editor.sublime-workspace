@@ -1,0 +1,709 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"listlet",
+				"listlet"
+			],
+			[
+				"alt",
+				"alt"
+			],
+			[
+				"src",
+				"src"
+			],
+			[
+				"alter",
+				"alter"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"js",
+				"js"
+			],
+			[
+				"vlab",
+				"vlab"
+			],
+			[
+				"hadleySprite",
+				"hadleySprite"
+			],
+			[
+				"top",
+				"top"
+			],
+			[
+				"VLab",
+				"VLab"
+			],
+			[
+				"IDV",
+				"IDV"
+			],
+			[
+				"shuff",
+				"shuff"
+			],
+			[
+				"fluid",
+				"fluid"
+			],
+			[
+				"border-bottom",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/revealEXP.js",
+			"settings":
+			{
+				"buffer_size": 46907,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/revealEXP.css",
+			"settings":
+			{
+				"buffer_size": 33356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 4643,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/theme/light.css",
+			"settings":
+			{
+				"buffer_size": 4900,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/deckHadley.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "preloadHadley.js",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "expHadley.html",
+			"settings":
+			{
+				"buffer_size": 40912,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n\n\n\n		Reveal.addEventListener( 'splash', function() {\n			console.log( '\"splash\" has fired' );\n		   	document.getElementById('M2m').src='trigger/splash.gif';\n		} );\n\n		Reveal.addEventListener( 'regimes', function() {\n			console.log( '\"regimes\" has fired' );\n			document.getElementById('M2m').src='trigger/splash.png';\n		/*	document.getElementById('hadleyio').src='trigger/tankspin_horizn.gif';\n			document.getElementById('worldio').src='trigger/worldspin_trans.gif';\n			document.getElementById('eddio').src='trigger/tankspin_eddy.gif';*/\n		} );\n\n		Reveal.addEventListener( 'pretracers', function() {\n			console.log( '\"pretracers\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'vimvid', function() {\n			console.log( '\"vimvid\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'vlab', function() {\n			console.log( '\"vlab\" has fired' );\n/*		 	   document.getElementById('emily').src='image/hadley_render2s.gif';*/\n   		} );\n\n		Reveal.addEventListener( 'freecam', function() {\n			console.log( '\"freecam\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'tracerlooks', function() {\n			console.log( '\"tracerlooks\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'greenrelease', function() {\n			console.log( '\"greenrelease\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'pinkrelease', function() {\n			console.log( '\"pinkrelease\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'pinkspread', function() {\n			console.log( '\"pinkspread\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'greenwinding', function() {\n			console.log( '\"greenwinding\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'particletrk', function() {\n			console.log( '\"particletrk\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'schemata', function() {\n			console.log( '\"schemata\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'numnumnum', function() {\n			console.log( '\"numnumnum\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'climated', function() {\n			console.log( '\"climated\" has fired' );\n	  	} );\n\n		/*$('.swap').click(function(){ \n    		$(this).attr('src','new/path/to/img.jpg');\n		});*/\n\n		/* document.getElementById(\"img\").src = img.src.replace(\".gif\", \".png\");*/\n",
+			"file": "triggerHadley.js",
+			"file_size": 2259,
+			"file_write_time": 130166522493010104,
+			"settings":
+			{
+				"buffer_size": 2182,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/repo/slipring.github.io/slipring.github.io/js/PxLoaderImage.js",
+		"/D/repo/slipring.github.io/slipring.github.io/js/PxLoader.js",
+		"/D/repo/slipring.github.io/slipring.github.io/deckspec01.css",
+		"/D/repo/slipring.github.io/slipring.github.io/expHadley.html",
+		"/D/repo/slipring.github.io/slipring.github.io/EXPhadley.html",
+		"/D/repo/slipring.github.io/slipring.github.io/stylesheets/pygment_trac.css",
+		"/D/repo/slipring.github.io/slipring.github.io/index.html",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/cursors/preloader_JS.html",
+		"/C/Users/Bill/Desktop/bustout/dynamic/preloader_JS.html",
+		"/C/Users/Bill/Documents/dr coled",
+		"/C/Users/Bill/Desktop/tipsy/docs/src/index.html.erb",
+		"/C/Users/Bill/Desktop/tipsy/src/javascripts/jquery.tipsy.js",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/css/tipsy.css",
+		"/C/Users/Bill/Desktop/tipsy/src/stylesheets/tipsy.css",
+		"/C/Users/Bill/Desktop/tipsy/docs/src/project.yml",
+		"/C/Users/Bill/Desktop/tipsy/docs/src/stylesheets",
+		"/C/Users/Bill/Desktop/tipsy/docs/src/javascripts",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/index.html",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/css/functions.css",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/js/jquery.roundabout.js",
+		"/C/Users/Bill/Desktop/construct/fireworks/H2B0.htm",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/icon/lovelicons/PNG/.DS_Store",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/components.css",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/css-components.css",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/expexp.html",
+		"/C/Users/Bill/Dropbox/webhead/synth/DEMOfronts.html",
+		"/C/Users/Bill/Dropbox/webhead/synth/index.html",
+		"/C/Users/Bill/Dropbox/webhead/synth/DEMOeddies.html",
+		"/C/Users/Bill/Dropbox/webhead/synth/DEMOhadley.html",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/index_subtractive.html",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/junk_dna.html",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/css/explo.css",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/functions.css",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/DEMOeddies.html",
+		"/C/Users/Bill/Dropbox/webhead/00_2013/01 rvlio bootstrap/combine 2 live/js/reveal.min.js",
+		"//Doug/c/Users/build/documents/my dropbox/webhead/00_2013/01 rvlio bootstrap/combine 2 bootstrap no roundabout/idvhadley.html",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2/.gitignore",
+		"/C/Users/Bill/Dropbox/ameliacooper/online framework/index_demo.html",
+		"/F/launchpad/README",
+		"/F/launchpad/ad_removal_uninstall.sh",
+		"/F/launchpad/ad_removal_install.sh",
+		"/F/launchpad/ad_removal.ini",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2 live/css/theme/override.css",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2 live/index.html",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2/index.html",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2/grunt.js",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2/LICENSE",
+		"/D/balanced vortex/00_2013/01 rvlio bootstrap/combine 2/README.md",
+		"/C/Users/Bill/sandbox/synth/css/explo.css",
+		"/C/Users/Bill/sandbox/synth/hadleyidv.html",
+		"/C/Users/Bill/sandbox/synth/css/bootstrap.css",
+		"/C/Users/Bill/sandbox/synth/css/back/bootstrap.css",
+		"/C/Users/Bill/sandbox/synth/index.html",
+		"/C/Users/Bill/sandbox/synth/lib/js/head.min.js",
+		"/C/Users/Bill/sandbox/synth/css/reveal.css",
+		"/C/Users/Bill/sandbox/synth/package_hold/reveal.js-master/reveal.js-master/css/theme/beige.css",
+		"/C/Users/Bill/sandbox/font/demo/index.html",
+		"/C/Users/Bill/sandbox/font/style.css",
+		"/C/Users/Bill/sandbox/synth/bootstrap.min.css",
+		"/C/Users/Bill/sandbox/synth/bootstrap.css",
+		"/C/Users/Bill/sandbox/synth/icon/lovelicons/you're awesome.rtf",
+		"/C/Users/Bill/sandbox/synth/junk_dna",
+		"/C/Users/Bill/Downloads/standalone/Click counter.csv",
+		"/C/Users/Bill/Downloads/standalone/clicksolvent/data/Click counter.csv",
+		"/C/Users/Bill/Documents/novs/nobs",
+		"/C/Users/Bill/Documents/sublime sets/Polski",
+		"/C/Users/Bill/Documents/sublime sets/sidetrax",
+		"/C/Users/Bill/Downloads/rss.webintents",
+		"/C/Users/Bill/Documents/sublime sets/activate",
+		"/C/Users/Bill/Documents/sublime sets/clips",
+		"/C/Users/Bill/Documents/sublime sets/fessenden",
+		"/C/Users/Bill/Documents/sublime sets/warp",
+		"/C/Users/Bill/Documents/sublime sets/woelv",
+		"/N/MPT/MAYANPROPHECY.nfo",
+		"/N/MPT/00-blazinseedboxes.com.nfo"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"altswap",
+			"loading",
+			"splash",
+			"load",
+			"loadly",
+			"hidden",
+			"splash",
+			"font",
+			"body",
+			"h4",
+			"subl",
+			"sublet",
+			"js",
+			"trigger",
+			"js",
+			"hidden headline",
+			"topnav",
+			"supernav",
+			"snup",
+			"clicket",
+			"exit",
+			"clicket",
+			"mapplet",
+			"groupee2",
+			"hidden coordinate",
+			"glight",
+			"bootstrap",
+			"DEMOhadley",
+			"vlab",
+			"toggle",
+			"content",
+			"contented",
+			"content",
+			"cursor",
+			"alt",
+			"previousslide",
+			"fluid",
+			"spritely",
+			"speedbox",
+			"spritely",
+			"loaderImage",
+			"coord",
+			"router",
+			"eddy",
+			"vlab",
+			"zoom",
+			"aside",
+			"coordinate",
+			"map",
+			"coord",
+			"narration",
+			"coords",
+			"narration",
+			"Weather in a tank",
+			"refeye",
+			"loaderimage",
+			"loaderImage",
+			"body",
+			"light",
+			"levels",
+			"unlock4d",
+			"mouseover",
+			"selector",
+			"z-index",
+			"toggler",
+			"if",
+			"element",
+			"arrows",
+			"reveal",
+			"font",
+			"clicket",
+			"element",
+			"clicket",
+			"cspeed",
+			"thaw",
+			"mapplet",
+			"map",
+			"navigate-down",
+			"spinup",
+			"overview",
+			"arrows",
+			"toggleyou",
+			"freeze",
+			"light",
+			"setPreviousVerticalIndex",
+			"particle",
+			"perm",
+			"EARTH<",
+			"image/idv/",
+			"background",
+			"img2",
+			"initialize",
+			"img",
+			"fluid",
+			"data-state",
+			"screen",
+			"fflux",
+			"ffflux",
+			"bebas",
+			"group",
+			"elemesn",
+			"elemesnt",
+			"element",
+			"E2B",
+			"switcher",
+			"vimeo",
+			"reveal",
+			"data-state",
+			"reveal",
+			"01",
+			"map",
+			"new york",
+			"owned",
+			"70",
+			"65",
+			"ownership",
+			"guid",
+			">\n",
+			"wish",
+			"key",
+			"theme",
+			"color",
+			"ol",
+			"hadley",
+			"Hadley",
+			"align",
+			"inspect",
+			"left"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"headline",
+			"groupeer",
+			"coordinate",
+			"flux/hadley/",
+			"groupee",
+			"flux"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/revealEXP.js",
+					"settings":
+					{
+						"buffer_size": 46907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								609,
+								609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/revealEXP.css",
+					"settings":
+					{
+						"buffer_size": 33356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2062,
+								2066
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 624.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/stylesheet.css",
+					"settings":
+					{
+						"buffer_size": 4643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3832,
+								3832
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/theme/light.css",
+					"settings":
+					{
+						"buffer_size": 4900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2040,
+								2040
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1386.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/deckHadley.css",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "preloadHadley.js",
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								910,
+								910
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "expHadley.html",
+					"settings":
+					{
+						"buffer_size": 40912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33019,
+								33019
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 25268.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "triggerHadley.js",
+					"settings":
+					{
+						"buffer_size": 2182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1579,
+								1579
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 587.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.311058495822,
+			0.673946486523,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 128.0,
+	"status_bar_visible": true
+}

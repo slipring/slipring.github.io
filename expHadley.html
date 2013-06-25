@@ -16,24 +16,30 @@
 			<!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"> -->
 			<!-- <script src="js/bootstrap.min.js"></script> -->
 			<script src="lib/js/head.min.js"></script>
+			<!--preq for ContentEditable-->
 			<script src="js/h5utils.js"></script>
 
+		<!-- NONLOCAL STY -->
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+			<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script> 
+			<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+	    	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
 
-			<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!--PRELOADING-->
+			<script type="text/javascript" src="js/PxLoader.js"></script>
+			<script type="text/javascript" src="js/PxLoaderImage.js"></script> 
+			<script type="text/javascript" src="preloadHadley.js"></script>
+
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 			<script>
 				document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 			</script>
-			<!--[if lt IE 9]>
+		<!--[if lt IE 9]>
 			<script src="lib/js/html5shiv.js"></script>
-			<![endif]-->
-			
-		<!-- NONLOCAL STY -->
-			<!--<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script> -->
-			<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
-	    	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
-			<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<![endif]-->
 
-
+					
 	</head>
 
 
@@ -44,7 +50,7 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
 
-			<section id="EXAMPLE STACK">
+<!-- 			<section id="EXAMPLE STACK">
 				<section id="mainstream" data-state="tops">
 					<h1>SYNOPSIS LEVEL</h1>
 					
@@ -84,38 +90,19 @@
 						Explanatory text
 					</aside>
 				</section>
-			</section> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			</section>  -->
 
 
 			<section>
-				<section data-state="tops intro">
+				<section data-state="tops splash">
 
-
-					<img id="LtoS"
+					<img id="M2m"
 						style="background:none;
 								border:none;
 								box-shadow:none;
 								max-height:80%;"
-						 src="flux/JITTER5.gif"
-						 alt="cursors/cloud.png">
+						 src="trigger/splash.png">
+
 
 
 					<aside class="coordinate">
@@ -147,49 +134,35 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 			<section>
 				<section data-state="tops regimes">
 					<div id="grouper">
 						<div id="groupee">
-	    					<img id="hadleyio"
+	    					<img id="hadleyio" class="sublet"
 								style="background:none;
 									border:none;
 									box-shadow:none;
 									max-height:100%;"
-							src="flux/peartankscape15w.gif"
-							alt="cursors/cloud.png">
+							src="trigger/tankspin_horzn.jpg">
 						</div>
 						<div id="groupeer">
-							<img id="worldio"
+							<img id="worldio" class="sublet"
 								style="background:none;
 								border:none;
 								box-shadow:none;
 								max-height:100%;"
-							src="flux/pearworldapart15w.gif"
-							alt="cursors/cloud.png">
+							src="trigger/worldspin_trans.jpg">
 						</div>
 
 						<div id="groupeer">
-							<img id="eddio" class="fragment roll-in" data-fragment-index="1"
+							<img id="eddio" class="fragment roll-in sublet" 
+								data-fragment-index="1"
 								style="background:none;
 								border:none;
 								box-shadow:none;
 								max-height:100%;"
-							src="flux/peartankeddy15w.gif"
-							alt="cursors/cloud.png">
+							src="trigger/tankspin_eddy.jpg">
 						</div>
-
-
 					</div>
 
 					<aside class="coordinate">
@@ -1500,6 +1473,7 @@
 		<img id="reflock" src="cursors/unlock.png" style="margin-top:-20px;margin-left:12px;">
 	</div>  -->
 
+
 <shoes>
 	<div id="toggler">
 		<p id="toggleme"><img src="cursors/narration.png" style="float:left;"></p>
@@ -1515,8 +1489,8 @@
 
 	<!-- 	<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
 	<div id="narration" class="stuckopen">
-		<h2 id="headliner" contenteditable="true">Splash Title</h2>
-		<p id="contented" contenteditable="true">Splash Text</p>
+		<h2 id="headliner" contenteditable="true">getting up to spin...</h2>
+		<p id="contented" contenteditable="true">preload count</p>
 	</div>
 </shoes>
 
@@ -1614,12 +1588,12 @@
 
 
 	
+<script src="triggerHadley.js"></script>
 
 
 
 
 
-		<script src="js/triggerHadley.js"></script>
 
 
 
@@ -1729,24 +1703,15 @@
 	Reveal.addEventListener( 'slidechanged', function( event ) {
 	    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 /*			console.log(event.previousSlide);*/
-		argsToArray(event.previousSlide.getElementsByTagName("img")).forEach(function(img) {
-  			img.src = img.src.split('gif').join('jpg');
-		});
-		argsToArray(event.currentSlide.getElementsByTagName("img")).forEach(function(img) {
+		argsToArray(event.currentSlide.getElementsByClassName("sublet")).forEach(function(img) {
   			img.src = img.src.split('jpg').join('gif');
 		});
-/*   		var listly = event.previousSlide.querySelectorAll("img");
-			console.log(listly.src);
-*/
-/*			if (listly) {
-			for(var x=0; x<listly.length; x++)
-			{
-			  var alter = listly[x].src;
-			  listly[x].src = listly[x].alt
-			  listly[x].alt = alter
-			  console.log(listly[x].src);
-			}
-		}*/
+
+
+		argsToArray(event.previousSlide.getElementsByClassName("sublet")).forEach(function(img) {
+  			img.src = img.src.split('gif').join('jpg');
+  		}); 
+
 	} );
 
 
@@ -1851,7 +1816,7 @@
 	var cHeight=1200;
 	var cTotalFrames=30;
 	var cFrameWidth=587;
-	var cImageSrc='image/hadley_sprite.png';
+	var cImageSrc='sprites/hadley_sprite.png';
 	var cImageTimeout=false;
 	var cIndex=0;
 	var cXpos=0;
@@ -1915,7 +1880,7 @@
 
 
 	Reveal.addEventListener( 'regimes', function() {
-			console.log( '"regimes" has fired' );
+			console.log( '"halter" has fired' );
 			 	stopAnimation();
 		} );
 	Reveal.addEventListener( 'spritely_A', function() {

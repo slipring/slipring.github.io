@@ -81,8 +81,8 @@
     background:rgba(0,0,0,.1);
     padding:8px;
     width: 60%;
-     box-shadow: 0px 4px 4px rgba(0,0,0,.4);
-     -moz-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    box-shadow: 0px 4px 4px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
     -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
     /*    max-height: 9999px;*/
 }
@@ -91,11 +91,11 @@
 #headliner {
     /*color:rgba(255,255,255,.9);*/
     color: #eeeeee;
-          font-family: "League Gothic", Impact, sans-serif;
-          line-height: 0.9em;
-          letter-spacing: 0.02em;
-/*          text-transform: uppercase;*/
-          text-shadow: 0px 0px 6px rgba(105, 225, 231, 0.8);
+    font-family: "League Gothic", Impact, sans-serif;
+    line-height: 0.9em;
+    letter-spacing: 0.02em;
+/*  text-transform: uppercase;*/
+    text-shadow: 0px 0px 6px rgba(105, 225, 231, 0.8);
 }
 
 #contented {color:white;}
@@ -107,8 +107,6 @@ img, img:hover { cursor: pointer;
 .UXemphatic {cursor: url(bcursor.png), auto;}
 .corotating {cursor: url(bcursor.png), auto;}
 .inertial {cursor: url(bcursor.png), auto;}
-
-
 
 
 
@@ -248,6 +246,16 @@ figcaption { display: block; }
 }
 
 
+
+
+
+/*#loadmap {
+    position: fixed; 
+    bottom: 144px;
+    right: 144px;
+    z-index: 32;
+}
+*/
 
 
 
