@@ -11,8 +11,6 @@
 		<!-- LOCAL STY -->
 			<link rel="stylesheet" href="css/revealEXP.css">
 			<link rel="stylesheet" href="css/theme/light.css" id="theme">
-			<link rel="stylesheet" href="css/stylesheet.css">
-			<link rel="stylesheet" href="css/deckHadley.css">
 			<!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"> -->
 			<!-- <script src="js/bootstrap.min.js"></script> -->
 			<script src="lib/js/head.min.js"></script>
@@ -38,7 +36,9 @@
 		<!--[if lt IE 9]>
 			<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-
+			
+			<link rel="stylesheet" href="css/stylesheet.css">
+			<link rel="stylesheet" href="css/deckHadley.css">
 					
 	</head>
 
@@ -538,9 +538,21 @@
 						<div class="row-fluid">
   							<div class="span12">
     							<div class="row-fluid">
+
+
      								 <div class="span3">
-     								 		<img style="border:none;margin:0px;margin:0px;margin-top:60px;background:none;box-shadow:none;" src="image/1-400w.gif">
+     								 	<div id="grouper">
+     								 		<div id="groupee" style="z-index:3">
+     								 			<img class="sublet"
+     								 			style="border:none;margin:0px;margin:0px;margin-top:60px;background:none;box-shadow:none;" src="trigger/hadley_replay1.jpg">
+     								 		</div>
+     								 		<div id="groupeer" style="z-index:0">
+     								 			<img style="border:none;margin:0px;margin:0px;margin-top:60px;background:none;box-shadow:none;" src="static/hadley_replay1bdrop.png">
+     								 		</div>
+     								 	</div>
      								 </div>
+
+
       								<div class="span9">
         								<div class="row-fluid">
           									<div class="span6">
@@ -550,24 +562,28 @@
           										<h4 style="color:gray;">still frame</h4>
           									</div>
 			        					</div>
+
         								<div class="row-fluid">
           									<div class="span6">
-											<img id="emily" style="border:none;margin:0px;background:none;box-shadow:none;" src="image/hadley_render2s.gif">
- 											<!-- <img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/hadley_render2s.gif"> -->
+												<img class="sublet" 
+													src="trigger/hadley_mediumless.jpg">
 					          				</div>
           		    				   		 <div class="span6">
-          										<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/hadstill2.png">
+          										<img src="static/hadley_1wind.png">
           									</div>
  						       			</div>
+
         								<div class="row-fluid">
           									<div class="span6">
-          										<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/vray_volumetric-fog_testloop.gif">
+          										<img class="sublet" 
+          											src="trigger/hadley_canless.jpg">
           									</div>
           									<div class="span6">
-          										<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/hadstill.png">
+          										<img src="static/hadley_1p5wind.png">
           									</div>
         								</div>
       								</div>
+
     							</div>
   							</div>
 						</div>
@@ -1489,7 +1505,7 @@
 
 	<!-- 	<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
 	<div id="narration" class="stuckopen">
-		<h2 id="headliner" contenteditable="true">getting up to spin...</h2>
+		<h2 id="headliner" contenteditable="true">spinning up...</h2>
 		<p id="contented" contenteditable="true">preload count</p>
 	</div>
 </shoes>

@@ -15,7 +15,7 @@ var
   imgElement10A = loader.addImage('trigger/tankspin_horzn.gif','motion');
   imgElement10B = loader.addImage('trigger/worldspin_trans.gif','motion');
   imgElement10C = loader.addImage('trigger/tankspin_eddy.gif','motion');
-  imgElement10ABC = loader.addImage('trigger/tankspin_horzn.jpg','proxy');
+  imgElement10ABP = loader.addImage('trigger/tankspin_horzn.jpg','proxy');
   //slide 2,0
   
   //slide 3,0
@@ -23,6 +23,16 @@ var
   imgElement31A = loader.addImage('sprites/hadley_sprite.png','spritest');
 
   //slide 4,0
+  imgElement40A = loader.addImage('trigger/hadley_mediumless.gif','motion');
+  imgElement40AP = loader.addImage('trigger/hadley_mediumless.jpg','proxy');
+  imgElement40B = loader.addImage('trigger/hadley_canless.gif','motion');
+  imgElement40BP = loader.addImage('trigger/hadley_canless.jpg','proxy');
+  imgElement40C = loader.addImage('static/hadley_1wind.png','still');
+  imgElement40D = loader.addImage('static/hadley_1p5wind.png','still');
+  imgElement40Z = loader.addImage('trigger/hadley_replay1.gif','motion');
+  imgElement40ZU = loader.addImage('static/hadley_replay1bdrop.png','still');
+
+
   //slide 5,0
   //slide 6,0
   //slide 7,0
@@ -48,7 +58,7 @@ loader.addProgressListener(function(e) {
 loader.addCompletionListener(function(e) { 
   console.log('Ready to go!');
   document.getElementById('headliner').innerHTML = 
-  "getting up to spin... all caught up!"
+  "spinning up... fluid ready!"
   document.getElementById('M2m').src='trigger/splash.gif';
 }); 
 

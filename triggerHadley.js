@@ -25,7 +25,6 @@
 
 		Reveal.addEventListener( 'vlab', function() {
 			console.log( '"vlab" has fired' );
-/*		 	   document.getElementById('emily').src='image/hadley_render2s.gif';*/
    		} );
 
 		Reveal.addEventListener( 'freecam', function() {
@@ -67,6 +66,7 @@
 	  	Reveal.addEventListener( 'climated', function() {
 			console.log( '"climated" has fired' );
 	  	} );
+
 
 		/*$('.swap').click(function(){ 
     		$(this).attr('src','new/path/to/img.jpg');
