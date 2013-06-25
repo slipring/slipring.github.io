@@ -31,9 +31,25 @@ var
   imgElement40D = loader.addImage('static/hadley_1p5wind.png','still');
   imgElement40Z = loader.addImage('trigger/hadley_replay1.gif','motion');
   imgElement40ZU = loader.addImage('static/hadley_replay1bdrop.png','still');
+  //slide 4,1
+  imgElement41A = loader.addImage('trigger/hadley_contourside.gif','motion');
+  imgElement41AP = loader.addImage('trigger/hadley_contourside.jpg','proxy');
+  imgElement41B = loader.addImage('trigger/hadley_contourover.gif','motion');
+  imgElement41BP = loader.addImage('trigger/hadley_contourover.jpg','proxy');
+  imgElement41C = loader.addImage('static/hadley_rotoscope.png','still');
+  imgElement41D = loader.addImage('trigger/hadley_inking.gif','motion');
+  imgElement41DP = loader.addImage('trigger/hadley_inking.jpg','proxy');
+   //slide 4,2
+  imgElement42A = loader.addImage('trigger/hadley_fcontext.gif','motion');
+  imgElement42AP = loader.addImage('trigger/hadley_fcontext.jpg','proxy');
+  imgElement42B = loader.addImage('trigger/hadley_wcontext.gif','motion');
+  imgElement42BP = loader.addImage('trigger/hadley_wcontext.jpg','proxy');
 
 
   //slide 5,0
+  imgElement50A = loader.addImage('trigger/hadley_roamview.gif','motion');
+  imgElement50AP = loader.addImage('trigger/hadley_roamview.jpg','proxy');
+
   //slide 6,0
   //slide 7,0
   //slide 8,0

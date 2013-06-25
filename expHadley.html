@@ -543,8 +543,10 @@
      								 <div class="span3">
      								 	<div id="grouper">
      								 		<div id="groupee" style="z-index:3">
-     								 			<img class="sublet"
-     								 			style="border:none;margin:0px;margin:0px;margin-top:60px;background:none;box-shadow:none;" src="trigger/hadley_replay1.jpg">
+     								 			<img id="synthgifI" class="sublet renewer"
+     								 			style="border:none;margin:0px;margin:0px;margin-top:60px;background:none;box-shadow:none;" 
+     								 			src="trigger/hadley_replay1.jpg"
+     								 			onClick="document.getElementById('synthgifI').src='trigger/hadley_replay1.gif'">
      								 		</div>
      								 		<div id="groupeer" style="z-index:0">
      								 			<img style="border:none;margin:0px;margin:0px;margin-top:60px;background:none;box-shadow:none;" src="static/hadley_replay1bdrop.png">
@@ -565,21 +567,30 @@
 
         								<div class="row-fluid">
           									<div class="span6">
-												<img class="sublet" 
-													src="trigger/hadley_mediumless.jpg">
+												<img id="nowater" 
+												class="sublet renewer" 
+												style="border:0px;box-shadow: 0px 4px 4px rgba(0,0,0,.4);"
+												src="trigger/hadley_mediumless.jpg"
+												onClick="document.getElementById('nowater').src='trigger/hadley_mediumless.gif'">
 					          				</div>
           		    				   		 <div class="span6">
-          										<img src="static/hadley_1wind.png">
+          										<img 
+          										style="border:0px;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+          										src="static/hadley_1wind.png">
           									</div>
  						       			</div>
 
         								<div class="row-fluid">
           									<div class="span6">
-          										<img class="sublet" 
-          											src="trigger/hadley_canless.jpg">
+          										<img id="nocan" 
+          										style="border:0px;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+          										class="sublet renewer" 
+          										src="trigger/hadley_canless.jpg" 
+          										onClick="document.getElementById('nocan').src='trigger/hadley_canless.gif'">
           									</div>
           									<div class="span6">
-          										<img src="static/hadley_1p5wind.png">
+          										<img style="border:0px;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+          										src="static/hadley_1p5wind.png">
           									</div>
         								</div>
       								</div>
@@ -609,18 +620,40 @@
       							<div class="span6">
         							<div class="row-fluid">
           								<div class="span11">
-          									<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/contour-evolve_300w.gif">
+          									<img id="contourings" class="sublet renewer"
+          									style="border:none;margin:0px;background:none;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+          									src="trigger/hadley_contourside.jpg"
+          									onClick="document.getElementById('contourings').src='trigger/hadley_contourside.gif'">
           								</div>
-					          			<div class="span11">
-					          				<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/contour-evolve-ohead_400w.gif">
+					          			<div class="span10">
+					          				<img id="contouringo" class="sublet renewer"
+					          				style="border:none;margin:5px;background:none;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+					          				src="trigger/hadley_contourover.jpg"
+					          				onClick="document.getElementById('contouringo').src='trigger/hadley_contourover.gif'">
 					          			</div>
         							</div>
       							</div>
  			     				<div class="span6">
+ 			     					<div class="row-fluid">
  			     					<div class="span12">
- 			     						<img style="border:none;margin:0px;background:none;box-shadow:none;float:right;" src="image/hadrotoscope.png">
-         								<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/contour-extrusion_600w.gif">
+ 			     						<img 
+ 			     						style="border:none;margin:0px;background:none;float:right;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+ 			     						src="static/hadley_rotoscope.png">
+ 			     					</div>
+ 			     				</div>
+ 			     				<div class="row-fluid">
+ 			     					<img 
+ 			     					style="border:none;margin:11px;background:none;box-shadow:none;float:right;" 
+ 			     					src="cursors/transparentpixel.gif">
+ 			     				</div>
+ 			     				<div class="row-fluid">
+ 			     					<div class="span12">
+         								<img id="mesher" class="sublet renewer"
+         								style="border:none;margin:0px;background:none;box-shadow:0px 4px 4px rgba(0,0,0,.4);" 
+         								src="trigger/hadley_inking.jpg"
+         								onClick="document.getElementById('mesher').src='trigger/hadley_inking.gif'">
          							</div>
+         						</div>
     							</div>
   							</div>
 						</div>
@@ -643,8 +676,14 @@
 
 
 				<section data-state="blackout" id="digital">
-					<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/catmulls_blankdrop_200h.gif">
-					<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/rotato_contex_200ht.gif">
+					<img id="floorless" class="sublet renewer"
+					style="border:none;margin:0px;background:none;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+					src="trigger/hadley_fcontext.jpg"
+					onClick="document.getElementById('floorless').src='trigger/hadley_fcontext.gif'">
+					<img id="floored" class="sublet renewer"
+					style="border:none;margin:0px;background:none;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+					src="trigger/hadley_wcontext.jpg"
+					onClick="document.getElementById('floored').src='trigger/hadley_wcontext.gif'">
 					
 
 					<aside class="coordinate">
@@ -682,7 +721,12 @@
 			<section>
 
 					<section data-state="tops freecam">
-						<img style="border:none;margin:0px;background:none;box-shadow:none;" src="image/mock-up_700w.gif">
+						<img id="artifistill"
+						class="sublet renewer"
+						style="border:none;margin:0px;background:none;box-shadow: 0px 4px 4px rgba(0,0,0,.4);" 
+						src="trigger/hadley_roamview.jpg"
+						onClick="document.getElementById('artifistill').src='trigger/hadley_roamview.gif'"
+						>
 
 
 

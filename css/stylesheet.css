@@ -104,6 +104,8 @@
 /* INFO CURSORS */
 img, img:hover { cursor: pointer;
                  cursor: hand; }
+img.renewer, img.renewer:hover { cursor: url(../cursors/prev.png), auto;}
+
 .UXemphatic {cursor: url(bcursor.png), auto;}
 .corotating {cursor: url(bcursor.png), auto;}
 .inertial {cursor: url(bcursor.png), auto;}
