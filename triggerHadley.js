@@ -4,12 +4,12 @@
 
 		Reveal.addEventListener( 'splash', function() {
 			console.log( '"splash" has fired' );
-		   	document.getElementById('M2m').src='trigger/splash.gif';
+		   	document.getElementById('M2m').src='trigger/gcsplash.gif';
 		} );
 
 		Reveal.addEventListener( 'regimes', function() {
 			console.log( '"regimes" has fired' );
-			document.getElementById('M2m').src='trigger/splash.png';
+			document.getElementById('M2m').src='trigger/gcsplash.png';
 		/*	document.getElementById('hadleyio').src='trigger/tankspin_horizn.gif';
 			document.getElementById('worldio').src='trigger/worldspin_trans.gif';
 			document.getElementById('eddio').src='trigger/tankspin_eddy.gif';*/

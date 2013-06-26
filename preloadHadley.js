@@ -10,12 +10,12 @@ var loader = new PxLoader({
 var 
 
   //slide 0,0
-	imgElement00 = loader.addImage('trigger/splash.png','first');
+	imgElement00 = loader.addImage('trigger/gcsplash.png','first');
   //slide 1,0
-  imgElement10A = loader.addImage('trigger/tankspin_horzn.gif','motion');
-  imgElement10B = loader.addImage('trigger/worldspin_trans.gif','motion');
-  imgElement10C = loader.addImage('trigger/tankspin_eddy.gif','motion');
-  imgElement10ABP = loader.addImage('trigger/tankspin_horzn.jpg','proxy');
+  imgElement10A = loader.addImage('trigger/gctankspin_horzn.gif','motion');
+  imgElement10B = loader.addImage('trigger/gcworldspin_trans.gif','motion');
+  imgElement10C = loader.addImage('trigger/gctankspin_eddy.gif','motion');
+  imgElement10ABP = loader.addImage('trigger/gctankspin_horzn.jpg','proxy');
   //slide 2,0
   
   //slide 3,0
@@ -60,7 +60,7 @@ var
   //slide 13,0
   //slide 14,0
   //slide 0,0
-	imgElement99 = loader.addImage('trigger/splash.gif','last');
+	imgElement99 = loader.addImage('trigger/gcsplash.gif','last');
 
 
 loader.addProgressListener(function(e) { 
@@ -75,7 +75,7 @@ loader.addCompletionListener(function(e) {
   console.log('Ready to go!');
   document.getElementById('headliner').innerHTML = 
   "spinning up... fluid ready!"
-  document.getElementById('M2m').src='trigger/splash.gif';
+  document.getElementById('M2m').src='trigger/gcsplash.gif';
 }); 
 
 
