@@ -80,19 +80,19 @@
 			}
 		},
 		{
-			"file": "css/stylesheet.css",
-			"settings":
-			{
-				"buffer_size": 4643,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "css/theme/light.css",
 			"settings":
 			{
 				"buffer_size": 4900,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 4812,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -107,7 +107,7 @@
 			"file": "preloadHadley.js",
 			"settings":
 			{
-				"buffer_size": 1664,
+				"buffer_size": 3280,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,18 +115,23 @@
 			"file": "expHadley.html",
 			"settings":
 			{
-				"buffer_size": 40912,
+				"buffer_size": 43639,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "idvHadley.html",
+			"settings":
+			{
+				"buffer_size": 29409,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "\n\n\n\n		Reveal.addEventListener( 'splash', function() {\n			console.log( '\"splash\" has fired' );\n		   	document.getElementById('M2m').src='trigger/splash.gif';\n		} );\n\n		Reveal.addEventListener( 'regimes', function() {\n			console.log( '\"regimes\" has fired' );\n			document.getElementById('M2m').src='trigger/splash.png';\n		/*	document.getElementById('hadleyio').src='trigger/tankspin_horizn.gif';\n			document.getElementById('worldio').src='trigger/worldspin_trans.gif';\n			document.getElementById('eddio').src='trigger/tankspin_eddy.gif';*/\n		} );\n\n		Reveal.addEventListener( 'pretracers', function() {\n			console.log( '\"pretracers\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'vimvid', function() {\n			console.log( '\"vimvid\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'vlab', function() {\n			console.log( '\"vlab\" has fired' );\n/*		 	   document.getElementById('emily').src='image/hadley_render2s.gif';*/\n   		} );\n\n		Reveal.addEventListener( 'freecam', function() {\n			console.log( '\"freecam\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'tracerlooks', function() {\n			console.log( '\"tracerlooks\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'greenrelease', function() {\n			console.log( '\"greenrelease\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'pinkrelease', function() {\n			console.log( '\"pinkrelease\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'pinkspread', function() {\n			console.log( '\"pinkspread\" has fired' );\n	  	} );\n\n		Reveal.addEventListener( 'greenwinding', function() {\n			console.log( '\"greenwinding\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'particletrk', function() {\n			console.log( '\"particletrk\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'schemata', function() {\n			console.log( '\"schemata\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'numnumnum', function() {\n			console.log( '\"numnumnum\" has fired' );\n	  	} );\n\n	  	Reveal.addEventListener( 'climated', function() {\n			console.log( '\"climated\" has fired' );\n	  	} );\n\n		/*$('.swap').click(function(){ \n    		$(this).attr('src','new/path/to/img.jpg');\n		});*/\n\n		/* document.getElementById(\"img\").src = img.src.replace(\".gif\", \".png\");*/\n",
 			"file": "triggerHadley.js",
-			"file_size": 2259,
-			"file_write_time": 130166522493010104,
 			"settings":
 			{
-				"buffer_size": 2182,
+				"buffer_size": 2110,
 				"line_ending": "Windows"
 			}
 		}
@@ -155,6 +160,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Bill/Dropbox/webhead/coriolis/css/stylesheetIDV.css",
+		"/C/Users/Bill/Dropbox/webhead/coriolis/css/bootstrap.min.css",
 		"/D/repo/slipring.github.io/slipring.github.io/js/PxLoaderImage.js",
 		"/D/repo/slipring.github.io/slipring.github.io/js/PxLoader.js",
 		"/D/repo/slipring.github.io/slipring.github.io/deckspec01.css",
@@ -247,6 +254,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<aside class=\"h",
+			"hidden headline",
+			"bootstrap",
+			"flux/hadley/hadley",
+			"hadley",
+			"toggle",
+			"virtualLab",
+			"virtual",
+			"virtualLab",
+			"NMod",
+			"VirtualLab",
+			"Vlab",
+			"VLab",
+			"hadleyd",
+			"flux",
+			"H3B0",
+			"flux/H",
+			"flux/proxy001",
+			"queryselect",
+			"innerHTML",
+			"narration",
+			"onclick",
+			"grouper",
+			"sublet",
 			"altswap",
 			"loading",
 			"splash",
@@ -350,31 +381,7 @@
 			"elemesn",
 			"elemesnt",
 			"element",
-			"E2B",
-			"switcher",
-			"vimeo",
-			"reveal",
-			"data-state",
-			"reveal",
-			"01",
-			"map",
-			"new york",
-			"owned",
-			"70",
-			"65",
-			"ownership",
-			"guid",
-			">\n",
-			"wish",
-			"key",
-			"theme",
-			"color",
-			"ol",
-			"hadley",
-			"Hadley",
-			"align",
-			"inspect",
-			"left"
+			"E2B"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -382,6 +389,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<aside class=\"coordinate\">\n						0.0  \n					</aside>\n					<aside class=\"h",
+			"headline",
+			"image/zonalH",
 			"headline",
 			"groupeer",
 			"coordinate",
@@ -398,7 +408,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -457,34 +467,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "css/stylesheet.css",
-					"settings":
-					{
-						"buffer_size": 4643,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3832,
-								3832
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 336.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "css/theme/light.css",
 					"settings":
 					{
@@ -507,6 +489,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1386.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/stylesheet.css",
+					"settings":
+					{
+						"buffer_size": 4812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1966,
+								1966
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1224.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -542,15 +552,15 @@
 					"file": "preloadHadley.js",
 					"settings":
 					{
-						"buffer_size": 1664,
+						"buffer_size": 3280,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								910,
-								910
+								814,
+								814
 							]
 						],
 						"settings":
@@ -560,31 +570,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 84.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 6,
 					"file": "expHadley.html",
 					"settings":
 					{
-						"buffer_size": 40912,
+						"buffer_size": 43639,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33019,
-								33019
+								35831,
+								35831
 							]
 						],
 						"settings":
@@ -593,7 +597,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 25268.0,
+						"translation.y": 28288.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -606,18 +610,51 @@
 			[
 				{
 					"buffer": 7,
-					"file": "triggerHadley.js",
+					"file": "idvHadley.html",
 					"settings":
 					{
-						"buffer_size": 2182,
+						"buffer_size": 29409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1579,
-								1579
+								27874,
+								27874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 17951.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "triggerHadley.js",
+					"settings":
+					{
+						"buffer_size": 2110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								547,
+								547
 							]
 						],
 						"settings":
@@ -626,7 +663,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 587.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -668,8 +705,8 @@
 		"cols":
 		[
 			0.0,
-			0.311058495822,
-			0.673946486523,
+			0.328372117194,
+			0.736127304069,
 			1.0
 		],
 		"rows":
