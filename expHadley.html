@@ -105,14 +105,14 @@
 
 
 
-					<aside class="coordinate">
+					<aside id="originc" class="coordinate">
 						0.0  
 					</aside>
-					<aside class="headline">
+					<aside id="originh" class="headline">
 						Weather in a Tank  
 					</aside>
-					<aside class="notes">
-						Dynamics of the atmosphere using a tank of water, a bucket of ice, and a rotating turntable apparatus.
+					<aside id="originn" class="notes">
+						Dynamics of the atmosphere using a tank of water, a bucket of ice, and a rotating turntable apparatus. Experience the planetary 
 					</aside>
 
 				</section>
@@ -169,10 +169,10 @@
 						1.0  
 					</aside>
 					<aside class="headline">
-						Features of the World Model  
+						studying the atmosphere's general circulation in the laboratory  
 					</aside>
 					<aside class="notes">
-						Compressible air in earth's atmosphere is modeled by 
+						The air of our earth's atmosphere can be modeled by {compressible/incompressible} 
 					</aside>
 				</section>
 
@@ -276,6 +276,8 @@
 					 
 					  <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/10459062/" frameborder="0" allowfullscreen></iframe>
     	
+				<h4> use spacebar to switch tracers </h4>
+
 
 				<div id="grouper">
 					<img
@@ -297,27 +299,27 @@
 
 
 
-					<img id="groupee"	class="sublet"		
+					<img id="groupee"			
 						style="background:none;
 							border:none;
 							box-shadow:none;
 							max-height:50%;
-							top: -50px;
+							top: -0px;
 							left: 500px;
 							float:right;"
-						src="image/hadley_1rpm.jpg">
+						src="image/hadley_1rpm.gif">
 					
 
 
-					<img id="groupee"
+<!-- 					<img id="groupee"
 						usemap="#switcher"
 						style="background:none;
 								border:none;
 								box-shadow:none;
 								max-height:10%;
-								top: 400px;
+								top: 100px;
 								left: 5px;"
-						src="image/wiat_experiment_swap.png">
+						src="image/wiat_experiment_swap.png"> -->
 						
 					<map id="_switcher" name="switcher">
 							<area shape="rect" coords="0 0 40 40" href="DEMOfronts.html#/1/1" />
@@ -1226,11 +1228,11 @@
 						12.2  
 					</aside>
 					<aside class="headline">
-							Title 
-						</aside>
-						<aside class="notes">
-							Description
-						</aside>
+						Title 
+					</aside>
+					<aside class="notes">
+						Description
+					</aside>
 
  				</section>
 			</section>
@@ -1560,10 +1562,27 @@
 
 	<!-- 	<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
 	<div id="narration" class="stuckopen">
-		<h2 id="headliner" contenteditable="true">spinning up...</h2>
-		<p id="contented" contenteditable="true">preload count</p>
+		<center>
+			<h3 id="headliner" contenteditable="true">
+				General Circulation of the Atmosphere</h3>		</center>
+			<p id="contented" contenteditable="true">
+				 To understand the hows of climate change, we
+				 forces shaping (invisible) winds, weather, and climate can be  and weather can climate behaviors and weather formations Dynamics of the atmosphere 
+				 Planetary balancing of
+				 using a tank of 
+			</p>
+
+	</div>
+
+	<div id="preloadpop" class="closeable" onClick="document.getElementById('preloadpop').style.display = 'none';">
+		<h3 id="pheadliner">&nbsp;&nbsp;&nbsp;preloading</h3>
+		<p id="pcontented">counter</p>
 	</div>
 </shoes>
+
+
+
+
 
 
 </footer>
@@ -1671,12 +1690,6 @@
 
 
 
-
-
-
-
-
-
 		<script>
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
@@ -1698,10 +1711,8 @@
 			}
 
 			} );
+
 		</script>
-
-
-
 
 
 
@@ -1758,8 +1769,8 @@
 
 
 
-
 	<script>
+
 	/*	function changeImage(img) {
  		   document.getElementById("img").src = img.src.replace(".gif", ".png");
 		}

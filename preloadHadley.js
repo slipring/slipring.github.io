@@ -11,6 +11,7 @@ var
 
   //slide 0,0
 	imgElement00 = loader.addImage('trigger/gcsplash.png','first');
+  imgElement99 = loader.addImage('trigger/gcsplash.gif','first');
   //slide 1,0
   imgElement10A = loader.addImage('trigger/gctankspin_horzn.gif','motion');
   imgElement10B = loader.addImage('trigger/gcworldspin_trans.gif','motion');
@@ -59,24 +60,23 @@ var
   //slide 12,0
   //slide 13,0
   //slide 14,0
-  //slide 0,0
-	imgElement99 = loader.addImage('trigger/gcsplash.gif','last');
+
 
 
 loader.addProgressListener(function(e) { 
   console.log(e.resource.getName()); 
-  document.getElementById('contented').innerHTML =
-    'preloading image ' +
+  document.getElementById('pcontented').innerHTML =
+    '&nbsp;&nbsp;&nbsp;&nbsp;rsrc ' +
     (e.completedCount + ' / ' + e.totalCount);
 }); 
 
 
 loader.addCompletionListener(function(e) { 
   console.log('Ready to go!');
-  document.getElementById('headliner').innerHTML = 
-  "spinning up... fluid ready!"
+  document.getElementById('pheadliner').innerHTML = 
+  "&nbsp;&nbsp;&nbsp;preloaded"
   document.getElementById('M2m').src='trigger/gcsplash.gif';
 }); 
 
 
-loader.start(['first','still', 'motion', 'proxy', 'spritest', 'last']);
+loader.start(['first','still', 'motion', 'proxy', 'spritest']);

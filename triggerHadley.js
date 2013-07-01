@@ -1,7 +1,5 @@
 
-
-
-
+		
 		Reveal.addEventListener( 'splash', function() {
 			console.log( '"splash" has fired' );
 		   	document.getElementById('M2m').src='trigger/gcsplash.gif';
