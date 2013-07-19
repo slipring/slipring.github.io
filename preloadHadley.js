@@ -9,9 +9,13 @@ var loader = new PxLoader({
 
 var 
 
+  //slide viewer
+  imgElementV0 = loader.addImage('lvl.png','first');
+
   //slide 0,0
-	imgElement00 = loader.addImage('trigger/gcsplash.png','first');
   imgElement99 = loader.addImage('trigger/gcsplash.gif','first');
+	imgElement00 = loader.addImage('trigger/gcsplash.png','first');
+
   //slide 1,0
   imgElement10A = loader.addImage('trigger/gctankspin_horzn.gif','motion');
   imgElement10B = loader.addImage('trigger/gcworldspin_trans.gif','motion');
@@ -21,7 +25,7 @@ var
   
   //slide 3,0
   //slide 3,1
-  imgElement31A = loader.addImage('sprites/hadley_sprite.png','spritest');
+  imgElement31A = loader.addImage('sprites/hadley_sprite.png','sprites');
 
   //slide 4,0
   imgElement40A = loader.addImage('trigger/hadley_mediumless.gif','motion');
@@ -61,6 +65,39 @@ var
   //slide 13,0
   //slide 14,0
 
+  imgElementI01 = loader.addImage('image/H1B0.png','existent');
+  imgElementI02 = loader.addImage('image/H2B0.png','existent');
+  imgElementI03 = loader.addImage('image/H2B1.png','existent');
+  imgElementI04 = loader.addImage('image/H2B2.png','existent');
+  imgElementI05 = loader.addImage('image/H2B3.png','existent');
+  imgElementI06 = loader.addImage('image/H2C0.png','existent');
+  imgElementI07 = loader.addImage('image/H3B0.png','existent');
+  imgElementI08 = loader.addImage('image/H3C0.png','existent');
+  imgElementI09 = loader.addImage('image/hadley_1rpm.gif','existent');
+  imgElementI10 = loader.addImage('image/hadley_40-1200_1000w.gif','existent');
+  imgElementI11 = loader.addImage('image/hadley_bottomflows.png','existent');
+  imgElementI12 = loader.addImage('image/hadley_domeproxy.gif','existent');
+  imgElementI13 = loader.addImage('image/hadley_domezoom.png','existent');
+  imgElementI14 = loader.addImage('image/hadley_greendye256_4sdelay.gif','existent');
+  imgElementI15 = loader.addImage('image/hadley_key_perm.png','existent');
+  imgElementI16 = loader.addImage('image/hadley_norotato.gif','existent');
+  imgElementI17 = loader.addImage('image/hadley_particletracks.gif','existent');
+  imgElementI18 = loader.addImage('image/hadley_pdrop.gif','existent');
+  imgElementI19 = loader.addImage('image/hadley_perma256.gif','existent');
+  imgElementI20 = loader.addImage('image/hadley_permdrifter.gif','existent');
+  imgElementI21 = loader.addImage('image/hadley_permdrop.png','existent');
+  imgElementI22 = loader.addImage('image/hadley_permlongterm.gif','existent');
+  imgElementI23 = loader.addImage('image/hadley_proxy001.png','existent');
+  imgElementI24 = loader.addImage('image/hadley_ptrackult.png','existent');
+  imgElementI25 = loader.addImage('image/hadley_schematic.png','existent');
+  imgElementI26 = loader.addImage('image/hadley_superprox.gif','existent');
+  imgElementI27 = loader.addImage('image/hadley_topflows.png','existent');
+  imgElementI28 = loader.addImage('image/hadley_top-level-ana.png','existent');
+  imgElementI29 = loader.addImage('image/hadleydome_pattern.gif','existent');
+  imgElementI30 = loader.addImage('image/wiat_experiment_swap.png','existent');
+  imgElementI31 = loader.addImage('image/wiat_portal.png','existent');
+  imgElementI32 = loader.addImage('image/wisp_wiggle.gif','existent');
+
 
 
 loader.addProgressListener(function(e) { 
@@ -74,9 +111,9 @@ loader.addProgressListener(function(e) {
 loader.addCompletionListener(function(e) { 
   console.log('Ready to go!');
   document.getElementById('pheadliner').innerHTML = 
-  "&nbsp;&nbsp;&nbsp;preloaded"
-  document.getElementById('M2m').src='trigger/gcsplash.gif';
+  "&nbsp;&nbsp;&nbsp;all ready!"
+  document.getElementById('M2m').src='trigger/gcsplash.png';
 }); 
 
 
-loader.start(['first','still', 'motion', 'proxy', 'spritest']);
+loader.start(['first','still', 'motion', 'proxy', 'existent', 'sprites']);
