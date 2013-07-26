@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>sprite H1</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+<!--		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+		</script>  -->
+
+        <style type="text/css">
+			#speedthru {
+			background: transparent url(sprites/hadley_sprite.png) 0 0 no-repeat;
+			position: absolute;
+			top: 0px;
+			right: 15px;
+			width: 587px;
+			height: 587px;
+			z-index: 100;
+			cursor:pointer;
+			}
+		</style>
+
+		<script src="scripts/jquery-1.6.3.min.js" type="text/javascript"></script>
+
+		<script type="text/javascript" src="js/jquery.spritely.js">
+		</script>
+       
+		<script type="text/javascript">
+
+			(function($) {
+            $(document).ready(function() {
+
+				$('#speedthru').sprite({fps: 3, no_of_frames: 35}) .active;
+
+				}
+			}
+			);
+
+			</script>
+
+	</head>
+
+	<body>
+		<div id="speedthru">a</div>
+	</body>
+
+</html>

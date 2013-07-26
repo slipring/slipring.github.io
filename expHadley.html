@@ -38,7 +38,33 @@
 		<![endif]-->
 			
 			<link rel="stylesheet" href="css/stylesheet.css">
+
+			<script type="text/javascript" src="js/jquery.spritely.js"></script>
+
 			<link rel="stylesheet" href="css/deckHadley.css">
+			
+			<style type="text/css">
+			#speedthru {
+			background: transparent url(sprites/hadley_sprite.png) 0 0 no-repeat;
+			position: absolute;
+			top: -150px;
+			right: 100px;
+			width: 587px;
+			height: 587px;
+			z-index: 100;
+			cursor:pointer;
+			}
+			</style>
+
+			<script type="text/javascript">
+			(function($) {
+           		 $(document).ready(function() {
+
+					$('#speedthru').sprite({fps: 3, no_of_frames: 35});
+
+					});
+        		})(jQuery);
+			</script>
 					
 	</head>
 
@@ -449,7 +475,30 @@
 					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/explo.html">spritely config</a> -->
 
 					
-					<div id="hadleySprite" style="top:0px"></div>
+<!-- 					<div id="hadleySprite" style="top:0px"></div>
+ -->
+ 						<div id="speedthru">AAA</div>
+
+ 			<div id="controllers" style="top:-280px;position:absolute;">
+ 				<button onclick="$('#speedthru').fps(24);">.fps(24)</button>
+                <button onclick="$('#speedthru').fps(12);">.fps(12)</button>
+                <button onclick="$('#speedthru').fps(6);">.fps(6)</button>
+                
+                <button onclick="$('#speedthru').fps(1);">.fps(1)</button>
+                <button onclick="$('#speedthru').spStop();">.spStop()</button>
+                <button onclick="$('#speedthru').spStop(true);">.spStop(true) (returns to frame 1)</button>
+                <button onclick="$('#speedthru').spStart();">.spStart()</button>
+    
+                <button onclick="$('#speedthru').spToggle();">.spToggle()</button>
+                <button onclick="$('#speedthru').spState(1);">.spState(1)</button>
+                <button onclick="$('#speedthru').spState(2);">.spState(2)</button>
+<!--                 <button onclick="$('#speedthru').spChangeDir('left');">.spChangeDir('left')</button>
+                <button onclick="$('#speedthru').spChangeDir('right');">.spChangeDir('right')</button> -->
+                <button onclick="$('#speedthru').spReverse(true);">.rewind(true)</button>
+                 <button onclick="$('#speedthru').goToFrame(1);">go to frame 1</button>
+                <button onclick="$('#speedthru').spReverse(false);">.rewind(false)</button>
+            </div>
+
 
 					<aside class="coordinate">
 						3.1  
@@ -1560,12 +1609,12 @@
 		<h4 id="coord">*.*</h4>
 	</div>
 
-	<!-- 	<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
-	<div id="narration" class="stuckopen">
+	<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';">
+<!-- 	<div id="narration" class="stuckopen"> -->
 		<center>
-			<h3 id="headliner" contenteditable="true">
+			<h3 id="headliner" contenteditable="false">
 				General Circulation of the Atmosphere</h3>		</center>
-			<p id="contented" contenteditable="true">
+			<p id="contented" contenteditable="false">
 				 To understand the hows of climate change, we
 				 forces shaping (invisible) winds, weather, and climate can be  and weather can climate behaviors and weather formations Dynamics of the atmosphere 
 				 Planetary balancing of
@@ -1889,9 +1938,8 @@
 
 
 
-<script>
+<!-- <script>
 
-/*	Hadley Sprite Variable Speed  */
 
 	var cSpeed=122;
 	var cWidth=587;
@@ -1981,9 +2029,7 @@
 			 	stopAnimation();
 		} );
 
-</script>
-
-
+</script>  -->
 
 
 
