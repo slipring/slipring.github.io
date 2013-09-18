@@ -14,6 +14,7 @@
 		<script>
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
 				$(".ajax").colorbox();
 				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
@@ -37,11 +38,13 @@
 	</head>
 	<body>
 
-
-			<p><a class='iframe' href="expFronts.html">Outside Webpage (Iframe)</a></p>
+			<h2>Other Content Types</h2>
+			<p><a class='ajax' href="ajax.html" title="Ajax insert">Outside HTML (Ajax)</a></p>
+			<p><a class='iframe group1' href="expFronts.html">Outside Webpage (Iframe)</a></p>
+			<p><a class='iframe group1' href="expHadley.html">Outside Webpage (Iframe)</a></p>
 			<p><a class='inline' href="#inline_content">Inline HTML</a></p>
 			<p><a class='callbacks' href="../content/marylou.jpg" title="Marylou on Cumberland Island">Example with alerts</a>. Callbacks and event-hooks allow users to extend functionality without having to rewrite parts of the plugin.</p>
-			<p><a class='ajax' href="../content/ajax.html" title="Homer Defined">Outside HTML (Ajax)</a></p>
+		
 			<p><a class='youtube' href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Flash / Video (Iframe/Direct Link To YouTube)</a></p>
 			<p><a class='vimeo' href="http://player.vimeo.com/video/2285902" title="R&ouml;yksopp: Remind Me">Flash / Video (Iframe/Direct Link To Vimeo)</a></p>
 
@@ -54,7 +57,7 @@
 			
 			<p><strong>If you try to open a new Colorbox while it is already open, it will update itself with the new content.</strong></p>
 			<p>Updating Content Example:<br />
-			<a class="ajax" href="../content/ajax.html">Click here to load new content</a></p>
+			<a class="ajax" href="ajax.html">Click here to load new content</a></p>
 			</div>
 		</div>
 
