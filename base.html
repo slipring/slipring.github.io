@@ -15,10 +15,9 @@
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
 				$(".group1").colorbox({rel:'group1'});
-				$(".ajax").colorbox();
 				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-				$(".iframe").colorbox({iframe:true, width:"95%", height:"95%"});
+				$(".iframe").colorbox({iframe:true, width:"90%", height:"90%"});
 				$(".inline").colorbox({inline:true, width:"50%"});
 				$(".callbacks").colorbox({
 					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
@@ -39,9 +38,8 @@
 	<body>
 
 			<h2>Other Content Types</h2>
-			<p><a class='ajax' href="ajax.html" title="Ajax insert">Outside HTML (Ajax)</a></p>
-			<p><a class='iframe group1' href="expFronts.html">Outside Webpage (Iframe)</a></p>
-			<p><a class='iframe group1' href="expHadley.html">Outside Webpage (Iframe)</a></p>
+			<p><a class='iframe group1' href="expFronts.html" title="Fronts Experiment">Outside Webpage (Iframe)</a></p>
+			<p><a class='iframe group1' href="expHadley.html" title="Hadley Cell Experiment">Outside Webpage (Iframe)</a></p>
 			<p><a class='inline' href="#inline_content">Inline HTML</a></p>
 			<p><a class='callbacks' href="../content/marylou.jpg" title="Marylou on Cumberland Island">Example with alerts</a>. Callbacks and event-hooks allow users to extend functionality without having to rewrite parts of the plugin.</p>
 		
