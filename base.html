@@ -14,7 +14,10 @@
 		<script>
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
-					$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});
 				$(".inline").colorbox({inline:true, width:"50%"});
 				$(".callbacks").colorbox({
 					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
@@ -23,12 +26,23 @@
 					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
 					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
 				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
 				});
 			});
 		</script>
 	</head>
 	<body>
+
+
 			<p><a class='iframe' href="expFronts.html">Outside Webpage (Iframe)</a></p>
+
+
+		<h2>Demonstration of using callbacks</h2>
+		<p><a class='callbacks' href="../content/marylou.jpg" title="Marylou on Cumberland Island">Example with alerts</a>. Callbacks and event-hooks allow users to extend functionality without having to rewrite parts of the plugin.</p>
 
 		<!-- This contains the hidden content for inline calls -->
 		<div style='display:none'>
@@ -42,5 +56,7 @@
 			<a class="ajax" href="../content/ajax.html">Click here to load new content</a></p>
 			</div>
 		</div>
+
+
 	</body>
 </html>
