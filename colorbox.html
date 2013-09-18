@@ -10,7 +10,7 @@
 		</style>
 		<link rel="stylesheet" href="colorbox.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="../jquery.colorbox.js"></script>
+		<script src="jquery.colorbox.js"></script>
 		<script>
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
@@ -21,7 +21,7 @@
 				$(".ajax").colorbox();
 				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
 				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".iframe").colorbox({iframe:true, width:"100%", height:"100%"});
 				$(".inline").colorbox({inline:true, width:"50%"});
 				$(".callbacks").colorbox({
 					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
@@ -68,7 +68,7 @@
 		<p><a class='ajax' href="../content/ajax.html" title="Homer Defined">Outside HTML (Ajax)</a></p>
 		<p><a class='youtube' href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Flash / Video (Iframe/Direct Link To YouTube)</a></p>
 		<p><a class='vimeo' href="http://player.vimeo.com/video/2285902" title="R&ouml;yksopp: Remind Me">Flash / Video (Iframe/Direct Link To Vimeo)</a></p>
-		<p><a class='iframe' href="http://wikipedia.com">Outside Webpage (Iframe)</a></p>
+		<p><a class='iframe' href="expFronts.html">Outside Webpage (Iframe)</a></p>
 		<p><a class='inline' href="#inline_content">Inline HTML</a></p>
 		
 		<h2>Demonstration of using callbacks</h2>
