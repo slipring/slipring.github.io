@@ -1,3 +1,9 @@
+<?php
+$c5t_identifier_key = 'triald';
+$c5t_identifier_key = 'errord';
+include './include.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,6 +14,9 @@
 			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
 			h2{font-size:13px; margin:15px 0 0 0;}
 		</style>
+
+		<link rel="stylesheet" href="/comments/template/default/style.css" type="text/css" />
+
 		<link rel="stylesheet" href="colorbox.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="jquery.colorbox.js"></script>
@@ -134,7 +143,7 @@
 				<a class='iframe world' href="expEddies.html" title="Eddy Cell Experiment">Water Vapor & Meridional Heat Flux</a>
 				<br>
 
-				<a class='iframe world' href="expBucket.html" title="Balanced Vortex - Bucket Experiment">Hurricanes & Geostrophic Wind</a>
+				<a class='iframe world' href="expBucket.html" title="Balanced Vortex - Bucket Experiment">Hurricane Circulation & Geostrophic Wind</a>
 				<br>
 
 				<a class='iframe world' href="expDyestir.html" title="Taylor Columns - Dye Stir Experiment">Atmosphere & Ocean - Plumes and Blooms</a>
@@ -157,6 +166,15 @@
 
 
 			</div>
+
+			<br>
+			<br>
+
+
+
+
+			<?php echo $c5t_output; ?>
+
 
 
 
