@@ -1,52 +1,56 @@
-<!doctype html>
+
+<!DOCTYPE HTML>
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>DEMO - Fronts</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<head>
+
+	<meta charset="utf-8">
+
+		<title>Fronts - Experiment _ Weather in a Tank</title>
+
+	<meta name="title" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 	
-		<!-- LOCAL STY -->
-			<link rel="stylesheet" href="css/revealEXP.css">
-			<link rel="stylesheet" href="css/theme/light.css" id="theme">
-			<!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen"> -->
-			<!-- <script src="js/bootstrap.min.js"></script> -->
-			<script src="lib/js/head.min.js"></script>
-			<!--preq for ContentEditable-->
+	<!-- LINK ON-SITE -->
+		<link rel="stylesheet" href="css/revealEXP.css">
+		<link rel="stylesheet" href="css/theme/light.css" id="theme">
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" media="screen">
+		
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/jquery-10.1.2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+
+		<!--req for ContentEditable-->
 			<script src="js/h5utils.js"></script>
 
-		<!-- NONLOCAL STY -->
-			<script src="http://code.jquery.com/jquery-latest.js"></script>
-			<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script> 
-			<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
-	    	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
+	<!--PRELOADING-->
+		<script type="text/javascript" src="js/PxLoader.js"></script>
+		<script type="text/javascript" src="js/PxLoaderImage.js"></script> 
+		<script type="text/javascript" src="preloadFronts.js"></script>
 
-		<!--PRELOADING-->
-			<script type="text/javascript" src="js/PxLoader.js"></script>
-			<script type="text/javascript" src="js/PxLoaderImage.js"></script> 
-			<script type="text/javascript" src="preloadFronts.js"></script>
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
 
-
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-			<script>
-				document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-			</script>
 		<!--[if lt IE 9]>
 			<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 			
-			<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
 
-			<script type="text/javascript" src="js/jquery.spritely.js">
-			</script>
-
-			<link rel="stylesheet" href="css/deckFronts.css">
+		<script type="text/javascript" src="js/jquery.spritely.js"></script>
+	
+		<link rel="stylesheet" href="css/deckFronts.css">
 					
-	</head>
-
-
+</head>
 
 
 	<body>
@@ -59,15 +63,27 @@
 
 					<center>
 					<p style="width: 200px;float: left;margin-left: 0px; margin-top: 25px">
-					<img style="background:none; border:none;box-shadow:none;width:100%;"class="clear" src="image/fronts_movie_narrow.gif">
+					<img style="background:none; border:none;box-shadow:none;width:100%;"class="clear" src="image/fronts_movie_narrow.gif"
+					alt="The more you know">
+					<aside class="fragmeant">
+						Toggling explanatory text
+					</aside>
 					</p>
 
 					<p class="fragment roll-in" style="width: 200px;float: left;margin-left: 10px;">
-					<img style="background:none;border:none;box-shadow:none;width:100%;" src="image/fronts_posterline_narrow.gif" >
+					<img style="background:none;border:none;box-shadow:none;width:100%;" src="image/fronts_posterline_narrow.gif" 
+					alt="The more there is to for you to know">
+					<p class="fragmeant">
+						Toggling explanatory text
+					</p>
 					</p>
 				
 					<p class="fragment roll-in" style="width: 200px;float: left;margin-left: 10px;">
-					<img style="background:none; border:none;box-shadow:none;width:100%;" src="image/fronts_line_build480w.gif">
+					<img style="background:none; border:none;box-shadow:none;width:100%;" src="image/fronts_line_build480w.gif" 
+					alt="The more you know! ☄">
+					<p class="fragmeant">
+						Toggling explanatory 
+					</p>
 					</p>
 					</center>
 
@@ -286,19 +302,19 @@
 			</div>
 
 
-			<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';">
-			<!-- 	<div id="narration" class="stuckopen"> -->
+<!-- 			<div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
+				<div id="narration" class="stuckopen">
+				<p id="contented" contenteditable="false">
+					 Forces guiding wind currents, weather formation and climate dynamics
+				</p>
+
 				<center>
-					<h3 id="headliner" contenteditable="false">
+					<h3 id="headliner" contenteditable="false"
+					style="margin-top: 1px; margin-bottom: 1px;">
 					General Circulation of the Atmosphere
 					</h3>		
 				</center>
-				<p id="contented" contenteditable="false">
-					 To understand the hows of climate change, we
-					 forces shaping (invisible) winds, weather, and climate can be  and weather can climate behaviors and weather formations Dynamics of the atmosphere 
-					 Planetary balancing of
-					 using a tank of 
-				</p>
+				
 
 			</div>
 
@@ -342,36 +358,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<script src="js/revealEXP.js"></script>
-
-
 
 
 		<script>
@@ -436,12 +423,21 @@
 				Reveal.addEventListener( 'fragmentshown', function( event ) {
 		 	   // event.fragment = the fragment DOM element
 				console.log(event.fragment);
+		    	console.log( 'fragment appear' );
+		    	var fragmeaning = event.fragment.querySelector("fragmeant");
+				if(fragmeaning) {
+				document.getElementById('headliner').innerHTML = fragmeaning.innerHTML;
+				}
+
 				} );
 				Reveal.addEventListener( 'fragmenthidden', function( event ) {
 		    	// event.fragment = the fragment DOM element
 		    	console.log(event.fragment);
+		    	console.log( 'fragment vanish' );
 				} );
 		
+
+			
 
 
 
@@ -671,6 +667,15 @@
 						</script>-->
 
 
+		<script>
+			$('#toggleme').click(function() {
+		   		 $('#contented').toggle();
+		   		  $('#toggler').toggleClass('withborder');
+		   		  $('#narration').show();
+		  			});
+		</script>
+
+
 		<!--	<script>
 
 				$('#Oview').click(function() {
@@ -703,7 +708,6 @@
 					});
 
 			</script> -->
+</body>
 
-
-	</body>
 </html>

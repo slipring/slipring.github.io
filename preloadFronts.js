@@ -1,4 +1,4 @@
-var loader = new PxLoader({ 
+/*var loader = new PxLoader({ 
   // how frequently we poll resources for progress 
   statusInterval: 5000, // every 5 seconds by default 
   // delay before logging since last progress change 
@@ -7,7 +7,8 @@ var loader = new PxLoader({
   noProgressTimeout: Infinity // do not stop waiting by default 
   }); 
 
-var 
+var */
+
   //slide viewer
  /* imgElementV0 = loader.addImage('lvl.png','first');*/
 
@@ -109,7 +110,7 @@ var
   //slide 14,0
 
 
-loader.addProgressListener(function(e) { 
+/*loader.addProgressListener(function(e) { 
   console.log(e.resource.getName()); 
   document.getElementById('pcontented').innerHTML =
     '&nbsp;&nbsp;&nbsp;&nbsp;rsrc ' +
@@ -125,4 +126,4 @@ loader.addCompletionListener(function(e) {
 }); 
 
 
-loader.start(['first','still', 'motion', 'proxy', 'sprites']);
+loader.start(['first','still', 'motion', 'proxy', 'sprites']);*/
