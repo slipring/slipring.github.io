@@ -61,6 +61,78 @@
 		<script src="http://jskomment.appspot.com/jskomment.js"></script>
  -->
 
+ 		<script type="text/javascript" src="js/jquery.vticker.js"></script> 
+<script>
+$(function() {
+
+  //vticker
+  // $('#example-vticker').vTicker('init', {speed: 400, 
+  //   pause: 1000,
+  //   showItems: 2,
+  //   padding:4});
+
+  // pause
+  // $('#example-pause').vTicker({margin:10});
+
+
+  $('#exemplar').vTicker('init',
+  	{margin:10,
+  	speed: 3000, 
+    pause: 1500,
+    showItems: 2,
+    padding:4});
+
+
+
+  $('#pause').click(function() { 
+    $this = $(this);
+    if($this.hasClass('icon-pause')) {
+      $('#exemplar').vTicker('pause', true);
+      // $this.text('Play');
+      $this.removeClass('icon-pause');
+      $this.addClass('icon-play');
+      $('#next').toggle();
+      $('#prev').toggle();
+    }
+    else {
+      $('#exemplar').vTicker('pause', false);
+      // $this.text('Pause');
+      $this.removeClass('icon-play');
+      $this.addClass('icon-pause');
+      $('#next').toggle();
+      $('#prev').toggle();
+    }
+  });
+
+
+  $('#next').click(function() { 
+    $('#exemplar').vTicker('next', {animate:false});
+  });
+
+  $('#prev').click(function() { 
+  	 // $('#example').vTicker('pause', true);
+    //   $('#pause').text('Unpause');
+    $('#exemplar').vTicker('prev', {animate:false});
+  });
+
+ 
+  // $('#prev-animate').click(function() { 
+  //   $('#example').vTicker('prev', {animate:true});
+  // });
+
+  //   $('#next-animate').click(function() { 
+  //   $('#example').vTicker('next', {animate:true});
+  // });
+
+
+
+});
+
+</script>
+
+
+
+
 </head>
 
 
@@ -73,22 +145,34 @@
 
 			<div class="slides">
 
-				<section>
+				<section details="rotating frame details overlap eyeball">
+					<span class="firstsplash">Lookit</span>
 
 					<center>
 					<p style="width: 200px;float: left;margin-left: 0px; margin-top: 25px">
+					
 					<img style="background:none; border:none;box-shadow:none;width:100%;"class="clear" src="image/fronts_movie_narrow.gif"
-					alt="The more you know">
+					details="Print this">
+					
+
 					</p>
 
 					<p class="fragment roll-in" style="width: 200px;float: left;margin-left: 10px;">
+					<span class="makesplash">I I I </span>
+
 					<img style="background:none;border:none;box-shadow:none;width:100%;" src="image/fronts_posterline_narrow.gif" 
-					alt="The more there is to for you to know">
+					details="Print that">
+
+					
 					</p>
 				
 					<p class="fragment roll-in" style="width: 200px;float: left;margin-left: 10px;">
+					<span class="makesplash">Tookit</span>
+
+					
 					<img style="background:none; border:none;box-shadow:none;width:100%;" src="image/fronts_line_build480w.gif" 
-					alt="The more you know! ☄">
+					details="The more you know! ☄">
+
 					</p>
 					</center>
 
@@ -100,7 +184,17 @@
 						Mainline point
 					</aside>
 					<aside class="notes">
-						Toggling explanatory text
+						<ul class="tickertape">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+						</ul>
 					</aside>
 
 					
@@ -112,20 +206,31 @@
 				</section>
 
 
+			<section>
 
 				<section>
-			
+					<span class="firstsplash">No fragment like the whole</span>
+
+
+
 					<img style="background:none; border:none;box-shadow:none;" src="image/fronts_transparent-4step-13sloop.gif">
 
 
+					
 					<aside class="coordinate">
 						10.9 
 					</aside>
 					<aside class="headline">
-						Mainline point
+						Sideline point
 					</aside>
 					<aside class="notes">
-						Toggling explanatory text
+						<ul class="tickertape" >
+							<li>Ivvvv doovmomv</li>
+							<li>II vmodmvom</li>			
+<!-- 							<li>IIIvmomvom</li>
+							<li>IVoooo</li>
+							<li>Vooooooooo</li> -->
+						</ul>
 					</aside>
 
 <!-- 					<aside class="comments">
@@ -133,101 +238,199 @@
 					</aside> -->
 
 				</section>
+
+				<section>
+					<span class="firstsplash">Trial tester</span>
+					
+					<aside class="coordinate">
+						9A 
+					</aside>
+					<aside class="headline">
+						Underlying message
+					</aside>
+					<aside class="notes">
+						<ul class="tickertape" >
+							<li>Cool</li>
+							<li>Modey a llob epa op ero poa o ro poepor pyou aouyou bout poug a outpiuel</li>			
+							<li>Bahdhoier o O OR lorem aomre aom eoma you bo aopir oupipre poa s you so emoamrponoanreas</li>
+							<li>Sopofm omomomomomomom eor oemroemromo eoamoma</li>
+							<li>But utu tuututututut</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+
+
 			</div>
 		</div>
 
 
 		<footer>
 
-			<div id="toggler" >
+		
+			<div id="toggler">
+			<center>
+				<span class="icon-comment" id="toggleme">
+					<img id="wordhook" src="cursors/narration.png" style="float:left;display:none;">
+				</span>
+			</center>
+			</div>
 
-				<!-- class="withborder" -->
-			
-				<!-- <img src="cursors/narration.png" style="float:left;"> -->
-
-				<span class="icon icon-comment" id="toggleme"></span>
-			<br>
+<!-- 				<span class="icon icon-comment" id="toggleme"></span>
+ -->
+<!--  later			<br>
 				<span class="icon icon-bookmark" id="toggleme2"></span>
 			<br>
 				<span class="icon icon-book" id="toggleme3"></span>
-				
-			</div>
+				 -->
 
-
+			
 
 						
 
 			<div id="wholeview">
-				
+				<center>
 				<!-- <img id="zoomO" src="cursors/zoomout.png"> -->
 
-				<span id="Oview" class="icon-zoom-out"></span>
-
+				<span id="Oview" class="icon-road"></span>
+					</center>
 <!--			<span id="Fscreen" class="icon-fullscreen" onClick="document.requestFullscreen();"></span> -->
 		    </div>
 
-			<div id="coordinates">
-				<h4 id="coord">*.*</h4>
-			</div>
 
+			<div id="coordinates">
+				<div id="offsetter">
+				<center>
+				<h3 id="coord">*.*</h3>
+				</center>
+				</div>
+				<div id="offputter">
+				<span id="expandering" class="icon-circle-arrow-left"></span>
+				</div>
+			</div>
+			<div id="uppers">
 			<div id="headlineup">
-					<h3 id="headliner" contenteditable="false"
+					<h3 id="headliner" class="text-hollow" contenteditable="false"
 					style="margin-top: 1px; margin-bottom: 1px;">
 					General Circulation of the Atmosphere
-					</h3>		
+					</h3>	
 			</div>
 
+			<div id="splashup">
+					<span style="position:fixed;margin-left:-18px;margin-top:4px" class="icon-bullhorn"></span><h4 id="splashline" contenteditable="false"
+					style="margin-top: 1px; margin-bottom: 1px;">
+					First direction
+					</h4>	
+			</div>
+			</div>
+
+
+			<div id="eyelet" class="eyelight">
+				<center>
+				<span id="eyecon" style="margin-top:-1px" class="icon-eye-open"></span>
+				</center>
+		    </div>
+
+			<div id="eyelineup">
+					<h5 id="eyeliner" contenteditable="false"
+					style="margin-top: 1px; margin-bottom: 1px;">
+					Click to observe
+					</h5>	
+			</div>
+		
 
 			<!-- <div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
 			
 
-			<div id="narration" class="stuckopen">
+				<div id="chatcontrol" class="btn-group">
+		 				
+						<span class="icon-chevron-up" id="prev" style="display:none;"></span>
+		 				<br>
+						<span class="icon-pause" id="pause">Pause</span>
+		 				<br>
+		 				<span class="icon-chevron-down" id="next" style="display:none;"></span>
 
-				<div id="wordless" style="float:right" onClick="document.getElementById('narration').style.display = 'none';$('#toggler').addClass('withborder');">
-					  <span class="icon-remove"></span>
+						<!-- <button class="btn btn-mini" id="pause">Pause</button> -->
+		 				
+		 				<!-- <button class="btn btn-mini" id="prev" style="display:none;"><span class="icon-chevron-up"></span></button>
+		 				<button class="btn btn-mini" id="next" style="display:none;"><span class="icon-chevron-down"></span></button>
+		 				 -->
+				</div>	
+
+
+			<div id="narration" class="stuckopen" >
+
+
+				<!--document.getElementById('narration').style.display = 'none'-->
+
+
+
+				<div id="contented" contenteditable="false">
+					<div class="example">
+						<div class="example" id="exemplar" style="overflow: hidden; position: relative; height: 41px;">
+							<ul class="tickertape">
+								<li>A</li>
+								<li>B</li>
+								<li>C</li>
+								<li>D</li>
+							</ul>
+		 				</div>
+					</div>
 				</div>
 
+<!-- 					<div style="position:absolute;top:20px;left:4px"> -->
+					<div style="position:absolute;bottom:12px;left:3px">
+					 <span id="editmess" class="icon-pencil" onClick="document.getElementById('contented').setAttribute('contenteditable','true');
+					 getElementById('splashline').setAttribute('contenteditable','true')
+					 getElementById('headliner').setAttribute('contenteditable','true')
+					 $('#editmess').toggle();"></span>
 
+		   		  	</div>
+
+		   		  	<div style="position:absolute;bottom:12px;right:4px">
+
+		   		  		   <span id="wordless" class="icon-remove" onClick="document.getElementById('narration').style.display='none';$('#toggler').addClass('withborder');$('#wordhook').toggle();$('#chatcontrol').toggle();$('#toggleme').toggleClass('icon-comment');"></span>
+				</div>
+			</div>
 
 			
+			
+				<!-- later
 
+				<div id="notebook" class="tabs" >
 
-			<div id="narrator" class="tabs" >
+					<div class="tab">
+					   <input type="radio" id="tab-1" name="tab-group-1" checked>
+					   <label for="tab-1">Tab One</label>
+					   
+					   <div class="contently">
+					     	<p id="contented" contenteditable="false">
+						 	Forces guiding wind currents, weather formation and climate dynamics
+							</p>
+					   </div> 
+					</div>
 
+					<div class="tab">
+					   <input type="radio" id="tab-2" name="tab-group-1">
+					   <label for="tab-2">Tab Two</label>
+					   
+					   <div class="contently">
+					       stufferd
+					   </div> 
+					</div>
 
-				<div class="tab">
-				   <input type="radio" id="tab-1" name="tab-group-1" checked>
-				   <label for="tab-1">Tab One</label>
-				   
-				   <div class="contently">
-				     	<p id="contented" contenteditable="false">
-					 	Forces guiding wind currents, weather formation and climate dynamics
-						</p>
-				   </div> 
-				</div>
-
-				<div class="tab">
-				   <input type="radio" id="tab-2" name="tab-group-1">
-				   <label for="tab-2">Tab Two</label>
-				   
-				   <div class="contently">
-				       stufferd
-				   </div> 
-				</div>
-
-				<div class="tab">
-				   <input type="radio" id="tab-3" name="tab-group-1">
-				   <label for="tab-3">Tab Three</label>
-				 
-				   <div class="contently">
-				       <div id="commented">tab threed</div>
-				   </div> 
-				</div>
+					<div class="tab">
+					   <input type="radio" id="tab-3" name="tab-group-1">
+					   <label for="tab-3">Tab Three</label>
+					 
+					   <div class="contently">
+					       <div id="commented">tab threed</div>
+					   </div> 
+					</div>
     
-			</div>
+				</div>
+			-->
 
-
-			</div>
 
 			<!-- <div id="preloadpop" class="closeable" onClick="document.getElementById('preloadpop').style.display = 'none';">
 						<h3 id="pheadliner">&nbsp;&nbsp;&nbsp;preloading</h3>
@@ -235,6 +438,10 @@
 				</div> -->
 
 		</footer>
+
+
+
+
 
 
 
@@ -274,16 +481,30 @@
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
 			
+			$('#narration').show();
+			$('#toggler').removeClass('withborder');
+		   	$('#chatcontrol').show();
+		   	$('#wordhook').hide();
+		   	$('#toggleme').addClass('icon-comment');
+
+		   	var subsplash = event.currentSlide.querySelector(".firstsplash");
+				if(subsplash) {
+					document.getElementById('splashline').innerHTML = subsplash.innerHTML;
+					};
+
 			var notes = event.currentSlide.querySelector(".notes");
 			if(notes) {
 			console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
-			document.getElementById('contented').innerHTML = notes.innerHTML;
+			$('#exemplar').vTicker('stop');
+			document.getElementById('exemplar').innerHTML = notes.innerHTML;
+			$('#exemplar').vTicker('init',{margin:10,speed: 3000,pause: 1500,showItems: 2,padding:4});
 			}
 			
 			var headline = event.currentSlide.querySelector(".headline");
 			if(headline) {
 			document.getElementById('headliner').innerHTML = headline.innerHTML;
 			}
+
 
 			// var commentary = event.currentSlide.querySelector(".comments");
 			// if(commentary) {
@@ -310,6 +531,11 @@
 				// if(fragmeaning) {
 				// document.getElementById('headliner').innerHTML = fragmeaning.innerHTML;
 				//}
+				var subsplash = event.fragment.querySelector(".makesplash");
+				if(subsplash) {
+					document.getElementById('splashline').innerHTML = subsplash.innerHTML;
+					};
+
 				} );
 
 				Reveal.addEventListener( 'fragmenthidden', function( event ) {
@@ -318,29 +544,44 @@
 		    	console.log( 'fragment vanish' );
 				} );
 
-			$( document ).on( 'click', function( event ) {
-			 console.log( event.type );    // The event type, eg. "click"
-			 console.log( event.which );   // The button or key that was pressed.
-		 	 console.log( event.target );  // The originating element.
-		 	 console.log( event.pageX );   // The document mouse X coordinate.
-		 	 console.log( event.pageY );   // The document mouse Y coordinate.
+
+
+				$( document ).on( 'click', function(event) {
+					var detailed = event.target.getAttribute('details');
+					if (detailed) {
+						document.getElementById('eyeliner').innerHTML = detailed;
+						console.log(detailed);
+					};
+
+					
+				});
+
+			// $( document ).on( 'click', function( event ) {
+			//  console.log( event.type );    // The event type, eg. "click"
+			//  console.log( event.which );   // The button or key that was pressed.
+		 // 	 console.log( event.target );  // The originating element.
+		 // 	 console.log( event.pageX );   // The document mouse X coordinate.
+		 // 	 console.log( event.pageY );   // The document mouse Y coordinate.
 		 	 
 
-			});
+			// });
 
 
-			var handleClick = function() {
-		 	 console.log( 'something was clicked' );
-			};
+			// var handleClick = function() {
+		 // 	 console.log( 'something was clicked' );
+			// };
 
-			var imgClick = function() {
-		 	document.getElementById('contented').innerHTML = $(this).attr('alt');
-			};
+			// $( 'img' ).on( 'click', handleClick );
+			// $( 'h2' ).on( 'click', handleClick );
+
+
+
+
+		
+			// var imgClick = function() {
+			 // 	document.getElementById('contented').innerHTML = $(this).attr('alt');
+			// };
 	
-
-			$( 'img' ).on( 'click', imgClick );
-			$( 'h2' ).on( 'click', handleClick );
-
 		</script>
 
 
@@ -348,7 +589,21 @@
 
 		<script src="triggerHadley.js"></script>
 
-
+    		 <script>
+				$(document).ready(function(){
+				    var $list = $(".tplandesclist > div");
+				    $(".arrow").click(function(){
+				        var $next = $list.filter(".current").removeClass('current').next();
+				        if(!$next.length){
+				            $next = $list.first()
+				        }
+				        
+				        $next.addClass('current')
+				        $("#result").html('').append($next.clone());
+				        
+				    });
+				});
+			</script>
 
 
 		<script>
@@ -454,46 +709,87 @@
 
 
 		<script>
-			$('#toggleme').click(function() {
-		   		 // $('#contented').toggle();
-		   		  $('#narration').toggle();
-		   		  // $('#narrator').toggle();
-		   		  
-		   		  // $('#toggler').toggleClass('withborder');
-		   		  
-		  			});
 
-			$('#toggleme2').click(function() {
-		   		 // $('#contented').toggle();
-		   		  $('#narration').show();
-		   		  $('#narrator').toggleClass('hidden');
-		   		  // $('#narrator').toggle();
+			$('#wholeview').click(function() {
+		   		 Reveal.toggleOverview();
+		   		 $('#Oview').toggleClass('icon-zoom-out')
+		   		 $('#Oview').toggleClass('icon-zoom-in')
 
-		   		  // $('#toggler').toggleClass('withborder');
-		   		  
-		  			});
+				});
+		</script>
 
-			$('#toggleme3').click(function() {
-		   		 // $('#contented').toggle();
-		   		  $('#narration').show();
-		   		  // $('#narrator').toggle();
-		   		  $('#narrator').removeClass('hidden');
-		   		  $('#narrator').toggleClass('squashed');
-		   		  // $('#toggler').toggleClass('withborder');
-		   		  
-		  			});
+		<script>
+			$('#coordinates').click(function() {
+				
+				// if( $('#headlineup').css("display") == 'none' ){
+				// 	$('#headlineup').show();
+				// 	}
+				// else{
+				// 	};
 
 
+				$('#uppers').toggle();
+				$('#expandering').toggleClass('icon-circle-arrow-left');
+				$('#expandering').toggleClass('icon-circle-arrow-right');
+				$('#expandering').toggleClass('icon-white');
+				$('#coordinates').toggleClass('glowering');	
+				$('#coordinates').toggleClass('shadowing');			
+				// $('#offputter').css('left','39px');
+			});
 
-
-			$('#Oview').click(function() {
-			   		 Reveal.toggleOverview();
-					});
-
-
+			$('#headlineup').click(function() {
+				$('#splashup').toggle();
+				$('#headliner').toggleClass('text-hollow');
+				$('#headliner').toggleClass('text-full');
+			})
 
 		</script>
 
+		<script>
+			$('#eyelet').click(function() {
+				$('#eyelineup').toggle();
+				$('#eyecon').toggleClass('icon-white');
+				$('#eyelet').toggleClass('eyelight');
+				$('#eyelet').toggleClass('eyeshadow');
+				 });
+		</script>
+
+		<script>
+			$('#toggler').click(function() {
+		   		 // $('#contented').toggle();
+		   		 // $('#wordless').toggle();
+		  //  		 $('#exemplar').vTicker('stop');
+				// document.getElementById('exemplar').innerHTML = notes.innerHTML;
+				//   $('#exemplar').vTicker('init',{margin:10,speed: 3000,pause: 1500,showItems: 2,padding:4});
+		   		  $('#toggler').toggleClass('withborder');
+		   		  $('#narration').toggle();
+		   		  $('#chatcontrol').toggle();
+		   		  $('#wordhook').toggle();
+		   		  $('#toggleme').toggleClass('icon-comment');
+
+		  			});
+		</script>
+		
+		<!--	// $('#toggleme2').click(function() {
+		 //   		 // $('#contented').toggle();
+		 //   		  $('#narration').show();
+		 //   		  $('#notebook').toggleClass('hidden');
+		 //   		  // $('#notebook').toggle();
+
+		 //   		  // $('#toggler').toggleClass('withborder');
+		   		  
+		 //  			});
+
+			// $('#toggleme3').click(function() {
+		 //   		 // $('#contented').toggle();
+		 //   		  $('#narration').show();
+		 //   		  // $('#notebook').toggle();
+		 //   		  $('#notebook').removeClass('hidden');
+		 //   		  $('#notebook').toggleClass('squashed');
+		 //   		  // $('#toggler').toggleClass('withborder');
+		   		  
+		 //  			});
+        -->
 
 		<!--	<script>
 
