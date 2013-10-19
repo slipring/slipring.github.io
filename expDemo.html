@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-<head>
+	<head>
 
 	<meta charset="utf-8">
 
@@ -15,26 +15,67 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 	
-	<!-- LINK ON-SITE -->
+	<!-- CSS & JS -->
 		<link rel="stylesheet" href="css/revealEXP.css">
 		<link rel="stylesheet" href="css/theme/light.css" id="theme">
 		<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" media="screen">
 		
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/jquery-10.1.2.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+		
+		<!-- // 	head.js("js/jquery-10.1.2.js", "js/bootstrap.min.js", "js/h5utils.js", "js/PxLoader.js", "js/PxLoaderImage.js","preloadFronts.js","js/jquery.spritely.js",
+		// 		 function() // all done
+		// 	}); -->
+	
+		<script type="text/javascript" src="js/jquery-10.1.2.js"></script>
+		<!--		<script type="text/javascript" src="js/PxLoader.js"></script>
+		<script type="text/javascript" src="js/PxLoaderImage.js"></script>
+		<script type="text/javascript" src="preloadFronts.js"></script> -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/h5utils.js"></script>
+		<script type="text/javascript" src="js/jquery.spritely.js"></script>
+		<script type="text/javascript" src="js/jquery.vticker.js"></script>
 
-		<!--req for ContentEditable-->
-			<script src="js/h5utils.js"></script>
 
-	<!--PRELOADING-->
-		<script type="text/javascript" src="js/PxLoader.js"></script>
-		<script type="text/javascript" src="js/PxLoaderImage.js"></script> 
-		<script type="text/javascript" src="preloadFronts.js"></script>
+		<script>
+			$(function() {
+			  $('#exemplar').vTicker('init',
+			  	{margin:10,
+			  	speed: 3000, 
+			    pause: 1500,
+			    showItems: 2,
+			    padding:4});
+			  $('#pause').click(function() { 
+			    $this = $(this);
+			    if($this.hasClass('icon-pause')) {
+				  // $this.text('Play');
+			      $('#exemplar').vTicker('pause', true);
+			      $this.removeClass('icon-pause');
+			      $this.addClass('icon-play');
+			      $('#next').toggle();
+			      $('#prev').toggle();
+			    }
+			    else {
+			      // $this.text('Pause');
+			      $('#exemplar').vTicker('pause', false);
+			      $this.removeClass('icon-play');
+			      $this.addClass('icon-pause');
+			      $('#next').toggle();
+			      $('#prev').toggle();
+			    }
+			  });
 
-	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+			  $('#next').click(function() { 
+			    $('#exemplar').vTicker('next', {animate:false});
+			  });
+			  $('#prev').click(function() { 
+			    $('#exemplar').vTicker('prev', {animate:false});
+			  });
+
+			});
+		</script>
+		
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
@@ -42,11 +83,8 @@
 		<!--[if lt IE 9]>
 			<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-			
-		<link rel="stylesheet" href="css/stylesheet.css">
 
-		<script type="text/javascript" src="js/jquery.spritely.js"></script>
-	
+		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="css/deckFronts.css">
 	
 		<!--   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
@@ -57,128 +95,42 @@
   			});
   		</script>-->
 
-<!-- 
+
+		<!-- 
 		<script src="http://jskomment.appspot.com/jskomment.js"></script>
- -->
-
- 		<script type="text/javascript" src="js/jquery.vticker.js"></script> 
-<script>
-$(function() {
-
-  //vticker
-  // $('#example-vticker').vTicker('init', {speed: 400, 
-  //   pause: 1000,
-  //   showItems: 2,
-  //   padding:4});
-
-  // pause
-  // $('#example-pause').vTicker({margin:10});
+ 		-->
 
 
-  $('#exemplar').vTicker('init',
-  	{margin:10,
-  	speed: 3000, 
-    pause: 1500,
-    showItems: 2,
-    padding:4});
+	</head>
 
 
-
-  $('#pause').click(function() { 
-    $this = $(this);
-    if($this.hasClass('icon-pause')) {
-      $('#exemplar').vTicker('pause', true);
-      // $this.text('Play');
-      $this.removeClass('icon-pause');
-      $this.addClass('icon-play');
-      $('#next').toggle();
-      $('#prev').toggle();
-    }
-    else {
-      $('#exemplar').vTicker('pause', false);
-      // $this.text('Pause');
-      $this.removeClass('icon-play');
-      $this.addClass('icon-pause');
-      $('#next').toggle();
-      $('#prev').toggle();
-    }
-  });
-
-
-  $('#next').click(function() { 
-    $('#exemplar').vTicker('next', {animate:false});
-  });
-
-  $('#prev').click(function() { 
-  	 // $('#example').vTicker('pause', true);
-    //   $('#pause').text('Unpause');
-    $('#exemplar').vTicker('prev', {animate:false});
-  });
 
  
-  // $('#prev-animate').click(function() { 
-  //   $('#example').vTicker('prev', {animate:true});
-  // });
-
-  //   $('#next-animate').click(function() { 
-  //   $('#example').vTicker('next', {animate:true});
-  // });
-
-
-
-});
-
-</script>
 
 
 
 
-</head>
+
+
+
+
+
+
+
+
 
 
 
 
 	<body>
-		<div class="reveal" id="slidestack">
 
-		<!-- Any section element inside of this container is displayed as a slide -->
-
+		<div class="reveal" id="FrontsLabStack">
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section details="rotating frame details overlap eyeball">
-					<span class="firstsplash">Lookit</span>
-
-					<center>
-					<p style="width: 200px;float: left;margin-left: 0px; margin-top: 25px">
-					
-					<img style="background:none; border:none;box-shadow:none;width:100%;"class="clear" src="image/fronts_movie_narrow.gif"
-					details="Print this">
-					
-
-					</p>
-
-					<p class="fragment roll-in" style="width: 200px;float: left;margin-left: 10px;">
-					<span class="makesplash">I I I </span>
-
-					<img style="background:none;border:none;box-shadow:none;width:100%;" src="image/fronts_posterline_narrow.gif" 
-					details="Print that">
-
-					
-					</p>
-				
-					<p class="fragment roll-in" style="width: 200px;float: left;margin-left: 10px;">
-					<span class="makesplash">Tookit</span>
-
-					
-					<img style="background:none; border:none;box-shadow:none;width:100%;" src="image/fronts_line_build480w.gif" 
-					details="The more you know! ☄">
-
-					</p>
-					</center>
-
-				
+				<section details="rotating frame of reference">
 					<aside class="coordinate">
-						1.1 
+						3
 					</aside>
 					<aside class="headline">
 						Mainline point
@@ -189,185 +141,210 @@ $(function() {
 							<li>2</li>
 							<li>3</li>
 							<li>4</li>
-							<li>5</li>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
 						</ul>
 					</aside>
 
+
+					<center>
+						<p style="width: 200px;float: left;margin-left: 0px; margin-top: 25px">
+							<span class="firstsplash">Observed video loop</span>
+							<img src="image/fronts_movie_narrow.gif"
+								style="background:none; border:none; box-shadow:none; width:100%;"
+								details="Overhead rotating frame, elevation inertial" />
+						</p>
+
+
+						<p class="fragment roll-in" style="width:200px; float:left; margin-left:10px;">
+							<span class="makesplash">Contours via color quantization</span>
+							<img src="image/fronts_posterline_narrow.gif"	
+								style="background:none; border:none; box-shadow:none; width:100%;"
+								details="Posterization level makes a fuzzy boundary into a stepped one" >					
+						</p>
+				
+						<p class="fragment roll-in" style="width:200px; float:left; margin-left:10px;">
+							<span class="makesplash">Rebuild 3d from 360/n lineaments</span>					
+							<img src="image/fronts_line_build480w.gif"
+								style="background:none; border:none;box-shadow:none;width:100%;"  
+								details="Every second, the camera's POV changes ~60 degrees about the phenomena ☄">
+						</p>
+					</center>				
 					
 					<!-- <div class="" style="width:500px;height:500px;position:fixed;display:block;background-color:black;">
 					<div class="jskomment" title="http://slipring.github.io/nullsleep1">Comment</div>
 					</div> -->
-					
 
 				</section>
 
 
-			<section>
+				<section class="1below">	
 
-				<section>
-					<span class="firstsplash">No fragment like the whole</span>
+					<section>
+						<aside class="coordinate">
+							4 
+						</aside>
+						<aside class="headline">
+							Sideline point
+						</aside>
+						<aside class="notes">
+							<ul class="tickertape">
+								<li>I I I I</li>
+								<li>II II II II</li>			
+							</ul>
+						</aside>
+
+						<span class="firstsplash">No fragment like the whole</span>
+						<img src="image/fronts_transparent-4step-13sloop.gif"
+							style="background:none; border:none; box-shadow:none;"
+							details="Virtual isometric view in rotating frame" >
+
+						<!--<aside class="comments">
+							<div class="jskomment" title="http://slipring.github.io/nullsleep2">Comment2</div>
+						</aside> -->
+
+					</section>
+
+
+					<section>	
+						<aside class="coordinate">
+							4B 
+						</aside>
+						<aside class="headline">
+							Underlying message
+						</aside>
+						<aside class="notes">
+							<ul class="tickertape" >
+								<li>Cool</li>
+								<li>Modey</li>			
+								<li>Bahdhoier</li>
+								<li>Sopofm</li>
+								<li>But utu</li>
+							</ul>
+						</aside>
+
+						<span class="firstsplash">Trial tester</span>
+
+						<div style="float:right;text-align:left">
+							<span class="icon-tint"></span><br>
+
+							<span class="icon-hand-up"></span>
+							<span class="icon-list-alt"></span>
+							</span><span class="icon-bookmark"></span><br>
+
+							<span class="icon-user"></span>
+							<span class="icon-edit"></span>
+							<span id="bookmark" class="icon-book"></span>
+							<span class="icon-comment"></span>
+							<span class="icon-globe"></span><br>
+
+
+						</div>					
+						
+						
 
 
 
-					<img style="background:none; border:none;box-shadow:none;" src="image/fronts_transparent-4step-13sloop.gif">
-
-
-					
-					<aside class="coordinate">
-						10.9 
-					</aside>
-					<aside class="headline">
-						Sideline point
-					</aside>
-					<aside class="notes">
-						<ul class="tickertape" >
-							<li>Ivvvv doovmomv</li>
-							<li>II vmodmvom</li>			
-<!-- 							<li>IIIvmomvom</li>
-							<li>IVoooo</li>
-							<li>Vooooooooo</li> -->
-						</ul>
-					</aside>
-
-<!-- 					<aside class="comments">
-						<div class="jskomment" title="http://slipring.github.io/nullsleep2">Comment2</div>
-					</aside> -->
-
+					</section>
+				
 				</section>
-
-				<section>
-					<span class="firstsplash">Trial tester</span>
-					
-					<aside class="coordinate">
-						9A 
-					</aside>
-					<aside class="headline">
-						Underlying message
-					</aside>
-					<aside class="notes">
-						<ul class="tickertape" >
-							<li>Cool</li>
-							<li>Modey a llob epa op ero poa o ro poepor pyou aouyou bout poug a outpiuel</li>			
-							<li>Bahdhoier o O OR lorem aomre aom eoma you bo aopir oupipre poa s you so emoamrponoanreas</li>
-							<li>Sopofm omomomomomomom eor oemroemromo eoamoma</li>
-							<li>But utu tuututututut</li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-
-
 			</div>
 		</div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<footer>
+				<!-- <span class="icon icon-bookmark" id="toggleme2"></span>
+				<span class="icon icon-book" id="toggleme3"></span> 
+				<span id="Fscreen" class="icon-fullscreen" onClick="document.requestFullscreen();"></span> -->
 
-		
 			<div id="toggler">
-			<center>
-				<span class="icon-comment" id="toggleme">
-					<img id="wordhook" src="cursors/narration.png" style="float:left;display:none;">
-				</span>
-			</center>
+				<center>
+					<span class="icon-comment" id="toggleme">
+						<img id="wordhook" src="cursors/narration.png" style="float:left; display:none;">
+					</span>
+				</center>
 			</div>
-
-<!-- 				<span class="icon icon-comment" id="toggleme"></span>
- -->
-<!--  later			<br>
-				<span class="icon icon-bookmark" id="toggleme2"></span>
-			<br>
-				<span class="icon icon-book" id="toggleme3"></span>
-				 -->
-
-			
-
-						
 
 			<div id="wholeview">
 				<center>
-				<!-- <img id="zoomO" src="cursors/zoomout.png"> -->
-
-				<span id="Oview" class="icon-road"></span>
-					</center>
-<!--			<span id="Fscreen" class="icon-fullscreen" onClick="document.requestFullscreen();"></span> -->
+					<span id="Oview" class="icon-road"></span>
+				</center>
 		    </div>
-
 
 			<div id="coordinates">
 				<div id="offsetter">
-				<center>
-				<h3 id="coord">*.*</h3>
-				</center>
+					<center>
+						<h3 id="coord">*.*</h3>
+					</center>
 				</div>
 				<div id="offputter">
-				<span id="expandering" class="icon-circle-arrow-left"></span>
+					<span id="expandering" class="icon-circle-arrow-left"></span>
 				</div>
 			</div>
+
 			<div id="uppers">
-			<div id="headlineup">
-					<h3 id="headliner" class="text-hollow" contenteditable="false"
-					style="margin-top: 1px; margin-bottom: 1px;">
-					General Circulation of the Atmosphere
+				<div id="headlineup">
+					<h3 id="headliner" class="text-hollow" contenteditable="false" style="margin-top:1px; margin-bottom:1px;">
+						General Circulation of the Atmosphere
 					</h3>	
-			</div>
+				</div>
 
-			<div id="splashup">
-					<span style="position:fixed;margin-left:-18px;margin-top:4px" class="icon-bullhorn"></span><h4 id="splashline" contenteditable="false"
-					style="margin-top: 1px; margin-bottom: 1px;">
-					First direction
+				<div id="splashup">
+					<span class="icon-bullhorn" style="position:fixed; margin-left:-18px; margin-top:4px;"></span>
+					<h4 id="splashline" contenteditable="false" style="margin-top:1px; margin-bottom:1px;">
+						First direction
 					</h4>	
+				</div>
 			</div>
-			</div>
-
 
 			<div id="eyelet" class="eyelight">
 				<center>
-				<span id="eyecon" style="margin-top:-1px" class="icon-eye-open"></span>
+					<span id="eyecon" class="icon-eye-open" style="margin-top:-1px;" ></span>
 				</center>
 		    </div>
 
 			<div id="eyelineup">
-					<h5 id="eyeliner" contenteditable="false"
-					style="margin-top: 1px; margin-bottom: 1px;">
+				<h5 id="eyeliner" contenteditable="false" style="margin-top:1px; margin-bottom:1px;">
 					Click to observe
-					</h5>	
+				</h5>	
 			</div>
 		
 
 			<!-- <div id="narration" class="closeable" onClick="document.getElementById('narration').style.display = 'none';"> -->
-			
-
-				<div id="chatcontrol" class="btn-group">
-		 				
-						<span class="icon-chevron-up" id="prev" style="display:none;"></span>
-		 				<br>
-						<span class="icon-pause" id="pause">Pause</span>
-		 				<br>
-		 				<span class="icon-chevron-down" id="next" style="display:none;"></span>
-
-						<!-- <button class="btn btn-mini" id="pause">Pause</button> -->
-		 				
-		 				<!-- <button class="btn btn-mini" id="prev" style="display:none;"><span class="icon-chevron-up"></span></button>
-		 				<button class="btn btn-mini" id="next" style="display:none;"><span class="icon-chevron-down"></span></button>
-		 				 -->
-				</div>	
+			<div id="notescroll" class="btn-group">			
+				<span class="icon-chevron-up" id="prev" style="display:none;"></span>
+		 			<br>
+				<span class="icon-pause" id="pause">Pause</span>
+		 			<br>
+		 		<span class="icon-chevron-down" id="next" style="display:none;"></span>
+		 	</div>	
 
 
 			<div id="narration" class="stuckopen" >
-
-
-				<!--document.getElementById('narration').style.display = 'none'-->
-
-
-
 				<div id="contented" contenteditable="false">
-					<div class="example">
-						<div class="example" id="exemplar" style="overflow: hidden; position: relative; height: 41px;">
+					<div class="scroller">
+						<div class="scroller substrate" id="exemplar" style="overflow:hidden; position:relative; height:41px;">
 							<ul class="tickertape">
 								<li>A</li>
 								<li>B</li>
@@ -377,36 +354,28 @@ $(function() {
 		 				</div>
 					</div>
 				</div>
+				<!-- <div style="position:absolute; top:20px; left:4px;"> -->
+				<div id="editmess" style="position:absolute; bottom:12px; left:3px">
+					 <span id="editmess" class="icon-pencil"></span>
+	   		  	</div>
 
-<!-- 					<div style="position:absolute;top:20px;left:4px"> -->
-					<div style="position:absolute;bottom:12px;left:3px">
-					 <span id="editmess" class="icon-pencil" onClick="document.getElementById('contented').setAttribute('contenteditable','true');
-					 getElementById('splashline').setAttribute('contenteditable','true')
-					 getElementById('headliner').setAttribute('contenteditable','true')
-					 $('#editmess').toggle();"></span>
-
-		   		  	</div>
-
-		   		  	<div style="position:absolute;bottom:12px;right:4px">
-
-		   		  		   <span id="wordless" class="icon-remove" onClick="document.getElementById('narration').style.display='none';$('#toggler').addClass('withborder');$('#wordhook').toggle();$('#chatcontrol').toggle();$('#toggleme').toggleClass('icon-comment');"></span>
+	  		  	<div id="wordless" style="position:absolute; bottom:12px; right:4px;">
+		   		     <span class="icon-remove"></span>
 				</div>
 			</div>
 
-			
-			
-				<!-- later
-
-				<div id="notebook" class="tabs" >
-
+		
+			<!-- <div id="notebook" class="tabs">
 					<div class="tab">
 					   <input type="radio" id="tab-1" name="tab-group-1" checked>
 					   <label for="tab-1">Tab One</label>
-					   
+					
 					   <div class="contently">
+
 					     	<p id="contented" contenteditable="false">
 						 	Forces guiding wind currents, weather formation and climate dynamics
 							</p>
+
 					   </div> 
 					</div>
 
@@ -415,7 +384,9 @@ $(function() {
 					   <label for="tab-2">Tab Two</label>
 					   
 					   <div class="contently">
+
 					       stufferd
+					   
 					   </div> 
 					</div>
 
@@ -424,18 +395,19 @@ $(function() {
 					   <label for="tab-3">Tab Three</label>
 					 
 					   <div class="contently">
+					   
 					       <div id="commented">tab threed</div>
+					   
 					   </div> 
 					</div>
     
-				</div>
-			-->
+			</div> -->
 
 
 			<!-- <div id="preloadpop" class="closeable" onClick="document.getElementById('preloadpop').style.display = 'none';">
 						<h3 id="pheadliner">&nbsp;&nbsp;&nbsp;preloading</h3>
 						<p id="pcontented">counter</p>
-				</div> -->
+			</div> -->
 
 		</footer>
 
@@ -445,11 +417,26 @@ $(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<script src="js/revealEXP.js"></script>
-
-
+		
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -459,7 +446,7 @@ $(function() {
 				center: true,
 
 				theme: Reveal.getQueryHash().theme || 'light', // available themes are in /css/theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/none
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
@@ -471,359 +458,12 @@ $(function() {
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
-
 			});
-
-
 		</script>
 
-		<script>
-			Reveal.addEventListener( 'slidechanged', function( event ) {
-			// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-			
-			$('#narration').show();
-			$('#toggler').removeClass('withborder');
-		   	$('#chatcontrol').show();
-		   	$('#wordhook').hide();
-		   	$('#toggleme').addClass('icon-comment');
-
-		   	var subsplash = event.currentSlide.querySelector(".firstsplash");
-				if(subsplash) {
-					document.getElementById('splashline').innerHTML = subsplash.innerHTML;
-					};
-
-			var notes = event.currentSlide.querySelector(".notes");
-			if(notes) {
-			console.info(notes.innerHTML.replace(/\n\s+/g,'\n'));
-			$('#exemplar').vTicker('stop');
-			document.getElementById('exemplar').innerHTML = notes.innerHTML;
-			$('#exemplar').vTicker('init',{margin:10,speed: 3000,pause: 1500,showItems: 2,padding:4});
-			}
-			
-			var headline = event.currentSlide.querySelector(".headline");
-			if(headline) {
-			document.getElementById('headliner').innerHTML = headline.innerHTML;
-			}
-
-
-			// var commentary = event.currentSlide.querySelector(".comments");
-			// if(commentary) {
-			// document.getElementById('commented').innerHTML = commentary.innerHTML;
-			// }
-
-			var currentcoord = event.currentSlide.querySelector(".coordinate");
-			if(currentcoord) {
-			document.getElementById('coord').innerHTML = currentcoord.innerHTML;
-			}
-
-			} );
-
-		</script>
-
-
-
-		<script>
-				Reveal.addEventListener( 'fragmentshown', function( event ) {
-		 	   // event.fragment = the fragment DOM element
-				console.log(event.fragment);
-		    	console.log( 'fragment appear' );
-		  		// var fragmeaning = event.fragment.querySelectorAll(".fragmeant");
-				// if(fragmeaning) {
-				// document.getElementById('headliner').innerHTML = fragmeaning.innerHTML;
-				//}
-				var subsplash = event.fragment.querySelector(".makesplash");
-				if(subsplash) {
-					document.getElementById('splashline').innerHTML = subsplash.innerHTML;
-					};
-
-				} );
-
-				Reveal.addEventListener( 'fragmenthidden', function( event ) {
-		    	// event.fragment = the fragment DOM element
-		    	console.log(event.fragment);
-		    	console.log( 'fragment vanish' );
-				} );
-
-
-
-				$( document ).on( 'click', function(event) {
-					var detailed = event.target.getAttribute('details');
-					if (detailed) {
-						document.getElementById('eyeliner').innerHTML = detailed;
-						console.log(detailed);
-					};
-
-					
-				});
-
-			// $( document ).on( 'click', function( event ) {
-			//  console.log( event.type );    // The event type, eg. "click"
-			//  console.log( event.which );   // The button or key that was pressed.
-		 // 	 console.log( event.target );  // The originating element.
-		 // 	 console.log( event.pageX );   // The document mouse X coordinate.
-		 // 	 console.log( event.pageY );   // The document mouse Y coordinate.
-		 	 
-
-			// });
-
-
-			// var handleClick = function() {
-		 // 	 console.log( 'something was clicked' );
-			// };
-
-			// $( 'img' ).on( 'click', handleClick );
-			// $( 'h2' ).on( 'click', handleClick );
-
-
-
-
+		<script src="js/overlayUI.js"></script>
+		<script src="js/eventListeners.js"></script>
 		
-			// var imgClick = function() {
-			 // 	document.getElementById('contented').innerHTML = $(this).attr('alt');
-			// };
-	
-		</script>
-
-
-
-
-		<script src="triggerHadley.js"></script>
-
-    		 <script>
-				$(document).ready(function(){
-				    var $list = $(".tplandesclist > div");
-				    $(".arrow").click(function(){
-				        var $next = $list.filter(".current").removeClass('current').next();
-				        if(!$next.length){
-				            $next = $list.first()
-				        }
-				        
-				        $next.addClass('current')
-				        $("#result").html('').append($next.clone());
-				        
-				    });
-				});
-			</script>
-
-
-		<script>
-
-			/*	function changeImage(img) {
-		 		   document.getElementById("img").src = img.src.replace(".gif", ".png");
-				}
-			*/
-
-			function argsToArray(args) {
-		 		 var r = []; for (var i = 0; i < args.length; i++)
-		    r.push(args[i]);
-		 		 return r;
-			}
-
-			Reveal.addEventListener( 'slidechanged', function( event ) {
-			    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-		/*			console.log(event.previousSlide);*/
-				argsToArray(event.currentSlide.getElementsByClassName("sublet")).forEach(function(img) {
-		  			img.src = img.src.split('jpg').join('gif');
-				});
-
-
-				argsToArray(event.previousSlide.getElementsByClassName("sublet")).forEach(function(img) {
-		  			img.src = img.src.split('gif').join('jpg');
-		  		}); 
-
-			} );
-
-		</script>
-
-
-
-
-
-		<!-- <script>
-		// 	var editable = document.getElementById('editable');
-
-		// 	addEvent(editable, 'blur', function () {
-	 // 		 // lame that we're hooking the blur event
-	 //  		localStorage.setItem('contenteditable', this.innerHTML);
-	 // 		 document.designMode = 'off';
-		// 	});
-
-		// 	addEvent(editable, 'focus', function () {
-	 //  		document.designMode = 'on';
-		// 	});
-
-		// 	addEvent(document.getElementById('clear'), 'click', function () {
-	 // 		 localStorage.clear();
-	 //  		window.location = window.location; // refresh
-		// 	});
-
-		// 	if (localStorage.getItem('contenteditable')) {
-	 //  		editable.innerHTML = localStorage.getItem('contenteditable');
-		// 	}
-
-		// </script> -->
-
-
-						<!--<script>
-						/*	var dstate = event.currentSlide.querySelector(".data-state");
-							if(dstate='fluid') {
-							document.getElementById('loaderImage').style.backgroundImage='url('+dImageSrc+')';
-							if(dstate='blackout') {
-							document.getElementById('loaderImage').style.backgroundImage='url('+eImageSrc+')';
-							}*/
-
-						/*	Reveal.addEventListener( 'fluid', function() {
-						console.log( '"fluid" has fired' );
-						document.getElementById('loaderImage').style.backgroundImage='url('+dImageSrc+')';
-
-						} );
-
-						Reveal.addEventListener( 'blackout', function() {
-						console.log( '"blackout" has fired' );
-						document.getElementById('loaderImage').style.backgroundImage='url('+eImageSrc+')';
-						} );
-
-						Reveal.addEventListener( 'levels', function() {
-						console.log( '"levels" has fired' );
-						document.getElementById('loaderImage').style.backgroundImage='url('+cImageSrc+')';
-						} );
-						*/
-
-						/*	Reveal.addEventListener( 'freeze', function() {
-						console.log( '"freeze" has fired' );
-						document.getElementById('reflock').src='cursors/lock.png';
-						document.getElementById('reflock').style.marginLeft="3px";
-						document.getElementById('refeye').style.marginLeft="2px";
-						document.getElementById('loaderImage').style.marginLeft="2px";
-						} );
-
-						Reveal.addEventListener( 'thaw', function() {
-						console.log( '"thaw" has fired' );
-						document.getElementById('reflock').src='cursors/unlock4d.png';
-						document.getElementById('reflock').style.marginLeft="12px";
-						  document.getElementById('refeye').style.marginLeft="5px";
-						  document.getElementById('loaderImage').style.marginLeft="4px";
-
-						} );*/
-						</script>-->
-
-
-		<script>
-
-			$('#wholeview').click(function() {
-		   		 Reveal.toggleOverview();
-		   		 $('#Oview').toggleClass('icon-zoom-out')
-		   		 $('#Oview').toggleClass('icon-zoom-in')
-
-				});
-		</script>
-
-		<script>
-			$('#coordinates').click(function() {
-				
-				// if( $('#headlineup').css("display") == 'none' ){
-				// 	$('#headlineup').show();
-				// 	}
-				// else{
-				// 	};
-
-
-				$('#uppers').toggle();
-				$('#expandering').toggleClass('icon-circle-arrow-left');
-				$('#expandering').toggleClass('icon-circle-arrow-right');
-				$('#expandering').toggleClass('icon-white');
-				$('#coordinates').toggleClass('glowering');	
-				$('#coordinates').toggleClass('shadowing');			
-				// $('#offputter').css('left','39px');
-			});
-
-			$('#headlineup').click(function() {
-				$('#splashup').toggle();
-				$('#headliner').toggleClass('text-hollow');
-				$('#headliner').toggleClass('text-full');
-			})
-
-		</script>
-
-		<script>
-			$('#eyelet').click(function() {
-				$('#eyelineup').toggle();
-				$('#eyecon').toggleClass('icon-white');
-				$('#eyelet').toggleClass('eyelight');
-				$('#eyelet').toggleClass('eyeshadow');
-				 });
-		</script>
-
-		<script>
-			$('#toggler').click(function() {
-		   		 // $('#contented').toggle();
-		   		 // $('#wordless').toggle();
-		  //  		 $('#exemplar').vTicker('stop');
-				// document.getElementById('exemplar').innerHTML = notes.innerHTML;
-				//   $('#exemplar').vTicker('init',{margin:10,speed: 3000,pause: 1500,showItems: 2,padding:4});
-		   		  $('#toggler').toggleClass('withborder');
-		   		  $('#narration').toggle();
-		   		  $('#chatcontrol').toggle();
-		   		  $('#wordhook').toggle();
-		   		  $('#toggleme').toggleClass('icon-comment');
-
-		  			});
-		</script>
-		
-		<!--	// $('#toggleme2').click(function() {
-		 //   		 // $('#contented').toggle();
-		 //   		  $('#narration').show();
-		 //   		  $('#notebook').toggleClass('hidden');
-		 //   		  // $('#notebook').toggle();
-
-		 //   		  // $('#toggler').toggleClass('withborder');
-		   		  
-		 //  			});
-
-			// $('#toggleme3').click(function() {
-		 //   		 // $('#contented').toggle();
-		 //   		  $('#narration').show();
-		 //   		  // $('#notebook').toggle();
-		 //   		  $('#notebook').removeClass('hidden');
-		 //   		  $('#notebook').toggleClass('squashed');
-		 //   		  // $('#toggler').toggleClass('withborder');
-		   		  
-		 //  			});
-        -->
-
-		<!--	<script>
-
-				$('#Oview').click(function() {
-			   		 Reveal.toggleOverview();
-					});
-
-				$('#toggleme').click(function() {
-		   		 $('#contented').toggle();
-		   		  $('#toggler').toggleClass('withborder');
-		   		  $('#narration').show();
-		  			});
-
-				$('#supernav').click(function() {
-		   		 $('#toggleyou').toggle();
-				 $('#snup').toggle();
-				  $('#sndown').toggle();
-				  $('#selector').toggle();
-					});
-
-				$('#IDVclimate').click(function() {
-		   		 $('#whorled').toggle();
-					});
-
-		/*		$('#virtualLab').click(function() {
-		   		 $('#inatank').toggle();
-		   			});*/
-
-				$('#numericMods').click(function() {
-		   		 $('#simwe').toggle();
-					});
-
-			</script> -->
-
-</body>
+	</body>
 
 </html>

@@ -190,7 +190,7 @@ min-width:20px;
 }
 
 
-#chatcontrol {
+#notescroll {
     position: fixed; 
 /*  bottom: 38px;*/
     bottom: 18px;
@@ -515,7 +515,6 @@ figcaption { display: block; }
     left: 144px;
     z-index: 32;
 }
-
 
 
 

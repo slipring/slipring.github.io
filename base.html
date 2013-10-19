@@ -1,22 +1,18 @@
-<!--<?php
-$c5t_identifier_key = 'triald';
-$c5t_identifier_key = 'errord';
-include './include.php';
-?>-->
-
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<meta charset='utf-8'/>
 		<title>Weather in a Tank Virtual Lab</title>
+
+
 		<style>
-			body{font:12px/1.2 Verdana, sans-serif; padding:0 10px;}
+			body{font:9px/1.2 Verdana, sans-serif; padding:0 10px;}
 			a:link, a:visited{text-decoration:none; color:#416CE5; border-bottom:1px solid #416CE5;}
 			h2{font-size:13px; margin:15px 0 0 0;}
 		</style>
 
-<!-- 		<link rel="stylesheet" href="/comments/template/default/style.css" type="text/css" />
- -->
+
 		<link rel="stylesheet" href="colorbox.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="jquery.colorbox.js"></script>
@@ -49,23 +45,32 @@ include './include.php';
 				});
 			});
 		</script>
+
+
+		<link rel="stylesheet" href="css/superset.css" />
+
+
 	</head>
+
+
+
 	<body>
+		
+		<center><h2>
+		<img src="cursors/d.png" />
+		Weather in a Tank Virtual Lab
+		<img src="cursors/di.png" />
+		</h2></center>
 
+		<p>
+			
 
-			<h2>Weather in a Tank Virtual Lab</h2>
+			<div id="experiments">
 
-			<p><a class='inline' href="#inline_content">Popup Walkthrough</a></p>
-
-			<br>
-
-
-
-			<div>
-
-			<p style="width: 250px;float: left;margin-left: 10px;">
-
+			<p style="width:30%; float:left; margin-left:10px;">
+				<img src="cursors/tank.png" />
 				Laboratory Experiments
+				<img src="cursors/tanki.png" />
 				<br>
 
 				<a class='iframe laboratory' href="expFronts.html" title="Fronts - Cylinder Collapse Experiment">Cylinder Collapse - Fronts</a>
@@ -81,14 +86,11 @@ include './include.php';
 				<br>
 
 				<a class='iframe laboratory' href="expDyestir.html" title="Taylor Columns - Dye Stir Experiment">Dye Stirring - Taylor Columns</a>
-
-
 			</p>
 
 
-			<p style="width: 250px;float: left;margin-left: 10px;">
-
-				Theory
+			<p style="width:15%; float:left; margin-left:10px;">
+				Theory 	<img src="cursors/sim.png" />
 				<br>
 
 				<a class='iframe theory' href="expFronts.html" title="Fronts - Cylinder Collapse Experiment">Balanced Motion + Margule Relation</a>
@@ -104,12 +106,11 @@ include './include.php';
 				<br>
 
 				<a class='iframe theory' href="expDyestir.html" title="Taylor Columns - Dye Stir Experiment"></a>
-
 			</p>
 
-			<p style="width: 150px;float: left;margin-left: 10px;">
 
-				Numerics
+			<p style="width:15%; float:left; margin-left:10px;">
+				<img src="cursors/simi.png" /> Numerics 
 				<br>
 
 				<a class='iframe theory' href="expFronts.html" title="Fronts - Cylinder Collapse Experiment">Fronts Sim[S|L]</a>
@@ -125,13 +126,11 @@ include './include.php';
 				<br>
 
 				<a class='iframe theory' href="expDyestir.html" title="Taylor Columns - Dye Stir Experiment">Dyestir Sim[S|L]</a>
-
 			</p>
 				
 
-			<p style="width: 300px;float: left;margin-left: 10px;">
-
-				World Climate
+			<p style="width:30%; float:left; margin-left:10px;">
+				<img src="cursors/world.png" />World Climate<img src="cursors/worldi.png" />
 				<br>
 
 				<a class='iframe world' href="expFronts.html" title="Fronts - Cylinder Collapse Experiment">Polar Front & Jetstream</a>
@@ -146,59 +145,33 @@ include './include.php';
 				<a class='iframe world' href="expBucket.html" title="Balanced Vortex - Bucket Experiment">Hurricane Circulation & Geostrophic Wind</a>
 				<br>
 
-				<a class='iframe world' href="expDyestir.html" title="Taylor Columns - Dye Stir Experiment">Atmosphere & Ocean - Plumes and Blooms</a>
-
+				<a class='iframe world' href="expDyestir.html" title="Taylor Columns - Dye Stir Experiment">Atmosphere & Ocean - Plumes 'n Blooms</a>
 			</p>
 
-			</div>
+		</div>
 
 
+		<div style="position:fixed;bottom:0px;right:5px;">
+			<img src="cursors/eye.png" />
+			<a class='inline' href="#inline_content">Popup Walkthrough</a></p>
+			<br>
+		</div>
 
-			<div>
-			
+		<div style="position:fixed;bottom:0px">
 			<!-- Callbacks and event-hooks allow users to extend functionality without having to rewrite parts of the plugin.-->
-				<p><a class='callbacks' 
-				href="images/calibration.png" 
-				title="Calibration with callbacks">Calibration</a></p>
-		
-
-				<p><a class='youtube' 
-				href="http://www.youtube.com/embed/kRixO3yaBh8?rel=0&amp;wmode=transparent" 
-				title="Youtube clip">YouTube</a></p>
-
-				<p><a class='vimeo' 
-				href="http://player.vimeo.com/video/62612780" 
-				title="Vimeo clip">Vimeo</a></p>
-
-
-			</div>
-
-			<br>
-			<br>
-
-
-
-
-	<!-- 		<?php echo $c5t_output; ?>
- -->
-
-
-
-<!-- <script src="http://jskomment.appspot.com/jskomment.js"></script>
-
-<div class="jskomment" title="http://slipring.github.io/nullsleep1">Comment</div>
-<div class="jskomment" title="http://slipring.github.io/nullsleep2">Comment2</div>
-<div class="jskomment" title="http://slipring.github.io/nullsleep3">Comment3</div>
-
-
-
-<h2>this page</h2>
-You will receive a legacy which will place you above want.
- --><!-- No title attribute, the comment thread is identified by the page URL -->
-<!-- <div class="jskomment" title="nullimustsave"></div>
- -->
-
-
+				<p>
+					<img src="cursors/prev.png" />
+					<a class='callbacks' 
+					href="images/calibration.png" 
+					title="Calibration with callbacks">Calibration</a>
+					<a class='youtube' 
+					href="http://www.youtube.com/embed/kRixO3yaBh8?rel=0&amp;wmode=transparent" 
+					title="Youtube clip">YouTube</a>
+					<a class='vimeo' 
+					href="http://player.vimeo.com/video/62612780" 
+					title="Vimeo clip">Vimeo</a>
+				</p>
+		</div>
 
 
 		<!-- This contains the hidden content for inline calls -->
@@ -210,11 +183,9 @@ You will receive a legacy which will place you above want.
 			
 			<p><strong>If you try to open a new Colorbox while it is already open, it will update itself with the new content.</strong></p>
 			<p>Updating Content Example:<br />
-			<a class="ajax" href="ajax.html">Click here to load new content</a></p>
+			<!-- <a class="ajax" href="ajax.html">Click here to load new content</a></p> -->
 			</div>
 		</div>
-
-
 
 
 
