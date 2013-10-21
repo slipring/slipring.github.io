@@ -324,14 +324,14 @@ min-width:20px;
 
 
 /* INFO CURSORS */
-img, img:hover { cursor: pointer;
-                 cursor: hand; }
-img.renewer, img.renewer:hover { cursor: url(../cursors/prev.png), auto;}
+img, img:hover { /*cursor: pointer;*/
+                 /* cursor: hand; */ }
+img.renewer, img.renewer:hover { cursor: url(../img/prev.png), auto;}
 
 .UXemphatic {cursor: url(bcursor.png), auto;}
 .corotating {cursor: url(bcursor.png), auto;}
 .inertial {cursor: url(bcursor.png), auto;}
-
+/* sucks */
 
 
 #sublet {border:none;
@@ -340,18 +340,12 @@ img.renewer, img.renewer:hover { cursor: url(../cursors/prev.png), auto;}
         box-shadow:none;}
 
 
-
-
 .proxys	{
 	/*margin-left:0px;*/
 	padding:0px;
 	background:none;
 	box-shadow:none;
 }
-
-
-
-
 
 
 #grouper {
@@ -470,7 +464,7 @@ img.renewer, img.renewer:hover { cursor: url(../cursors/prev.png), auto;}
     box-shadow: 0px 4px 4px rgba(0,0,0,.4);
     -moz-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
     -webkit-box-shadow: 0px 4px 4px rgba(0,0,0,.4);
-    cursor: url(../cursors/ban.png), auto;
+    cursor: url(../img/ban.png), auto;
 }
 
 
@@ -543,8 +537,8 @@ figcaption { display: block; }
 
 /*.onhover {
 ul, ol {margin:4px 0 4px 26px;padding:1px 0 1px 0;}
-ul li, ol li{font-size:13px;margin:0;list-style-image:url(cursors/di.png);clear:both;margin-bottom:3px;word-wrap:break-word;}
-ul li.hover{list-style-image:url(cursors/d.png);}
+ul li, ol li{font-size:13px;margin:0;list-style-image:url(img/di.png);clear:both;margin-bottom:3px;word-wrap:break-word;}
+ul li.hover{list-style-image:url(img/d.png);}
 ul a.link, ol a.link{font-size:13px;line-height:17px;color:#646c6f;}
 ul a.link:hover, ol a.link:hover{color:#8bba47;}
 ol li{list-style-image:none;color:#8bba47;}

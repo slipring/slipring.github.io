@@ -138,7 +138,7 @@
 
 			/*	Reveal.addEventListener( 'freeze', function() {
 					console.log( '"freeze" has fired' );
-					document.getElementById('reflock').src='cursors/lock.png';
+					document.getElementById('reflock').src='img/lock.png';
 					document.getElementById('reflock').style.marginLeft="3px";
 					document.getElementById('refeye').style.marginLeft="2px";
 					document.getElementById('loaderImage').style.marginLeft="2px";
@@ -146,7 +146,7 @@
 
 				Reveal.addEventListener( 'thaw', function() {
 					console.log( '"thaw" has fired' );
-					document.getElementById('reflock').src='cursors/unlock4d.png';
+					document.getElementById('reflock').src='img/unlock4d.png';
 					document.getElementById('reflock').style.marginLeft="12px";
 					document.getElementById('refeye').style.marginLeft="5px";
 					document.getElementById('loaderImage').style.marginLeft="4px";

@@ -24,7 +24,7 @@ body {
   background: -ms-radial-gradient(center, circle cover, #E7E1C9 0%, #918C84 100%);
   background: radial-gradient(center, circle cover, #E7E1C9 0%, #918C84 100%);
   background-color: #918C84;*/
-  background-image:url('../../lvl.png');
+  background-image:url('../../images/lvl.png');
 }
 
 .reveal {
