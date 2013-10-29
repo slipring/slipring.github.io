@@ -54,7 +54,7 @@ var Reveal = (function(){
 			theme: null,
 
 			// Transition style
-			transition: 'default', // default/cube/page/concave/zoom/linear/none
+			transition: 'concave', // default/cube/page/concave/zoom/linear/none
 
 			// Script dependencies to load
 			dependencies: []
