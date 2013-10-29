@@ -16,7 +16,8 @@
  * GLOBAL STYLES  #1c1e20   555a5f
  *********************************************/
 body {
-  background: #1c1e20;
+/*  background: #1c1e20;*/
+  background: rgb(26,24,23);
   background: -moz-radial-gradient(center, circle cover, #1c1e20 0%, #1a1817 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #1c1e20), color-stop(100%, #1a1817));
   background: -webkit-radial-gradient(center, circle cover, #1c1e20 0%, #1a1817 100%);
