@@ -48,13 +48,13 @@ var Reveal = (function(){
 			mouseWheel: true,
 
 			// Apply a 3D roll to links on hover
-			rollingLinks: false,
+			rollingLinks: true,
 
 			// Transition style (see /css/theme)
 			theme: null,
 
 			// Transition style
-			transition: 'default', // default/cube/page/concave/zoom/linear/none
+			transition: 'concave', // default/cube/page/concave/zoom/linear/none
 
 			// Script dependencies to load
 			dependencies: []
@@ -64,7 +64,7 @@ var Reveal = (function(){
 		// after n milliseconds
 		autoSlide = config.autoSlide,
 
-		// The horizontal and verical index of the currently active slide
+		// The horizontal and vertical index of the currently active slide
 		indexh = 0,
 		indexv = 0,
 
@@ -543,23 +543,28 @@ var Reveal = (function(){
 	 * @param {HTMLElement} stack The vertical stack element
 	 * @param {int} v Index to memorize
 	 */
+
 	function setPreviousVerticalIndex( stack, v ) {
 		if( stack ) {
 			stack.setAttribute( 'data-previous-indexv', v || 0 );
 		}
 	}
 
+	 /*cairn*/
+
 	/**
 	 * Retrieves the vertical index which was stored using 
 	 * #setPreviousVerticalIndex() or 0 if no previous index
 	 * exists.
 	 *
+	 * MOD -- Disabled to reset to 0 top slide on R L fo
+	 *
 	 * @param {HTMLElement} stack The vertical stack element
 	 */
 	function getPreviousVerticalIndex( stack ) {
-		if( stack && stack.classList.contains( 'stack' ) ) {
+/*		if( stack && stack.classList.contains( 'stack' ) ) {
 			return parseInt( stack.getAttribute( 'data-previous-indexv' ) || 0, 10 );
-		}
+		}*/
 
 		return 0;
 	}

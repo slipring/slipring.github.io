@@ -54,7 +54,7 @@ var Reveal = (function(){
 			theme: null,
 
 			// Transition style
-			transition: 'concave', // default/cube/page/concave/zoom/linear/none
+			transition: 'default', // default/cube/page/concave/zoom/linear/none
 
 			// Script dependencies to load
 			dependencies: []
@@ -549,19 +549,19 @@ var Reveal = (function(){
 		}
 	}
 
+/*cairn*/
+
 	/**
 	 * Retrieves the vertical index which was stored using 
 	 * #setPreviousVerticalIndex() or 0 if no previous index
 	 * exists.
 	 *
-	 * MOD -- Disabled to reset to 0 top slide on R L fo
-	 *
 	 * @param {HTMLElement} stack The vertical stack element
 	 */
 	function getPreviousVerticalIndex( stack ) {
-/*		if( stack && stack.classList.contains( 'stack' ) ) {
+		if( stack && stack.classList.contains( 'stack' ) ) {
 			return parseInt( stack.getAttribute( 'data-previous-indexv' ) || 0, 10 );
-		}*/
+		}
 
 		return 0;
 	}
