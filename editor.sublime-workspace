@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"png",
+				"png"
+			],
+			[
 				"listlet",
 				"listlet"
 			],
@@ -64,34 +68,18 @@
 	"buffers":
 	[
 		{
-			"file": "js/revealEXP.js",
+			"file": "js/spriteHadley.js",
 			"settings":
 			{
-				"buffer_size": 46907,
-				"line_ending": "Unix"
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/revealEXP.css",
+			"file": "triggerHadley.js",
 			"settings":
 			{
-				"buffer_size": 33356,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/theme/light.css",
-			"settings":
-			{
-				"buffer_size": 4900,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/stylesheet.css",
-			"settings":
-			{
-				"buffer_size": 4812,
+				"buffer_size": 2110,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +95,15 @@
 			"file": "preloadHadley.js",
 			"settings":
 			{
-				"buffer_size": 3280,
+				"buffer_size": 5597,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "spriteH1.html",
+			"settings":
+			{
+				"buffer_size": 4091,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,8 +111,64 @@
 			"file": "expHadley.html",
 			"settings":
 			{
-				"buffer_size": 43639,
+				"buffer_size": 46275,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 9626,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/jquery.spritely.js",
+			"settings":
+			{
+				"buffer_size": 25295,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Bill/Dropbox/webhead/coriolis/explo.html",
+			"settings":
+			{
+				"buffer_size": 10818,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 9634,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/theme/light.css",
+			"settings":
+			{
+				"buffer_size": 4900,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/revealEXP.css",
+			"settings":
+			{
+				"buffer_size": 33356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/revealEXP.js",
+			"settings":
+			{
+				"buffer_size": 46907,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -124,14 +176,6 @@
 			"settings":
 			{
 				"buffer_size": 29409,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "triggerHadley.js",
-			"settings":
-			{
-				"buffer_size": 2110,
 				"line_ending": "Windows"
 			}
 		}
@@ -160,6 +204,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Bill/Desktop/bustout/spritely_integral/spritely-master/spritely-master/spritely.jquery.json",
 		"/C/Users/Bill/Dropbox/webhead/coriolis/css/stylesheetIDV.css",
 		"/C/Users/Bill/Dropbox/webhead/coriolis/css/bootstrap.min.css",
 		"/D/repo/slipring.github.io/slipring.github.io/js/PxLoaderImage.js",
@@ -254,6 +299,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"aside",
+			"36px",
+			"toggler",
+			"						",
+			"contented",
+			"jquery",
+			"contented",
+			"Jquery",
+			"toggle",
+			"speedthru",
+			"sprite",
+			"hadley",
+			"rewind",
+			"speedthru",
+			"rewind",
+			"speedthru",
+			"jquery",
+			"jqeury",
+			"sprite",
+			"spriteHadley",
+			"Contentedit",
+			"contenteditable",
+			"Sprite",
+			"hadleySprite",
+			"existent",
+			"reveal",
+			"weather",
+			"splash",
+			"narration",
+			"1.0",
 			"<aside class=\"h",
 			"hidden headline",
 			"bootstrap",
@@ -351,37 +426,7 @@
 			"clicket",
 			"element",
 			"clicket",
-			"cspeed",
-			"thaw",
-			"mapplet",
-			"map",
-			"navigate-down",
-			"spinup",
-			"overview",
-			"arrows",
-			"toggleyou",
-			"freeze",
-			"light",
-			"setPreviousVerticalIndex",
-			"particle",
-			"perm",
-			"EARTH<",
-			"image/idv/",
-			"background",
-			"img2",
-			"initialize",
-			"img",
-			"fluid",
-			"data-state",
-			"screen",
-			"fflux",
-			"ffflux",
-			"bebas",
-			"group",
-			"elemesn",
-			"elemesnt",
-			"element",
-			"E2B"
+			"cspeed"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -389,6 +434,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"proxy",
 			"<aside class=\"coordinate\">\n						0.0  \n					</aside>\n					<aside class=\"h",
 			"headline",
 			"image/zonalH",
@@ -408,23 +454,49 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "js/revealEXP.js",
+					"file": "js/spriteHadley.js",
 					"settings":
 					{
-						"buffer_size": 46907,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								609,
-								609
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "triggerHadley.js",
+					"settings":
+					{
+						"buffer_size": 2110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19,
+								19
 							]
 						],
 						"settings":
@@ -439,90 +511,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "css/revealEXP.css",
-					"settings":
-					{
-						"buffer_size": 33356,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2062,
-								2066
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 624.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "css/theme/light.css",
-					"settings":
-					{
-						"buffer_size": 4900,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2040,
-								2040
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1386.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "css/stylesheet.css",
-					"settings":
-					{
-						"buffer_size": 4812,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1966,
-								1966
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1224.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "css/deckHadley.css",
 					"settings":
 					{
@@ -548,19 +537,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "preloadHadley.js",
 					"settings":
 					{
-						"buffer_size": 3280,
+						"buffer_size": 5597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								814,
-								814
+								396,
+								396
 							]
 						],
 						"settings":
@@ -570,25 +559,51 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 84.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "expHadley.html",
+					"buffer": 4,
+					"file": "spriteH1.html",
 					"settings":
 					{
-						"buffer_size": 43639,
+						"buffer_size": 4091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								35831,
-								35831
+								1062,
+								1062
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 83.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "expHadley.html",
+					"settings":
+					{
+						"buffer_size": 46275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3697,
+								3697
 							]
 						],
 						"settings":
@@ -597,7 +612,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 28288.0,
+						"translation.y": 1890.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 9626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								396,
+								396
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 770.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -605,11 +647,177 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 7,
+					"file": "js/jquery.spritely.js",
+					"settings":
+					{
+						"buffer_size": 25295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21987,
+								21987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7158.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Bill/Dropbox/webhead/coriolis/explo.html",
+					"settings":
+					{
+						"buffer_size": 10818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9573,
+								9573
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 713.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/stylesheet.css",
+					"settings":
+					{
+						"buffer_size": 9634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "css/theme/light.css",
+					"settings":
+					{
+						"buffer_size": 4900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1399,
+								1406
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "css/revealEXP.css",
+					"settings":
+					{
+						"buffer_size": 33356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2062,
+								2066
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "js/revealEXP.js",
+					"settings":
+					{
+						"buffer_size": 46907,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8984,
+								8984
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4278.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
 					"file": "idvHadley.html",
 					"settings":
 					{
@@ -630,40 +838,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 17951.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 8,
-					"file": "triggerHadley.js",
-					"settings":
-					{
-						"buffer_size": 2110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								547,
-								547
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 821.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -694,19 +869,12 @@
 				0,
 				2,
 				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.328372117194,
-			0.736127304069,
+			0.550368480056,
 			1.0
 		],
 		"rows":
