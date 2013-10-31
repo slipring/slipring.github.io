@@ -6,48 +6,213 @@
 
 		<title>Clothing</title>
 
-		<meta name="title" content="">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="title" content="" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- user-scalable=yes means in-slide content will resize on Ctrl+/-, user-scalable=no means content will stay same size -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+
+
+
 
 		<!-- Bootstrap 3.0.1, http://getbootstrap.com/-->
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+		
+		<!-- for jqChart -->
+		<link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqChart.css" />
+	    <link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqRangeSlider.css" />
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<!-- For jQuery UI 1.10.3 theme //smoothness, dot-luv -->
+		<link rel="stylesheet" href="plugin/jquery-ui/themes/smoothness/jquery-ui.css" />
 
-		<!-- Jquery UI 1.10.3 theme //smoothness, dot-luv -->
-		<link rel="stylesheet" href="plugin/jquery-ui/themes/dot-luv/jquery-ui.css" />
+		<link rel="stylesheet" href="css/reveal.css" />
+		<link rel="stylesheet" href="css/theme/night.css" id="theme" />
+
+		<!-- For jqPlot -->
+		<link rel="stylesheet" type="text/css" href="plugin/jqplot/jquery.jqplot.css" />
+	
+		<!-- For syntax highlighting, used in conjunction with hilight.js in the Reveal.initialize() dependencies; disable first if experiencing unwanted style collisions-->
+		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 
 
-		<!-- For syntax highlighting, used in conjunction with hilight.js as a Reveal.initialize  dependency; disable first if experiencing unwanted style collisions-->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
+		<!-- For UI elements -->
 		<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+		<!-- For in-stack elements -->
 		<!-- <link rel="stylesheet" href="css/subsheet.css"> -->
+
 
 		<!-- for PDF Export: load page with .html?print-pdf appended to index URL, open browser print dialog, select save as PDF, layout landscape, margins none; see https://github.com/hakimel/reveal.js#pdf-export for details -->
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+			<script>
+				document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			</script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
+		<!-- h5utils 1.12.1, https://github.com/remy/html5demos/tree/master/js -->
+			<script language="javascript" type="text/javascript" src="lib/js/h5utils.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqChart.css" />
-	    <link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqRangeSlider.css" />
-		<!--<link rel="stylesheet" type="text/css" media="screen" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.21/themes/smoothness/jquery-ui.css" /> -->
+		<!-- jQuery 1.10.2 loaded in <del>line<del> head, not as Reveal dependency, to enable using scripts in page with $( ) notation, http://jquery.com/-->
+			<script language="javascript" type="text/javascript" src="lib/js/jquery-1.10.2.js"></script>
+		<!-- for jqPlot jquery version compatability -->
+			<script language="javascript" type="text/javascript" src="plugin/jbrowser/jquery.browser.js"></script>
+		<!-- Spritely 0.6.2, http://spritely.net/ -->
+			<script language="javascript" type="text/javascript" src="plugin/spritely/src/jquery.spritely.js"></script>
+    	<!-- vTicker v1.13, http://richhollis.github.io/vticker/ -->
+    		<script language="javascript" type="text/javascript" src="plugin/vticker/jquery.vticker.js"></script>
+     
+
+		<!-- for jQuery sizzle, http://sizzlejs.com/ -->
+			<script language="javascript" type="text/javascript" src="plugin/jquery-sizzle/src/sizzle.js"></script>
+		<!-- Underscore, utility belt for Javascript, see: http://documentcloud.github.io/underscore/ -->
+			<script language="javascript" type="text/javascript" src="plugin/underscore/underscore-min.js"></script>
+		<!-- jQuery UI v1.10.3, http://jqueryui.com/ -->
+			<script language="javascript" type="text/javascript" src="plugin/jquery-ui/ui/jquery-ui.js"></script>
+
+		<!-- Bootstrap 3.0.1 dist, http://getbootstrap.com/ -->
+			<script language="javascript" type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- PxLoader v0.1, for preloading http://thinkpixellab.com/pxloader/ -->
+			<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoader.js"></script>
+			<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderImage.js"></script>
+			<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderSound.js"></script>
+			<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderVideo.js"></script>
+
+		<!-- jqDataVizualization (Chart, Gauges, GeoMap) 3.8.0.0 -->
+		<!-- (trial, need to license if used in final release) : http://www.jqchart.com/documentation/userguide/default.aspx#! -->
+		<!-- Currently active: jqChart http://www.jqchart.com/jquery/chart; //other: jqGauges, http://www.jqchart.com/jquery/gauges; jqGeoMap, http://www.jqchart.com/jquery/geomap;-->
+			<!--~trimtab unless save for radial graph; trouble with tooltips lining up unless zoom:1-->
+		    <script src="plugin/jqDataVis/js/jquery.jqChart.min.js" type="text/javascript"></script>
+		    <script src="plugin/jqDataVis/js/jquery.jqRangeSlider.min.js" type="text/javascript"></script>
+		    <script src="plugin/jqDataVis/js/jquery.mousewheel.js" type="text/javascript"></script>
+
+
+		<!-- Open source jqPlot 1.0.8, has logscale, no watermark, custom labels, no radial plot http://www.jqplot.com/ -->
+			<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
+			<script language="javascript" type="text/javascript" src="plugin/jqplot/jquery.jqplot.js"></script>
+			<script language="javascript" type="text/javascript" src="plugin/jqplot/plugins/jqplot.logAxisRenderer.js"></script>
+
+
+		<script lang="javascript" type="text/javascript">
+	        $(document).ready(function () {
+	        	
+	        	var zoomCurrent = 1;
+				var reciprCurrent = 1;
+				
+				function compensation() {
+					setTimeout( function() {
+					zoomCurrent = $('.slides').css('zoom');
+					console.log(zoomCurrent);
+					reciprCurrent = 1 / zoomCurrent;
+					console.log(reciprCurrent);
+					$('.slides .present .ui-jqchart').css('zoom', reciprCurrent);},
+					300);
+				} 
+
+				compensation();
+
+				// console.log(zoomCurrent);
+
+				// var domzoom = document.querySelector(".slides").getAttribute('zoom');
+				// console.log(domzoom);
+
+				// var livezoom = $('.slides').attr('zoom');
+				// console.log(livezoom);
+	        	
+	        	$.jqplot.config.enablePlugins = true;
+				$(function(){
+					$.jqplot('chartdiv',  [[[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]],
+						{ title:'Exponential Line',
+						  axes:{yaxis:{renderer: $.jqplot.LogAxisRenderer}},
+						  series:[{color:'#5FAB78',
+						  linePattern: 'dashed',
+		         		  showMarker: false,
+			              shadow: false}]
+						}
+					);
+				});
+
+
+	            $('#jqChart').jqChart({
+		                title: { text: 'Chart Title' },
+		                tooltips: {disabled:false},
+		                axes: [
+		                        {
+		                            type: 'category',
+		                            location: 'bottom',
+		                            zoomEnabled: true
+
+		                        }
+		                      ],
+		                series: [
+		                            {
+		                                type: 'column',
+		                                data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], ['H', 29]]
+		                            },
+		                            {
+		                                type: 'line',
+		                                data: [['A', 69], ['B', 57], ['C', 86], ['D', 23], ['E', 70], ['F', 60], ['D', 88], ['H', 22]]
+		                            }
+		                        ]
+		            });
+
+	            // var background = {
+	                // type: 'linearGradient',
+	                // x0: 0,
+	                // y0: 0,
+	                // x1: 0,
+	                // y1: 1,
+	                // colorStops: [{ offset: 0, color: '#d2e6c9' },
+	                //              { offset: 1, color: 'white'}]
+	            // };
+
+	            $('#jqChart2').jqChart({
+	                title: { text: 'Radar Spline Chart' },
+	                border: { strokeStyle: '#eee' },
+	                tooltips: {disabled:false},
+	                background: 'rgba(255,255,255,.2)',
+	                axes: [
+	                        {
+	                            type: 'categoryAngle',
+	                            categories: ['France', 'Canada', 'Germany', 'USA', 'Italy', 'Spain', 'Russia', 'Sweden', 'Japan']
+	                        }
+	                      ],
+	                series: [
+	                            {
+	                                title: 'Series 1',
+	                                type: 'radarSpline',
+	                                data: [65.62, 75.54, 60.45, 34.73, 85.42, 55.9, 63.6, 55.1, 77.2]
+	                            },
+	                            {
+	                                title: 'Series 2',
+	                                type: 'radarSpline',
+	                                data: [46.45, 63.78, 86.45, 30.76, 23.79, 35.67, 89.56, 67.45, 38.98]
+	                            }
+	                        ]
+	            });
+	        });
+    	</script>
 
 
 	</head>
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<body>
 
@@ -56,14 +221,31 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
+				<section>
+					<div id="chartdiv" style="height:400px;width:300px; ">
+					</div>
+				</section>
+
+
+				<section>
+					<div id="jqChart2" style="display:block;background-color:yellow;height:600px;width:600px;" >
+       				</div>
+					<!-- <div id="chartwrapper" class="stretch" style="display:block;text-align:center;position:relative;top:0px;left:0px; width:400px;height:300px;zoom:1;">
+       				 	<div id="jqChart2" style="position: absolute; display:inline; left: 0px; top: 0px; width:700px;height:500px;" >
+       				 	</div>
+       				</div>-->
+				</section>
+
 				<section data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/phivk/images/101058/sea-halfunderwater.gif">
 					<h2>Clothed Presentation</h2>
 					<p>This example contains a site-specific of the reveal.js platform.</p>
 
- 					    <div>
-       					 <div id="jqChart" style="width: 700px; height: 500px;"></div>
-    					</div>
 
+					<div id="chartwrapper" style="display:block;text-align:center;position:relative;top:0px;left:0px; width:400px;height:300px;">
+	       				<div id="jqChart" style="position: absolute; display:inline; left: 0px; top: 0px; width:400px;height:300px;">
+	       				</div>
+       				</div>
+    				
 						<p class="notes">slide 0-0 notes don't report to console.log onLoad</p>
 				</section>
 
@@ -198,14 +380,18 @@
 
 				<section data-markdown data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/phivk/images/101141/theend.gif">
 					#OR IS IT
+				</section>
 			</div>
 
 		</div>
 
 
+
+
+
+
+
 		<script src="lib/js/head.min.js"></script>
-		<!-- jQuery 1.10.2 loaded in line, not as Reveal dependency, to enable using scripts in page with $( ) notation, http://jquery.com/-->
-		<script src="lib/js/jquery-1.10.2.js"></script>
 		<!-- Reveal.js Presentation Framework - Pull #660 https://github.com/hakimel/reveal.js-->
 		<script src="js/reveal.min.js"></script>
 
@@ -216,13 +402,14 @@
 				progress: true, // Display a presentation progress bar
 				history: true,	// Push each slide change to the browser history
 								/// Pro: copying direct URL & preserves position across page refresh, Con: Refresh throws errors that do not occur with fresh deck load
-				center: true,	// Vertical centering of slides
+				center: false,	// Vertical centering of slides
+								/// Top: 0px position
 				// rtl: true,	// Change the presentation direction to be RTL
 								/// Reverses past/future classes when in RTL mode
 
 				theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
-				transitionSpeed: 'fast',
+				transitionSpeed: 'slow',
 				// backgroundTransition: 'linear'
 
 				// Mathjax config object - only include if necessary to change these default values
@@ -232,75 +419,42 @@
 				// },
 
 				dependencies: [
-					// CanvasJS v1.3.0 Beta 4, http://canvasjs.com/  ~trimtab: doesn't include logarithmic
-						// { src: 'plugin/canvasjs/source/canvasjs.js'},
-
-					// jqDataVizualization (trial) 3.8.0.0: http://www.jqchart.com/documentation/userguide/default.aspx#!  
-					// jqChart, http://www.jqchart.com/jquery/chart; jqGauges, http://www.jqchart.com/jquery/gauges; jqGeoMap, http://www.jqchart.com/jquery/geomap
-						{ src: 'plugin/jqDataVis/js/jquery-1.5.1.min.js'},
-						{ src: 'plugin/jqDataVis/js/jquery.mousewheel.js'},
-						{ src: 'plugin/jqDataVis/js/jquery.jqChart.min.js'},
-						{ src: 'plugin/jqDataVis/js/jquery.jqRangeSlider.min.js'},
-						{ src: 'plugin/jqDataVis/js/jquery.mousewheel.js'},
-
-					// jQuery UI v1.10.3, http://jqueryui.com/
-						{ src: 'plugin/jquery-ui/ui/jquery-ui.js'},
-					// jQuery sizzle, http://sizzlejs.com/
-						{ src: 'plugin/jquery-sizzle/src/sizzle.js'},
-
-					// PxLoader v0.1, http://thinkpixellab.com/pxloader/
-						{ src: 'plugin/PxLoader/PxLoader.js'},
-						{ src: 'plugin/PxLoader/PxLoaderImage.js'},
-						{ src: 'plugin/PxLoader/PxLoaderSound.js'},
-						{ src: 'plugin/PxLoader/PxLoaderVideo.js'},
 					
-					// Bootstrap 3.0.1 dist, http://getbootstrap.com/
-						{ src: 'bootstrap/js/bootstrap.min.js'},
-					
-					// h5utils 1.12.1, https://github.com/remy/html5demos/tree/master/js
-						{ src: 'lib/js/h5utils.js'},
-					
-					// Spritely 0.6.2, http://spritely.net/
-						{ src: 'plugin/spritely/src/jquery.spritely.js'},
-					
-					// vTicker v1.13, http://richhollis.github.io/vticker/
-						{ src: 'plugin/vticker/jquery.vticker.js'},
 
 					// Cross-browser shim that fully implements classList, more @ https://github.com/eligrey/classList.js/
 						{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+					// MathJax for LaTeX equation display (uncomment Mathjax config object to edit defaults)
+						{ src: 'plugin/math/math.js', async: true },
+
+
+					////// *Incompatible with jsPlot* //////
+					// Syntax highlight for <code> elements, see http://highlightjs.org/usage/
+	    			// highlight.js build includes support for:
+					// Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini, JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL, Clojure, GLSL, Lua, Scala, CoffeeScript, Go, Objective C, ActionScript, Markdown
+	    				// { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },	
 
 	        		// Interpret Markdown in <section> elements, tag section with <section data-markdown>
 	        		// [link](url) hyperlinks; ## headings (# bigger, ### smaller), ---- linebreak
 	        		// * lines for unordered list, 1. number lines for ordered list
 	        		// *italic* or _italic_   **bold** or __bold__   `monospace`
-	        		// style guide with mixed support, see http://daringfireball.net/projects/markdown/syntax
-				        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	        		// see 'http://daringfireball.net/projects/markdown/syntax' for a style guide with mixed support 
+				        // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				        // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 
-					// Syntax highlight for <code> elements, see http://highlightjs.org/usage/
-	    			// highlight.js build includes support for:
-					// Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini, JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL, Clojure, GLSL, Lua, Scala, CoffeeScript, Go, Objective C, ActionScript, Markdown
-	    				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },	
+				    ////// *Able to enable if off numerics* //////
 
 					// Zoom in and out with Alt+click
 						{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 
 					// Speaker notes
-	        			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					
-					// MathJax for LaTeX equation display (uncomment Mathjax config object to edit defaults)
-						{ src: 'plugin/math/math.js', async: true },
-
-					// Underscore, utility belt for Javascript, see: http://documentcloud.github.io/underscore/
-						{ src: 'plugin/underscore/underscore-min.js'}
+	        			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 
 			});
 
 
 			//Event Listeners 
-
-
 
 			Reveal.addEventListener( 'slidechanged', function( event ) {
 				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
@@ -318,109 +472,42 @@
 			     MathJax.Hub.Rerender(document.querySelector(".slides .present")) 
 			   }, 100);   // prevent display errors in equation formatting
 			} );
+
 		</script>
 
 
-		<script>
-			$( document ).on( 'click', function( event ) {
-				console.log( event.pageX + "," + event.pageY + " : " + event.type + " ! " + event.which);    // The document mouse X,Y coordinates : The event type, eg. "click" ! the button or key that was pressed.
-		 		console.log( event.target );  // The originating element.
-		 		console.log(  );   // 
-			});
+        <script>
+            $( document ).on( 'click', function( event ) {
+                console.log( event.pageX + "," + event.pageY + " : " + event.type + " ! " + event.which);    // The document mouse X,Y coordinates : The event type, eg. "click" ! the button or key that was pressed.
+                console.log( event.target );  // The originating element.
+                console.log(  );   // 
+            });
 
-			var handleClick = function() {
-				 console.log( 'something was clicked' );
-			};
+            var handleClick = function() {
+                 console.log( 'something was clicked' );
+            };
 
-			var imgClicked = function() {
-				console.log( 'image was clicked' );
-				document.getElementById('contented').innerHTML = $(this).attr('title');
-			};
+            var imgClicked = function() {
+                console.log( 'image was clicked' );
+                document.getElementById('contented').innerHTML = $(this).attr('title');
+            };
 
-			$( 'img' ).on( 'click', imgClicked );
-			$( 'h2' ).on( 'click', handleClick );
+            $( 'h2' ).on( 'click', handleClick );
+            $( 'img' ).on( 'click', imgClicked );
+        
+        </script>
+
+
+
 		
 
-		</script>
 
 
 
-		<!--Test chart with CanvasJS.js-->
-		<!--~trimtab: Clean, varied views, but no logarithmic scale available-->
-
-			<!-- <div id="chartContainer" style="position:inline-block;margin-left:-500px;height: 500px; width: 100%;">
-			</div> -->
-
-			<!--script type="text/javascript">
-			  window.onload = function () {
-			    var chart = new CanvasJS.Chart("chartContainer",
-			    {
-			      theme: "theme1",//theme2
-			      backgroundColor: "rgba(0,0,0,0)",
-			      title:{
-			        text: "rectangular"      
-			      },
-			      axisX:{
-			        tickColor: "DarkGray",
-			        tickLength: 8,
-			        tickThickness: 2
-			      },
-			      axisY:{
-			        tickLength: 8,
-			        tickColor: "DarkGray" ,
-			        tickThickness: 2
-			      },  
-			      data: [
-			      {        
-			        type: "column", //line, column, bar, spline, area, pie, doughnut
-			        dataPoints: [
-			        { x: 10, y: 40 }
-			        ]
-			      }
-			      ]
-			      
-			    });
-
-			    chart.render();
-			  }
-			  </script-->
-
-
-    		<!--[if IE]><script lang="javascript" type="text/javascript" src="plugin/jqDataVis/js/excanvas.js"></script><![endif]-->
    
 
-	    <script lang="javascript" type="text/javascript">
-	        $(document).ready(function () {
-	            $('#jqChart').jqChart({
-	                title: { text: 'Chart Title' },
-	                axes: [
-	                        {
-	                            type: 'category',
-	                            location: 'top',
-	                            zoomEnabled: true
-	                        }
-	                      ],
-	                series: [
-	                            {
-	                                type: 'column',
-	                                data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], ['H', 29]]
-	                            },
-	                            {
-	                                type: 'line',
-	                                data: [['A', 69], ['B', 57], ['C', 86], ['D', 23], ['E', 70], ['F', 60], ['D', 88], ['H', 22]]
-	                            }
-	                        ]
-	            });
-	        });
-	    </script>
 
 
-
-
-	    <script src="plugin/jqDataVis/js/jquery.jqChart.min.js" type="text/javascript"></script>
-	    <script src="plugin/jqDataVis/js/jquery.jqRangeSlider.min.js" type="text/javascript"></script>
-	    <script src="plugin/jqDataVis/js/jquery.mousewheel.js" type="text/javascript"></script>
-	    <!--[if IE]><script lang="javascript" type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
 
 	</body>
 </html>

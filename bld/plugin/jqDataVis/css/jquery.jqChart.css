@@ -1,4 +1,4 @@
-.ui-jqchart { position: relative; }
+.ui-jqchart { position: relative; zoom:1;}
 
 .ui-jqchart .ui-jqchart-toolbar { position: absolute; margin: 0; padding: 2px; list-style-type: none; white-space: nowrap; }
 .ui-jqchart .ui-jqchart-toolbar li { display: inline; margin: 0 2px; padding: 2px 0; cursor: pointer; float: left; }

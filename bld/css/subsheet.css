@@ -1,6 +1,44 @@
-div #experiments
-{
-background-image:url('img/tank.png');
-background-repeat:no-repeat;
-background-position:right top;
+#viewport {
+    /**
+     * Position relative so that canvas elements
+     * inside of it will be relative to the parent
+     */
+    position: relative;
+}
+ 
+#viewport canvas {
+    /**
+     * Position absolute provides canvases to be able
+     * to be layered on top of each other
+     * Be sure to remember a z-index!
+     */
+    position: absolute;
+}
+
+#viewport div.ui-jqchart{
+    /**
+     * Position absolute provides canvases to be able
+     * to be layered on top of each other
+     * Be sure to remember a z-index!
+     */
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: none;
+    position: absolute;
+    left: -50%;
+	top: -50%;
+}
+
+div.ui-jqchart div.ui-jqchart-tooltip{
+    /**
+     * Position absolute provides canvases to be able
+     * to be layered on top of each other
+     * Be sure to remember a z-index!
+     */
+    position: absolute;
+    left:-330px;
+    top:-480px;
 }
