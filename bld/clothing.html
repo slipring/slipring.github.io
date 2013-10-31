@@ -4,42 +4,360 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - Clothing</title>
+		<title>Clothing</title>
+
+		<meta name="title" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+		<!-- Bootstrap 3.0.1, http://getbootstrap.com/-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Jquery UI 1.10.3 -->
+		<link rel="stylesheet" href="plugin/jquery-ui/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="plugin/jquery-ui/themes/base/jquery-ui.css">
+
+		<!-- For syntax highlighting, used in conjunction with hilight.js as a Reveal.initialize  dependency; disable first if experiencing unwanted style collisions-->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+		<!-- <link rel="stylesheet" href="css/subsheet.css"> -->
+
+		<!-- for PDF Export: load page with .html?print-pdf appended to index URL, open browser print dialog, select save as PDF, layout landscape, margins none; see https://github.com/hakimel/reveal.js#pdf-export for details -->
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
 	</head>
 
 	<body>
 
 		<div class="reveal">
 
+			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
 				<section data-background="salmon">
-					<h2>Barebones Presentation</h2>
-					<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
+					<h2>Clothed Presentation</h2>
+					<p>This example contains a site-specific of the reveal.js platform.</p>
+
+					<div id="chartContainer" style="margin-left:-500px;height: 500px; width: 100%;">
+ 					</div>
+
+						<p class="notes">and the notes don't report to console.log onLoad yet</p>
+				</section>
+
+				<section data-background="assets/bg_handler-inv.jpg" data-background-size="300px,173px" data-background-repeat="repeat" data-background-color="#111" style="background: rgba(255,255,255,0.9)">
+					<h2>Theme specializations</h2>
+					<p>Selecting from provided themes, or tuning of themes in relation to content or its category.</p>
+
+						<p class="notes">go here... notes class still shows on slide</p>
+				</section>
+
+				<section id="equations" class="stack">
+					<section>
+						<h3>The Lorenz Equations</h3>
+
+						<div class="fragment">
+							\[\begin{aligned}
+							\dot{x} &amp; = \sigma(y-x) \\
+							\dot{y} &amp; = \rho x - y - xz \\
+							\dot{z} &amp; = -\beta z + xy
+							\end{aligned} \]
+						</div>
+					</section>
+
+					<section>
+						<h3>The Cauchy-Schwarz Inequality</h3>
+
+						<div class="fragment">
+							\[ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \]
+						</div>
+					</section>
+
+					<section>
+						<h3>A Cross Product Formula</h3>
+
+						<div class="fragment">
+							\[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+							\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+							\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+							\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
+							\end{vmatrix}  \]
+						</div>
+					</section>
+
+					<section>
+						<h3>The probability of getting \(k\) heads when flipping \(n\) coins is</h3>
+
+						<div class="fragment">
+							\[P(E)   = {n \choose k} p^k (1-p)^{ n-k} \]
+						</div>
+					</section>
+
+					<section>
+						<h3>An Identity of Ramanujan</h3>
+
+						<div class="fragment">
+							\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+							1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+							{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
+						</div>
+					</section>
+
+					<section>
+						<h3>A Rogers-Ramanujan Identity</h3>
+
+						<div class="fragment">
+							\[  1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
+							\prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\]
+						</div>
+					</section>
+
+					<section>
+						<h3>Maxwell&#8217;s Equations</h3>
+
+						<div class="fragment">
+							\[  \begin{aligned}
+							\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
+							\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
+							\nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+							\]
+						</div>
+					</section>
+				</section>
+
+				<section data-markdown data-background-size="" data-background-image="" data-background-color="" data-background-repeat="" data-background-position="" data-background-transition="">
+					## Markdown support
+  					Instructions [here](https://github.com/hakimel/reveal.js#markdown).
+
+  					* One
+  					* Two
+
+  					1.  One
+  					2.  Two 
+
+					```
+					<section data-markdown>
+					## Markdown support
+
+					For those of you who like that sort of thing.
+					Instructions and a bit more info available [here]
+					</section>
+					```
+
+  					--------
+
+  					*italic* **bold** _italwhat_ __oldb__ `fixed width` 
+
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="?#/themes">Linked</a> -
+						<a href="?theme=default#/themes">Default</a> -
+						<a href="?theme=sky#/themes">Sky</a> -
+						<a href="?theme=beige#/themes">Beige</a> -
+						<a href="?theme=simple#/themes">Simple</a> -
+						<a href="?theme=serif#/themes">Serif</a> -
+						<a href="?theme=night#/themes">Night</a> <br>
+						<a href="?theme=moon.css#/themes">Moon</a> -
+						<a href="?theme=simple.css#/themes">Simple</a> -
+						<a href="?theme=solarized.css#/themes">Solarized</a>
+					</p>
 				</section>
 
 				<section>
-					<h2>No Theme</h2>
-					<p>There's no theme included, so it will fall back on browser defaults.</p>
-				</section>
-
+					<img src="assets/bg_handler-inv.jpg" title="mad pattern">
+					<div id="contented" style="position:inline-block;size:100px;background-color:salmon;"> Baboao
+					</div>
 			</div>
 
 		</div>
 
+
 		<script src="lib/js/head.min.js"></script>
+		<!-- jQuery 1.10.2 loaded in line, not as Reveal dependency, to enable using scripts in page with $( ) notation, http://jquery.com/-->
+		<script src="lib/js/jquery-1.10.2.js"></script>
+		<!-- Reveal.js Presentation Framework - Pull #660 https://github.com/hakimel/reveal.js-->
 		<script src="js/reveal.min.js"></script>
 
 		<script>
 
-			Reveal.initialize();
+			Reveal.initialize({
+				controls: true, // Display controls in the bottom right corner
+				progress: true, // Display a presentation progress bar
+				history: true,	// Push each slide change to the browser history
+								/// Pro: copying direct URL & preserves position across page refresh, Con: Refresh throws errors that do not occur with fresh deck load
+				center: true,	// Vertical centering of slides
+				// rtl: true,	// Change the presentation direction to be RTL
+								/// Reverses past/future classes when in RTL mode
+
+				theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+				transitionSpeed: 'fast',
+				// backgroundTransition: 'linear'
+
+				// Mathjax config object - only include if necessary to change these default values
+				// math: {
+				// 	mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+				// 	config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+				// },
+
+				dependencies: [
+					// CanvasJS v1.3.0 Beta 4, http://canvasjs.com/
+						{ src: 'plugin/canvasjs/source/canvasjs.js'},
+
+					// jQuery UI v1.10.3, http://jqueryui.com/
+						{ src: 'plugin/jquery-ui/ui/jquery-ui.js'},
+					// jQuery sizzle, http://sizzlejs.com/
+						{ src: 'plugin/jquery-sizzle/src/sizzle.js'},
+
+					// PxLoader v0.1, http://thinkpixellab.com/pxloader/
+						{ src: 'plugin/PxLoader/PxLoader.js'},
+						{ src: 'plugin/PxLoader/PxLoaderImage.js'},
+						{ src: 'plugin/PxLoader/PxLoaderSound.js'},
+						{ src: 'plugin/PxLoader/PxLoaderVideo.js'},
+					
+					// Bootstrap 3.0.1 dist, http://getbootstrap.com/
+						{ src: 'bootstrap/js/bootstrap.min.js'},
+					
+					// h5utils 1.12.1, https://github.com/remy/html5demos/tree/master/js
+						{ src: 'lib/js/h5utils.js'},
+					
+					// Spritely 0.6.2, http://spritely.net/
+						{ src: 'plugin/spritely/src/jquery.spritely.js'},
+					
+					// vTicker v1.13, http://richhollis.github.io/vticker/
+						{ src: 'plugin/vticker/jquery.vticker.js'},
+
+					// Cross-browser shim that fully implements classList, more @ https://github.com/eligrey/classList.js/
+						{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+	        		// Interpret Markdown in <section> elements, tag section with <section data-markdown>
+	        		// [link](url) hyperlinks; ## headings (# bigger, ### smaller), ---- linebreak
+	        		// * lines for unordered list, 1. number lines for ordered list
+	        		// *italic* or _italic_   **bold** or __bold__   `monospace`
+	        		// style guide with mixed support, see http://daringfireball.net/projects/markdown/syntax
+				        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+					// Syntax highlight for <code> elements, see http://highlightjs.org/usage/
+	    			// highlight.js build includes support for:
+					// Bash, C#, C++, CSS, Diff, HTML, XML, HTTP, Ini, JSON, Java, JavaScript, PHP, Perl, Python, Ruby, SQL, Clojure, GLSL, Lua, Scala, CoffeeScript, Go, Objective C, ActionScript, Markdown
+	    				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },	
+
+					// Zoom in and out with Alt+click
+						{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+
+					// Speaker notes
+	        			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					
+					// MathJax for LaTeX equation display (uncomment Mathjax config object to edit defaults)
+						{ src: 'plugin/math/math.js', async: true },
+
+					// Underscore, utility belt for Javascript, see: http://documentcloud.github.io/underscore/
+						{ src: 'plugin/underscore/underscore-min.js'}
+				]
+
+			});
+
+
+			//Event Listeners 
+
+
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+    			MathJax.Hub.Rerender();  // prevent display errors in equation formatting
+    			console.log("Slide: "+(event.indexh)+"-"+event.indexv);
+    			console.log("----------------");
+    			console.log($(".slides section:nth-child("+(event.indexh+1)+") p.notes").text());
+    			console.log("----------------");
+   			 	console.log("");
+			});
+
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+			setTimeout(
+			   function() {
+			     MathJax.Hub.Rerender(document.querySelector(".slides .present")) 
+			   }, 100);   // prevent display errors in equation formatting
+			} );
+		</script>
+
+
+		<script>
+			$( document ).on( 'click', function( event ) {
+				console.log( event.pageX + "," + event.pageY + " : " + event.type + " ! " + event.which);    // The document mouse X,Y coordinates : The event type, eg. "click" ! the button or key that was pressed.
+		 		console.log( event.target );  // The originating element.
+		 		console.log(  );   // 
+			});
+
+			var handleClick = function() {
+				 console.log( 'something was clicked' );
+			};
+
+			var imgClicked = function() {
+				console.log( 'image was clicked' );
+				document.getElementById('contented').innerHTML = $(this).attr('title');
+			};
+
+			$( 'img' ).on( 'click', imgClicked );
+			$( 'h2' ).on( 'click', handleClick );
+		
 
 		</script>
+
+
+		<script type="text/javascript">
+		  window.onload = function () {
+		    var chart = new CanvasJS.Chart("chartContainer",
+		    {
+		      theme: "theme1",//theme2
+		      title:{
+		        text: "rectangular"      
+		      },
+		      axisX:{
+		        tickColor: "DarkGray",
+		        tickLength: 8,
+		        tickThickness: 2
+		      },
+		      axisY:{
+		        tickLength: 8,
+		        tickColor: "DarkGray" ,
+		        tickThickness: 2
+		      },  
+		      data: [
+		      {        
+		        type: "column",
+		        dataPoints: [
+		        { x: 10, y: 71 }
+		        ]
+		      }
+		      ]
+		      
+		    });
+
+		    chart.render();
+		  }
+		  </script>
+
+
 
 	</body>
 </html>
