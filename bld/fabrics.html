@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Clothing</title>
+			<title>Fabrics</title>
 
 		<meta name="title" content="" />
 		<meta name="description" content="" />
@@ -12,52 +12,53 @@
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<!-- user-scalable=yes means in-slide content will resize on Ctrl+/-, user-scalable=no means content will stay same size -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+		<!-- user-scalable=yes means in-slide content will resize on Ctrl+/-, user-scalable=no means content will stay same size -->
 
 
-
-		<!-- PACKAGE-INCLUDE STYLESHEETS -->
+		<!-- PRE-PACKAGED WEAVES -->
 			<!-- Bootstrap 3.0.1, http://getbootstrap.com/-->
-			<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+				<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
 			
 			<!-- for jqChart -->
-			<link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqChart.css" />
-		    <link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqRangeSlider.css" />
+				<link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqChart.css" />
+		    	<link rel="stylesheet" type="text/css" href="plugin/jqDataVis/css/jquery.jqRangeSlider.css" />
 
 			<!-- For jQuery UI 1.10.3 theme //smoothness, dot-luv -->
-			<link rel="stylesheet" href="plugin/jquery-ui/themes/smoothness/jquery-ui.css" />
+				<link rel="stylesheet" href="plugin/jquery-ui/themes/smoothness/jquery-ui.css" />
 
-			<link rel="stylesheet" href="css/reveal.css" />
-			<link rel="stylesheet" href="css/theme/refault.css" id="theme" />
+			<!-- for Reveal.js, modified stylesheet, use reveal.min.css for default settings -->
+				<link rel="stylesheet" href="css/reveal.css" />
+				<link rel="stylesheet" href="css/theme/refault.css" id="theme" />
+			<!-- ~trimtab : refault is modified default to enable data-state-theme transitions based on lab / sym / idv environments-->
 
 			<!-- For jqPlot -->
-			<link rel="stylesheet" type="text/css" href="plugin/jqplot/jquery.jqplot.css" />
+				<link rel="stylesheet" type="text/css" href="plugin/jqplot/jquery.jqplot.css" />
 		
 			<!-- For syntax highlighting, used in conjunction with hilight.js in the Reveal.initialize() dependencies; disable first if experiencing unwanted style collisions-->
-			<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
-
+				<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 		<!-- Unimplemented: Cycle vs. AnimateSlide via CSS carousel; Tabs other package vs. jQuery-ui old build; -->
 
-		<!--HOMEBREW BUBBLING OVER CASCADES-->
-			<!--~trimtab : relocate / determine whether colorbox is necessary, or else explore iframe embedding a la http://slid.es-->
+
+		<!--CASCADING LOOM-->
+			<!-- ~trimtab : relocate / determine whether colorbox is necessary, or else explore iframe embedding a la http://slid.es-->
 			<!-- Styles for external oframe container, shouldn't even be here unless it needs borrow / can then modify DOM elements across frame boundary -->
-			<!-- <link rel="stylesheet" href="css/superset.css"> -->
+				<!-- <link rel="stylesheet" href="css/superset.css"> -->
 
 			<!-- Styles shared for UI elements and their categorical variation across stacks, overware, bubble up from subspace, bubble down from superset -->
-			<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
+				<!-- <link rel="stylesheet" href="css/stylesheet.css"> -->
 
 			<!-- Styles shared between in-stack elements, underware, design vestiges go to commentspace then purged-->
-			<link rel="stylesheet" href="css/subspace.css">
+				<link rel="stylesheet" href="css/subspace.css">
 			
 			<!-- Utilized styles without a cascade -->
-			<link rel="stylesheet" href="css/strays.css">
+				<link rel="stylesheet" href="css/strays.css">
 
-		<!-- Unimplemented: css/interstices stylesheet for styles of elements shared between stacks (not belonging to a single subspace, or content that may take a different form in different places. 
-		~trimtab : This is probably what CSS is in the first place.. including a top level class or better, id, you can take each element and make it into it's variants in different places, a la    
-		#eddies .slides .present div #setup .can vs: 
-		#fronts .slides .present div #setup can .rotating would share the rotating rate but use a different can object-->
+			<!-- Learning curves with slid.es -->
+				<link rel="stylesheet" href="css/slidesrip.css">
+
+		<!-- Unimplemented: css/interstices stylesheet for styles of elements shared between stacks (not belonging to a single subspace, or content that may take a different form in different places. -->
+
 
 		<!-- PRINTING -->
 			<!-- for PDF Export: load page with .html?print-pdf appended to index URL, open browser print dialog, select save as PDF, layout landscape, margins none; see https://github.com/hakimel/reveal.js#pdf-export for details -->
@@ -65,51 +66,49 @@
 				<script>
 					document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 				</script>
-		<!-- ~~~~~trimtab : test cases : check if formatting method is preserved, how plots & background contain focus' are represented -->
+		<!-- ~~trimtab : test cases : check if formatting method is preserved, how plots & background contain focus' are represented -->
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
-
 		<!-- JS CAREFUL MESS -->
 			<!-- h5utils 1.12.1, https://github.com/remy/html5demos/tree/master/js -->
 				<script language="javascript" type="text/javascript" src="lib/js/h5utils.js"></script>
-
 			<!-- jQuery 1.10.2 loaded in head, not as Reveal dependency, to enable using scripts in page with $( ) notation, http://jquery.com/-->
 				<script language="javascript" type="text/javascript" src="lib/js/jquery-1.10.2.js"></script>
 			<!-- for jqPlot jquery version compatability -->
 				<script language="javascript" type="text/javascript" src="plugin/jbrowser/jquery.browser.js"></script>
+			<!-- for jQuery Cycle image swapping, http://jquery.malsup.com/cycle/download.html -->
+				<script language="javascript" type="text/javascript" src="lib/js/jquery.cycle.all.js"></script>
 			<!-- Spritely 0.6.2, http://spritely.net/ -->
 				<script language="javascript" type="text/javascript" src="plugin/spritely/src/jquery.spritely.js"></script>
 	    	<!-- vTicker v1.13, http://richhollis.github.io/vticker/ -->
-	    		<script language="javascript" type="text/javascript" src="plugin/vticker/jquery.vticker.js"></script>
-	     
-
+	    		<script language="javascript" type="text/javascript" src="plugin/vticker/jquery.vticker.js"></script>    
 			<!-- for jQuery sizzle, http://sizzlejs.com/ -->
 				<script language="javascript" type="text/javascript" src="plugin/jquery-sizzle/src/sizzle.js"></script>
 			<!-- Underscore, utility belt for Javascript, see: http://documentcloud.github.io/underscore/ -->
 				<script language="javascript" type="text/javascript" src="plugin/underscore/underscore-min.js"></script>
 			<!-- jQuery UI v1.10.3, http://jqueryui.com/ -->
 				<script language="javascript" type="text/javascript" src="plugin/jquery-ui/ui/jquery-ui.js"></script>
-
 			<!-- Bootstrap 3.0.1 dist, http://getbootstrap.com/ -->
 				<script language="javascript" type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+			<!-- Cycle -->
+
 
 			<!-- PxLoader v0.1, for preloading http://thinkpixellab.com/pxloader/ -->
 				<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoader.js"></script>
 				<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderImage.js"></script>
 				<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderSound.js"></script>
 				<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderVideo.js"></script>
-
 			<!-- jqDataVizualization (Chart, Gauges, GeoMap) 3.8.0.0 -->
-			<!-- (trial, need to license if used in final release) : http://www.jqchart.com/documentation/userguide/default.aspx#! -->
-			<!-- Currently active: jqChart http://www.jqchart.com/jquery/chart; //other: jqGauges, http://www.jqchart.com/jquery/gauges; jqGeoMap, http://www.jqchart.com/jquery/geomap;-->
-				<!--~!~trimtab unless save for radial graph; trouble with tooltips lining up unless zoom:1-->
+				<!-- (trial, need to license if used in final release) : http://www.jqchart.com/documentation/userguide/default.aspx -->
+				<!-- Currently active: jqChart http://www.jqchart.com/jquery/chart; -->
+				<!-- Activatable: jqGauges, http://www.jqchart.com/jquery/gauges; jqGeoMap, http://www.jqchart.com/jquery/geomap;-->
 			    <script src="plugin/jqDataVis/js/jquery.jqChart.min.js" type="text/javascript"></script>
 			    <script src="plugin/jqDataVis/js/jquery.jqRangeSlider.min.js" type="text/javascript"></script>
 			    <script src="plugin/jqDataVis/js/jquery.mousewheel.js" type="text/javascript"></script>
-
+			<!-- ~~trimtab : low-overhead radial graphs?;-->
 
 			<!-- Open source jqPlot 1.0.8, has logscale, no watermark, custom labels, no radial plot http://www.jqplot.com/ ; look into plugins directory @ plugin/jqplot/plugins -->
 				<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="excanvas.js"></script><![endif]-->
@@ -123,7 +122,7 @@
 	        	
 	        	$.jqplot.config.enablePlugins = true;
 				$(function(){
-					$.jqplot('chartdiv',  [[[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]],
+					$.jqplot('plotPressure',  [[[1, 2],[3,5.12],[5,13.1],[7,33.6],[9,85.9],[11,219.9]]],
 						{ title:'Exponential Line',
 						  axes:{yaxis:{renderer: $.jqplot.LogAxisRenderer}},
 						  series:[{color:'#5FAB78',
@@ -135,7 +134,7 @@
 				});
 
 
-	            $('#jqChart').jqChart({
+	            $('#rectChart').jqChart({
 		                title: { text: 'Chart Title' },
 		                tooltips: {disabled:false},
 		                axes: [
@@ -168,7 +167,7 @@
 	                //              { offset: 1, color: 'white'}]
 	            // };
 
-	            $('#jqChart2').jqChart({
+	            $('#polarChart').jqChart({
 	                title: { text: 'Radar Spline Chart' },
 	                border: { strokeStyle: '#eee' },
 	                tooltips: {disabled:false},
@@ -193,19 +192,12 @@
 	                        ]
 	            });
 	        });
+
     	</script>
 
 
+
 	</head>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -217,10 +209,65 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
+				<section data-autoslide="5000">
+					<button id="cancelAuto" class="button cancel negative grey xl">Cancel</button>
+					<button id="cueAuto" class="button save xl">OK</button>
 				</section>
 
-<!-- 				<section class="animation-slide">
+				<section data-autoslide="5000">
+					<div style="margin-left: 5%;">
+					    <div style="display: inline-block; width: 75%;">
+					        <a class="effect-options roll" href="http://plnkr.co/edit/3vfRkvG7R9DgQxtWbGHz?p=preview" target="_blank"><span data-title="Read 'n' Write">Read 'n' Write</span></a>
+					        <br><a class="effect-options roll" href="http://plnkr.co/edit/o4w3VGqmp8opfrWzvsJy?p=preview" target="_blank"><span data-title="Delete">Delete</span></a>
+					        <br><a class="effect-options roll" href="http://plnkr.co/edit/YiG28KTFdkeFXskolZqs?p=preview" target="_blank"><span data-title="Delete Everything">Delete Everything</span></a>
+					        <br><a class="effect-options roll" href="http://plnkr.co/edit/n0acYLdhk3AeZmPOGY9Z?p=preview" target="_blank"><span data-title="Permitted Values">Permitted Values</span></a>
+					    </div>
+					    <h2 class="effect-subtitle" style="text-align: left;">Demos</h2>
+					</div>
+				</section>
+
+				<section>
+					<div id="plotPressure" style="height:400px; width:300px; ">
+					</div>
+
+				</section>
+
+				<!--~trimtab : experiment with bgPlot to take graph canvas element and use it as a data-background-image; method of updating the image as it is in background; more easily done with gradients or a custom array of number of frame sequences; but sizing? expand larger than slides frame with multiplier-->
+				<!--<section class="bgPlot" data-background-size="contain" data-background-image="" data-plotname="polarPlot"> -->
+				<section>
+				<h1>What!</h1>
+				</section>
+
+
+				<section data-transition="linear" data-background-image="assets/sea-halfunderwater.gif">
+					<h2>Clothed Presentation</h2>
+					<p>This example contains a site-specific of the reveal.js platform.</p>
+
+
+					<div id="rectChart" style="position: absolute; display:inline; left: 0px; top: 0px; width:800px;height:500px;">
+	       			</div>
+
+						<p class="notes">slide 0-0 notes don't report to console.log onLoad</p>
+				</section>
+
+				<section>
+				<section>
+					<h2 class="standard-position-absolute fragment" data-fragment-index="0">So much for blue apples</h2>
+					<h2 class="animation-hide-after-fragment-revelation"> ♥ elegant</h2>
+					<br><br>
+					<img width="11" height="14" src="data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7" alt="File Icon" />
+				</section>
+				<section style="top: -111px; display: block;">
+					<p>An elegant map should feel</p>
+					<h2 style="color: rgb(255, 170, 0);">natural &amp; terse</h2>
+					<div class="standard-position-absolute fragment" style="top:0; background: #111;" data-fragment-index="0">
+			   			<p style="text-align: left; ">That's why I decided to roll my own solution...</p>
+				    	<p><br></p>
+				    	<p style="text-align: right; ">...despite of many existing solutions</p>
+					</div>
+				</section>
+
+				<section class="animation-slide">
 					<div class="animation-slide-1">
 			    	    <h2>
 						<span style="text-align: left; color: #f08;">pink</span>Gray</h2>
@@ -231,22 +278,16 @@
 							<span style="color: rgb(255, 234, 64)">$localStorage</span> &amp; <span style="color: rgb(255, 234, 64)">$sessionStorage</span> Done Right</p>
 					</div>
 
+				</section> 
+				</section>
+
+
+				<!-- <section>
+					<iframe src="http://slid.es/globalfax/global-heat-balance/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</section> -->
 
-				<section>
-				<iframe src="http://slid.es/globalfax/global-heat-balance/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-				</section>
 
 				<section>
-				<div class="standard-position-absolute fragment visible" style="top:0; background: #111;" data-fragment-index="0">
-				    <p style="text-align: left; ">That's why I decided to roll my own solution...</p>
-				    <p>
-				    <br></p>
-				    <p style="text-align: right; ">...despite of many existing solutions</p>
-				</div>
-				</section>
-
 
 				<section data-background-size="contain" data-background="assets/bg_handler-inv.jpg" style="postion:relative;">
 					<h1 class="blacksilk">OkF Headline</h1>
@@ -257,40 +298,33 @@
 					<div class="standard-mask fragment visible" style="bottom: 0%; height: 52px; color: #111; background: rgb(152, 242, 61); -webkit-transform: rotate(-10deg) translate3d(15%, 0, 0);" data-fragment-index="0">Span across controls to urgent forward</div>
 				</section>
 
-				<section>
-					<div id="chartdiv" style="height:400px; width:300px; ">
-					</div>
-
-				</section>
-
-
-				<section>
-					<div id="jqChart2" style="height:300px;width:300px;" >
-       				</div>
-				</section>
-
-				<section data-background-image="assets/sea-halfunderwater.gif">
-					<h2>Clothed Presentation</h2>
-					<p>This example contains a site-specific of the reveal.js platform.</p>
-
-
-					<div id="chartwrapper" style="display:block;text-align:center;position:relative;top:0px;left:0px; width:400px;height:300px;">
-	       				<div id="jqChart" style="position: absolute; display:inline; left: 0px; top: 0px; width:400px;height:300px;">
-	       				</div>
-       				</div>
-    				
-						<p class="notes">slide 0-0 notes don't report to console.log onLoad</p>
-				</section>
-
-				<section data-background="assets/bg_handler-inv.jpg" data-background-size="300px,173px" data-background-repeat="repeat" data-background-color="#111" style="background: rgba(255,255,255,0.9)">
+				<section id="themes" data-background="assets/bg_handler-inv.jpg" data-background-size="300px,173px" data-background-repeat="repeat" data-background-color="#111"  style="background: rgba(255,255,255,0.9)">
 
 					<h2 class="blacksilk">Theme specializations</h2>
 					<p>Selecting from provided themes, or tuning of themes in relation to content or its category.</p>
+							<a href="?#/themes">Linked</a> -
+							<a href="?theme=default#/themes">Default</a> -
+							<a href="?theme=sky#/themes">Sky</a> -
+							<a href="?theme=beige#/themes">Beige</a> -
+							<a href="?theme=simple#/themes">Simple</a> -
+							<a href="?theme=serif#/themes">Serif</a> -
+							<a href="?theme=night#/themes">Night</a> <br>
+							<a href="?theme=moon.css#/themes">Moon</a> -
+							<a href="?theme=simple.css#/themes">Simple</a> -
+							<a href="?theme=solarized.css#/themes">Solarized</a> -
+							<a href="?theme=refault.css#/themes">Refault</a>
+						</p>
 
 						<p class="notes">go here... notes class still shows on slide</p>
 				</section>
+				</section>
 
-				<section id="equations" class="stack">
+				<section>
+					<div id="polarChart" style="height:300px;width:300px;" >
+       				</div>
+				</section>
+
+				<section id="equations" data-background="#4d7e65" class="stack">
 					<section>
 						<h3>The Lorenz Equations</h3>
 
@@ -363,6 +397,15 @@
 					</section>
 				</section>
 
+
+				<section>
+				<section data-background="salmon" data-transition="default">
+					<img src="assets/bg_handler-inv.jpg" title="mad pattern">
+					<div id="contented" style="position:inline-block;size:100px;background-color:teal;">
+						click for details
+					</div>
+				</section>
+
 				<section data-markdown data-background-size="" data-background-image="" data-background-color="" data-background-repeat="" data-background-position="" data-background-transition="">
 					## Markdown support
   					Instructions [here](https://github.com/hakimel/reveal.js#markdown).
@@ -373,44 +416,11 @@
   					1.  One
   					2.  Two 
 
-					```
-					<section data-markdown>
-					## Markdown support
-
-					For those of you who like that sort of thing.
-					Instructions and a bit more info available [here]
-					</section>
-					```
-
   					--------
 
   					*italic* **bold** _italwhat_ __oldb__ `fixed width` 
 
 				</section>
-
-				<section id="themes" data-transition="linear" data-background="#4d7e65" >
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Linked</a> -
-						<a href="?theme=default#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a> -
-						<a href="?theme=refault.css#/themes">Refault</a>
-					</p>
-				</section>
-
-				<section data-background="salmon" data-transition="default">
-					<img src="assets/bg_handler-inv.jpg" title="mad pattern">
-					<div id="contented" style="position:inline-block;size:100px;background-color:teal;">
-						click for details
-					</div>
 				</section>
 
 				<section data-markdown data-background-image="https://s3.amazonaws.com/media-p.slid.es/uploads/phivk/images/101141/theend.gif">
@@ -419,7 +429,6 @@
 			</div>
 
 		</div>
-
 
 
 
@@ -437,6 +446,7 @@
 				progress: true, // Display a presentation progress bar
 				history: true,	// Push each slide change to the browser history
 								/// Pro: copying direct URL & preserves position across page refresh, Con: Refresh throws errors that do not occur with fresh deck load
+				loop: false,
 				center: false,	// Vertical centering of slides
 								/// when true, midline becomes top: 0px position
 				// rtl: true,	// Change the presentation direction to be RTL
@@ -471,17 +481,18 @@
 
 	        		// Interpret Markdown in <section> elements, tag section with <section data-markdown>
 	        		// [link](url) hyperlinks; ## headings (# bigger, ### smaller), ---- linebreak
-	        		// * lines for unordered list, 1. number lines for ordered list
-	        		// *italic* or _italic_   **bold** or __bold__   `monospace`
+	        		//  lines for unordered list, 1. number lines for ordered list
+	        		// italic or _italic_   or __bold__   `monospace`
 	        		// see 'http://daringfireball.net/projects/markdown/syntax' for a style guide with mixed support 
 				        // { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 				        // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-
 				    ////// Able to enable if external to numerical stacks //////
 
+				    // ~trimtab : having some target issues
 					// Zoom in and out with Alt+click
 						{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 
+					// ~trimtab : outputting only to console.log at the moment, stray <p> element styling
 					// Speaker notes
 	        			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
@@ -497,9 +508,8 @@
 			function compensation() {
 				setTimeout( function() {
 				zoomCurrent = $('.slides').css('zoom');
-				console.log(zoomCurrent);
 				reciprCurrent = 1 / zoomCurrent;
-				console.log(reciprCurrent);
+				console.log(zoomCurrent + " / " +reciprCurrent);
 				$('.slides .present .ui-jqchart').css('zoom', reciprCurrent);},
 				300);
 			} 
@@ -517,14 +527,34 @@
     			console.log($(".slides section:nth-child("+(event.indexh+1)+") p.notes").text());
     			console.log("----------------");
    			 	console.log("");
-			});
+			} );
+
+
+			// Extend Reveal.js to show the next slide when 
+        	// clicking the background, like web comics.
+        		Reveal.addEventListener( 'click', function( event ) {
+            // Advance to the next slide.
+            	Reveal.next()
+            // Do not consume the event. Send it up to
+            // its parent.
+        		}, false );
 
 			Reveal.addEventListener( 'fragmentshown', function( event ) {
-			setTimeout(
-			   function() {
-			     MathJax.Hub.Rerender(document.querySelector(".slides .present")) 
-			   }, 100);   // prevent display errors in equation formatting
-			} );
+					setTimeout(
+			   			function() {
+			    			 MathJax.Hub.Rerender(document.querySelector(".slides .present")) 
+			   			}, 100);   // prevent display errors in equation formatting
+				}  );
+
+			var canAuto = function() {
+        		 Reveal.cancelAutoSlide()
+      		};
+	  		var qAuto = function() {
+         		Reveal.cueAutoSlide()
+      		}; 
+
+      		$( 'cueAuto' ).on( 'click', qAuto );
+        	$( 'cancelAuto' ).on( 'click', canAuto );
 
 		</script>
 
@@ -533,7 +563,6 @@
             $( document ).on( 'click', function( event ) {
                 console.log( event.pageX + "," + event.pageY + " : " + event.type + " ! " + event.which);    // The document mouse X,Y coordinates : The event type, eg. "click" ! the button or key that was pressed.
                 console.log( event.target );  // The originating element.
-                console.log(  );   // 
             });
 
             var handleClick = function() {
@@ -547,10 +576,8 @@
 
             $( 'h2' ).on( 'click', handleClick );
             $( 'img' ).on( 'click', imgClicked );
-        
+        	
         </script>
-
-
 
 		
 

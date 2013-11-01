@@ -209,6 +209,7 @@ body {
 	z-index: 1;
 }
 
+/* ~trimtab */
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img,
 .reveal video,
