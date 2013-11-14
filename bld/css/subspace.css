@@ -12,9 +12,25 @@ display: block;
 box-sizing: border-box;
 }
 
-.slides section {
-    box-shadow: 0 0 5px black;
+
+div #rotato33ccw
+{
+transform:rotate(-33deg);
+-ms-transform:rotate(-33deg); /* IE 9 */
+-webkit-transform:rotate(-33deg); /* Safari and Chrome */
 }
+
+div #rotato180
+{
+transform:rotate(180deg);
+-ms-transform:rotate(180deg); /* IE 9 */
+-webkit-transform:rotate(180deg); /* Safari and Chrome */
+}
+
+/* See the active div container for the slide
+/*.slides section {
+    box-shadow: 0 0 5px black;
+}*/
 
 
 
