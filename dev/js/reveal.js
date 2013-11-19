@@ -69,13 +69,13 @@ var Reveal = (function(){
 			// Number of milliseconds between automatically proceeding to the
 			// next slide, disabled when set to 0, this value can be overwritten
 			// by using a data-autoslide attribute on your slides
-			autoSlide: 6000,    // ctrlpt //
+			autoSlide: 0,   // ctrlpt //
 
 			// Stop auto-sliding after user input
 			autoSlideStoppable: true,
 
 			// Enable slide navigation via mouse wheel
-			mouseWheel: false,
+			mouseWheel: true,
 
 			// Apply a 3D roll to links on hover
 			rollingLinks: false,
@@ -1621,7 +1621,6 @@ var Reveal = (function(){
 		updateBackground();
 		updateParallax();
 		updateSlideNumber();
-		updateCurrentFragments();  
 
 		// Update the URL hash
 		writeURL();
@@ -2305,45 +2304,13 @@ var Reveal = (function(){
 				dispatchEvent( 'fragmentshown', { fragment: fragments[0], fragments: fragments } );
 
 				updateControls();
-				// updateCurrentFragments();    // ctrlpt 709 //
 				return true;
 			}
-			// updateCurrentFragments();   // ctrlpt 709//
 		}
 
 		return false;
 
 	}
-
-	// ctrlpt 709 ~trimtab //  
-   // function updateCurrentFragments(){
-   //   resetCurrentFragments();
-   //   activateCurrentFragments();
-   // }
- 
-   // function resetCurrentFragments() {
-   //   var currentFragments = document.querySelectorAll( '.fragment.current-fragment' );
-   //   toArray( currentFragments ).forEach( function( element ) {
-   //     element.classList.remove( 'current-fragment' );
-   //   } );
-   // }
- 
-   // function activateCurrentFragments() {
-   //   if( currentSlide ){
-   //     var fragments = sortFragments( currentSlide.querySelectorAll( '.fragment.visible' ) );
- 
-   //     if( fragments.length ) {
-   //       var index = fragments[ fragments.length - 1 ].getAttribute( 'data-fragment-index' );
- 
-   //       fragments = currentSlide.querySelectorAll( '.fragment[data-fragment-index="' index  '"]');
- 
-   //       toArray( fragments ).forEach( function( element ) {
-   //         element.classList.add( 'current-fragment' );
-   //       } );
-   //     }
-   //   }
-   // }
- 
 
 	/**
 	 * Navigate to the previous slide fragment.
@@ -2371,10 +2338,8 @@ var Reveal = (function(){
 				dispatchEvent( 'fragmenthidden', { fragment: fragments[0], fragments: fragments } );
 
 				updateControls();
-				// updateCurrentFragments();   // ctrlpt 709//
 				return true;
 			}
-			// updateCurrentFragments();   // ctrlpt 709//
 		}
 
 		return false;
