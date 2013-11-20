@@ -6,8 +6,21 @@
 
 		<title>Basketball</title>
 
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+		<link href="bootstrap/css/bootstrap.icon-large.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/backboard.css" id="theme">
+
+		<link rel="stylesheet" href="plugin/jquery-ui/themes/smoothness/jquery-ui.css" />
+
+		<link rel="stylesheet" href="css/UI.css">
+
+		<script language="javascript" type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script language="javascript" type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script language="javascript" type="text/javascript" src="plugin/jquery-ui/ui/jquery-ui.js"></script>
+
+
+
 	</head>
 
 	<body>
@@ -16,19 +29,22 @@
 
 			<div class="slides">
 
-				<section data-transition="zoom" data-background-image="img/halfunderwater.gif">
+				<section id="Dataset" data-transition="zoom" data-background-image="img/halfunderwater.gif">
 					<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AA.png" title="January {N:winter/S:summer} over 30 years [1981-2010]; u,v,w,0 fields from ESRL datasets">
+
+					<div class="fragment" style="bottom: 0%; height: 52px; color: #111; background: rgb(152, 242, 61); -webkit-transform: rotate(-10deg) translate3d(15%, 0, 0);" data-fragment-index="0">Span across controls to urgent forward</div>
 				</section>
 				
-				<section data-transition="zoom">
+				<section id="Projection" data-transition="zoom">
 					<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AB.png" title="Proxy for Polar Stereographic Projection (N hemisphere): Blank map w. Pressure Scale, Latitudes and Longitudes, Compass, Projection Sphere and Overhead Thumbnail">
+					<aside class="notes">Aside keeps notes separate from on slide content. On-screen notes can be toggled, are also displayed in console log and experimental speaker notes display by pressing S.</aside>
 				</section>
 				
-				<section data-transition="concave">
+				<section id="Theta" data-transition="concave">
 					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/3"><img class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AL.png"></a>
 				</section>
 				
-				<section data-transition="fade">
+				<section id="0-iso Build" data-transition="fade">
 					<div style="position: absolute; z-index: 3" id="backdrop">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp11.PNG" max-width="100%"> 
 					</div>
@@ -43,7 +59,7 @@
 				</section>
 				
 				<section data-transition="fade">
-					<section>
+					<section id="Polar dome">
 						<div style="position: absolute; width: 771px; height: 460px; z-index: 6; left:0px; top:0px;" id="rotato180">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-potT-polar-oh-fade.gif" width="771" height="460">    
 		    			</div>
@@ -56,11 +72,11 @@
 					</section>
 				</section>
 				
-				<section data-transition="concave">
+				<section id="u-wind" data-transition="concave">
 					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/2"><img class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AC.png"></a>
 				</section>
 				
-				<section data-transition="fade">
+				<section id="Field to Iso" data-transition="fade">
 					<div style="position: absolute; width: 975px;  z-index: 6; left:20px; top:5px;" id="null9">    
 						<!-- original dims: 972x577 -->
 				     	<img src="http://web.mit.edu/wdmc/www/trailer/img/corner-u-stack.gif" width="842" height="500">
@@ -77,7 +93,7 @@
 				    </div>
 				</section>
 
-				<section data-transition="fade">
+				<section id="Iso 24" data-transition="fade">
 					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:556px; top:460px;" id="null10">    
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u24-rs.gif" width="467" height="279">
 					</div>
@@ -89,7 +105,7 @@
 					</div>
 				</section>
 
-				<section data-transition="fade">
+				<section id="Iso 42" data-transition="fade">
 					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:556px; top:460px;" id="null10">    
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u42-rs.gif" width="467" height="279">
 					</div>
@@ -101,7 +117,7 @@
 					</div>
 				</section>
 
-				<section data-transition="fade">
+				<section id="Iso 64" data-transition="fade">
 					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:556px; top:460px;" id="null10">    
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u64-rs.gif" width="467" height="279">
 					</div>
@@ -113,7 +129,7 @@
 					</div>
 				</section>
 
-				<section data-transition="zoom">
+				<section id="3x3" data-transition="zoom">
 					<div style="position: absolute; width: 339px; height: 202px; z-index: 6; left:678px; top:313px;" id="null3">    
  						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u64-rs.gif" width="339" height="202"> 
     				</div>
@@ -137,7 +153,7 @@
 					</div>
 				</section>
 
-				<section data-transition="fade">
+				<section id="steep stills" data-transition="fade">
 					<div style="position: absolute; width: 410px; height: 244px; z-index: 6; left:609px; top:527px" id="null">    
     					<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-peak-wobble-rs.gif" width="410" height="244">      
     				</div>		    
@@ -147,56 +163,56 @@
 				</section>
 
 				<section data-transition="none">
-					<section>
+					<section id="64m/s over">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp81.PNG" max-width="100%"> 
 						</div>
 					</section>
-					<section>
+					<section id="64m/s angle">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u64.gif" width="1024" height="611">
 						</div>
 					</section>
-					<section>
+					<section id="64m/s side">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u64.gif" width="1024" height="611">
 					</section>
 				</section>
 
 				<section data-transition="none">
-					<section>
+					<section id="42m/s over">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp111.PNG" max-width="100%">
 						</div>
 					</section>
-					<section>
+					<section id="42m/s angle">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u42.gif" width="1024" height="611">
 						</div>
 					</section>
-					<section>
+					<section id="42m/s side">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u42.gif" width="1024" height="611">
 					</section>
 				</section>
 
 				<section data-transition="none">
-					<section>
+					<section id="24m/s over">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp141.PNG" max-width="100%">
 						</div>
 					</section>
-					<section>
+					<section id="24m/s angle">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u24.gif" width="1024" height="611">
 						</div>
 					</section>
-					<section>
+					<section id="24m/s side">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u24.gif" width="1024" height="611">
 						</div>
 					</section>
 				</section>
 
-				<section data-transition="cube">
+				<section id="zonal avg" data-transition="cube">
 					<section>
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp11.PNG" max-width="100%">
 					</section>
@@ -205,35 +221,591 @@
 					</section>
 				</section>
 
-				<section data-transition="zoom">
+				<section id="seasonal var" data-transition="zoom">
 					<img src="http://web.mit.edu/wdmc/www/trailer/img/theta-jet-12-month-loop.gif" width="700" height="700" title="#IMAGEREF caption">
+				</section>
+
+				<section id="lorenz eqs">
+					<h3>The Lorenz Equations</h3>
+
+					<div class="fragment">
+						\[\begin{aligned}
+						\dot{x} &amp; = \sigma(y-x) \\
+						\dot{y} &amp; = \rho x - y - xz \\
+						\dot{z} &amp; = -\beta z + xy
+						\end{aligned} \]
+					</div>
+				</section>
+
+
+				<section id="icons" style="font-size:10px">
+					<section>
+							<i class="icon-large icon-glass"></i> icon-glas			       <i class="icon-large icon-music"></i> icon-musi			       <i class="icon-large icon-search"></i> icon-searh			       <i class="icon-large icon-envelope"></i> icon-enelope			       <i class="icon-large icon-heart"></i> icon-hear			       <i class="icon-large icon-star"></i> icon-sta
+				      	 <i class="icon-large icon-star-empty"></i> icon-tar-empty			       <i class="icon-large icon-user"></i> icon-use
+				       	<i class="icon-large icon-film"></i> icon-fil
+				      	 <i class="icon-large icon-th-large"></i> icon-thlarge			       <i class="icon-large icon-th"></i> icon-t
+					      <i class="icon-large icon-tst"></i> icon-ts
+				      	 <i class="icon-large icon-ok"></i> icon-o
+					      <i class="icon-large icon-remove"></i> icon-remoe			       <i class="icon-large icon-zoom-in"></i> icon-zoo-in			       <i class="icon-large icon-zoom-out"></i> icon-zom-out			       <i class="icon-large icon-off"></i> icon-of
+				       <i class="icon-large icon-signal"></i> icon-signl			       <i class="icon-large icon-cog"></i> icon-co
+				       <i class="icon-large icon-trash"></i> icon-tras			       <i class="icon-large icon-home"></i> icon-hom
+				       <i class="icon-large icon-file"></i> icon-fil
+				       <i class="icon-large icon-time"></i> icon-tim
+				       <i class="icon-large icon-road"></i> icon-roa
+				       <i class="icon-large icon-download-alt"></i> ico-download-alt			       <i class="icon-large icon-download"></i> icon-donload			       <i class="icon-large icon-upload"></i> icon-uplod			       <i class="icon-large icon-inbox"></i> icon-inbo			       <i class="icon-large icon-play-circle"></i> iconplay-circle			       <i class="icon-large icon-repeat"></i> icon-repet			       <i class="icon-large icon-refresh"></i> icon-refesh			       <i class="icon-large icost-alt"></i> icost-al
+				       <i class="icon-large icon-lock"></i> icon-loc
+				       <i class="icon-large icon-flag"></i> icon-fla
+				       <i class="icon-large icon-headphones"></i> icon-eadphones			       <i class="icon-large icon-volume-off"></i> icon-olume-off			       <i class="icon-large icon-volume-down"></i> iconvolume-down			       <i class="icon-large icon-volume-up"></i> icon-vlume-up			       <i class="icon-large icon-qrcode"></i> icon-qrcoe			       <i class="icon-large icon-barcode"></i> icon-barode			       <i class="icon-large icon-tag"></i> icon-ta
+				       <i class="icon-large icon-tags"></i> icon-tag
+				       <i class="icon-large icon-book"></i> icon-boo
+				       <i class="icon-large icon-bookmark"></i> icon-bokmark			       <i class="icon-large icon-print"></i> icon-prin			       <i class="icon-large icon-camera"></i> icon-camea			       <i class="icon-large icon-font"></i> icon-fon
+				       <i class="icon-large icon-bold"></i> icon-bol
+				       <i class="icon-large icon-italic"></i> icon-i
+					      <i class="icon-large icon-text-height"></i> icontext-height			       <i class="icon-large icon-text-width"></i> icon-ext-width			       <i class="icon-large icongn-left"></i> icongn-let			       <i class="icon-large icongn-center"></i> icongn-enter			       <i class="icon-large icongn-right"></i> icongn-rght			       <i class="icon-large icongn-justify"></i> icongnjustify			       <i class="icon-large icost"></i> icost>
+			    	</section>
+			    	<section>
+			       			       <i class="icon-large icon-indent-left"></i> iconindent-left			       <i class="icon-large icon-indent-right"></i> ico-indent-right			       <i class="icon-large icon-facetime-video"></i> ion-facetime-video			       <i class="icon-large icon-picture"></i> icon-picure			       <i class="icon-large icon-pencil"></i> icon-pencl			       <i class="icon-large icon-map-marker"></i> icon-ap-marker			       <i class="icon-large icon-adjust"></i> icon-adjut			       <i class="icon-large icon-tint"></i> icon-tin
+		       			<i class="icon-large icon-edit"></i> icon-edi
+		      			 <i class="icon-large icon-share"></i> icon-shar			       <i class="icon-large icon-check"></i> icon-chec			       <i class="icon-large icon-move"></i> icon-mov
+				       <i class="icon-large icon-step-backward"></i> icn-step-backward			       <i class="icon-large icon-fast-backward"></i> icn-fast-backward			       <i class="icon-large icon-backward"></i> icon-bakward			       <i class="icon-large icon-play"></i> icon-pla
+				       <i class="icon-large icon-pause"></i> icon-paus			       <i class="icon-large icon-stop"></i> icon-sto
+				       <i class="icon-large icon-forward"></i> icon-forard			       <i class="icon-large icon-fast-forward"></i> ico-fast-forward			       <i class="icon-large icon-step-forward"></i> ico-step-forward			       <i class="icon-large icon-eject"></i> icon-ejec			       <i class="icon-large icon-chevron-left"></i> ico-chevron-left			       <i class="icon-large icon-chevron-right"></i> icn-chevron-right			       <i class="icon-large icon-plus-sign"></i> icon-pus-sign			       <i class="icon-large icon-minus-sign"></i> icon-inus-sign			       <i class="icon-large icon-remove-sign"></i> iconremove-sign			       <i class="icon-large icon-ok-sign"></i> icon-ok-ign			       <i class="icon-large icon-question-sign"></i> icn-question-sign			       <i class="icon-large icon-info-sign"></i> icon-ifo-sign			       <i class="icon-large icon-screenshot"></i> icon-creenshot			       <i class="icon-large icon-remove-circle"></i> icn-remove-circle			       <i class="icon-large icon-ok-circle"></i> icon-o-circle			       <i class="icon-large icon-ban-circle"></i> icon-an-circle			       <i class="icon-large icon-arrow-left"></i> icon-rrow-left			       <i class="icon-large icon-arrow-right"></i> iconarrow-right			       <i class="icon-large icon-arrow-up"></i> icon-arow-up			       <i class="icon-large icon-arrow-down"></i> icon-rrow-down			       <i class="icon-large icon-share-alt"></i> icon-sare-alt			       <i class="icon-large icon-resize-full"></i> iconresize-full			       <i class="icon-large icon-resize-small"></i> ico-resize-small			       <i class="icon-large icon-plus"></i> icon-plu
+				       <i class="icon-large icon-minus"></i> icon-minu			       <i class="icon-large icon-asterisk"></i> icon-aserisk			       <i class="icon-large icon-exclamation-sign"></i>icon-exclamation-sign			       <i class="icon-large icon-gift"></i> icon-gif
+				       <i class="icon-large icon-leaf"></i> icon-lea
+				       <i class="icon-large icon-fire"></i> icon-fir
+				       <i class="icon-large icon-eye-open"></i> icon-ey-open			       <i class="icon-large icon-eye-close"></i> icon-ee-close			       <i class="icon-large icon-warning-sign"></i> ico-warning-sign			       <i class="icon-large icon-plane"></i> icon-plan			       <i class="icon-large icon-calendar"></i> icon-caendar			       <i class="icon-large icon-random"></i> icon-randm			       <i class="icon-large icon-comment"></i> icon-coment			       <i class="icon-large icon-magnet"></i> icon-magnt			       <i class="icon-large icon-chevron-up"></i> icon-hevron-up			       <i class="icon-large icon-chevron-down"></i> ico-chevron-down>
+			   		 </section>
+			    	<section>
+			    			       <i class="icon-large icon-retweet"></i> icon-reteet			       <i class="icon-large icon-shopping-cart"></i> icn-shopping-cart			       <i class="icon-large icon-folder-close"></i> ico-folder-close			       <i class="icon-large icon-folder-open"></i> iconfolder-open			       <i class="icon-large icon-resize-vertical"></i> con-resize-vertical			       <i class="icon-large icon-resize-horizontal"></i icon-resize-horizontal			       <i class="icon-large icon-hdd"></i> icon-hd
+		     		  <i class="icon-large icon-bullhorn"></i> icon-bulhorn			       <i class="icon-large icon-bell"></i> icon-bel
+		      			 <i class="icon-large icon-certificate"></i> iconcertificate			       <i class="icon-large icon-thumbs-up"></i> icon-tumbs-up			       <i class="icon-large icon-thumbs-down"></i> iconthumbs-down			       <i class="icon-large icon-hand-right"></i> icon-and-right			       <i class="icon-large icon-hand-left"></i> icon-hnd-left			       <i class="icon-large icon-hand-up"></i> icon-han-up			       <i class="icon-large icon-hand-down"></i> icon-hnd-down			       <i class="icon-large icon-circle-arrow-right"></> icon-circle-arrow-right			       <i class="icon-large icon-circle-arrow-left"></i icon-circle-arrow-left			       <i class="icon-large icon-circle-arrow-up"></i> con-circle-arrow-up			       <i class="icon-large icon-circle-arrow-down"></i icon-circle-arrow-down			       <i class="icon-large icon-globe"></i> icon-glob			       <i class="icon-large icon-wrench"></i> icon-wrenh			       <i class="icon-large icon-tasks"></i> icon-task			       <i class="icon-large icon-filter"></i> icon-filtr			       <i class="icon-large icon-briefcase"></i> icon-biefcase			       <i class="icon-large icon-fullscreen"></i> icon-ullscreen>
+					<i class="icon-large icon-glass"></i> icon-glass<
+					<i class="icon-large icon-leaf"></i> icon-leaf<
+					<i class="icon-large icon-dog"></i> icon-dog<
+					<i class="icon-large icon-user"></i> icon-user<
+					<i class="icon-large icon-girl"></i> icon-girl<
+					<i class="icon-large icon-car"></i> icon-car<
+					<i class="icon-large icon-user-add"></i> icon-user-add<
+					<i class="icon-large icon-user-remove"></i> icon-user-remove<
+					<i class="icon-large icon-film"></i> icon-film<
+					<i class="icon-large icon-magic"></i> icon-magic<
+					<i class="icon-large icon-envelope"></i> icon-envelope<
+					<i class="icon-large icon-camera"></i> icon-camera<
+					<i class="icon-large icon-heart"></i> icon-heart<
+					<i class="icon-large icon-beach-umbrella"></i> icon-beach-umbrella<
+					<i class="icon-large icon-train"></i> icon-train<
+					<i class="icon-large icon-print"></i> icon-print<
+					<i class="icon-large icon-bin"></i> icon-bin<
+					<i class="icon-large icon-trash"></i> icon-trash<
+					<i class="icon-large icon-music"></i> icon-music<
+					<i class="icon-large icon-note"></i> icon-note<
+					<i class="icon-large icon-cogwheel"></i> icon-cogwheel<
+					<i class="icon-large icon-cog"></i> icon-cog<
+					<i class="icon-large icon-home"></i> icon-home<
+					<i class="icon-large icon-snowflake"></i> icon-snowflake<
+					<i class="icon-large icon-fire"></i> icon-fire<
+					<i class="icon-large icon-cogwheels"></i> icon-cogwheels<
+					<i class="icon-large icon-parents"></i> icon-parents<
+					<i class="icon-large icon-binoculars"></i> icon-binoculars<
+					<i class="icon-large icon-road"></i> icon-road<
+					<i class="icon-large icon-search"></i> icon-search<
+					<i class="icon-large icon-cars"></i> icon-cars<
+					<i class="icon-large icon-pencil"></i> icon-pencil<
+					</section>
+			    	<section>
+					<i class="icon-large icon-bus"></i> icon-bus<
+					<i class="icon-large icon-wifi-alt"></i> icon-wifi-alt<
+					<i class="icon-large icon-luggage"></i> icon-luggage<
+					<i class="icon-large icon-old-man"></i> icon-old-man<
+					<i class="icon-large icon-woman"></i> icon-woman<
+					<i class="icon-large icon-file"></i> icon-file<
+					<i class="icon-large icon-credit"></i> icon-credit<
+					<i class="icon-large icon-airplane"></i> icon-airplane<
+					<i class="icon-large icon-plane"></i> icon-plane<
+					<i class="icon-large icon-notes"></i> icon-notes<
+					<i class="icon-large icon-stats"></i> icon-stats<
+					<i class="icon-large icon-charts"></i> icon-charts<
+					<i class="icon-large icon-pie-chart"></i> icon-pie-chart<
+					<i class="icon-large icon-group"></i> icon-group<
+					<i class="icon-large icon-keys"></i> icon-keys<
+					<i class="icon-large icon-calendar"></i> icon-calendar<
+					<i class="icon-large icon-router"></i> icon-router<
+					<i class="icon-large icon-camera-small"></i> icon-camera-small<
+					<i class="icon-large icon-dislikes"></i> icon-dies<
+					<i class="icon-large icon-star-empty"></i> icon-star-empty<
+					<i class="icon-large icon-star"></i> icon-star<
+					<i class="icon-large icon-link"></i> iconk<
+					<i class="icon-large icon-eye-open"></i> icon-eye-open<
+					<i class="icon-large icon-eye-close"></i> icon-eye-close<
+					<i class="icon-large icon-alarm"></i> icon-alarm<
+					<i class="icon-large icon-clock"></i> icon-clock<
+					<i class="icon-large icon-time"></i> icon-time<
+					<i class="icon-large icon-stopwatch"></i> icon-stopwatch<
+					<i class="icon-large icon-projector"></i> icon-projector<
+					<i class="icon-large icon-history"></i> icon-history<
+					<i class="icon-large icon-truck"></i> icon-truck<
+					<i class="icon-large icon-cargo"></i> icon-cargo<
+					<i class="icon-large icon-compass"></i> icon-compass<
+					<i class="icon-large icon-keynote"></i> icon-keynote<
+					<i class="icon-large icon-attach"></i> icon-attach<
+					<i class="icon-large icon-power"></i> icon-power<
+					<i class="icon-large icon-off"></i> icon-off<
+					<i class="icon-large icon-lightbulb"></i> iconhtbulb<
+					<i class="icon-large icon-tag"></i> icon-tag<
+					<i class="icon-large icon-tags"></i> icon-tags<
+					<i class="icon-large icon-cleaning"></i> icon-cleaning<
+					<i class="icon-large icon-ruller"></i> icon-ruller<
+					<i class="icon-large icon-gift"></i> icon-gift<
+					<i class="icon-large icon-umbrella"></i> icon-umbrella<
+					<i class="icon-large icon-book"></i> icon-book<
+					<i class="icon-large icon-bookmark"></i> icon-bookmark<
+					<i class="icon-large icon-signal"></i> icon-signal<
+					<i class="icon-large icon-cup"></i> icon-cup<
+					<i class="icon-large icon-stroller"></i> icon-stroller<
+					<i class="icon-large icon-headphones"></i> icon-headphones<
+					<i class="icon-large icon-headset"></i> icon-headset<
+					<i class="icon-large icon-warning-sign"></i> icon-warning-sign<
+					<i class="icon-large icon-signal"></i> icon-signal<
+					<i class="icon-large icon-retweet"></i> icon-retweet<
+					<i class="icon-large icon-refresh"></i> icon-refresh<
+					<i class="icon-large icon-roundabout"></i> icon-roundabout<
+					<i class="icon-large icon-random"></i> icon-random<
+					<i class="icon-large icon-heat"></i> icon-heat<
+					</section>
+			    	<section>
+					<i class="icon-large icon-repeat"></i> icon-repeat<
+					<i class="icon-large icon-display"></i> icon-display<
+					<i class="icon-large icon-log-book"></i> icon-log-book<
+					<i class="icon-large icon-adress-book"></i> icon-adress-book<
+					<i class="icon-large icon-magnet"></i> icon-magnet<
+					<i class="icon-large icon-table"></i> icon-table<
+					<i class="icon-large icon-adjust"></i> icon-adjust<
+					<i class="icon-large icon-tint"></i> icon-tint<
+					<i class="icon-large icon-crop"></i> icon-crop<
+					<i class="icon-large icon-vector-path-square"></i> icon-vector-path-square<
+					<i class="icon-large icon-vector-path-circle"></i> icon-vector-path-circle<
+					<i class="icon-large icon-vector-path-polygon"></i> icon-vector-path-polygon<
+					<i class="icon-large icon-vector-pathe"></i> icon-vector-pathe<
+					<i class="icon-large icon-vector-path-curve"></i> icon-vector-path-curve<
+					<i class="icon-large icon-vector-path-all"></i> icon-vector-path-all<
+					<i class="icon-large icon-font"></i> icon-font<
+					<i class="icon-large icon-it"></i> icon-it<
+					<i class="icon-large icon-bold"></i> icon-bold<
+					<i class="icon-large icon-text-undee"></i> icon-text-undee<
+					<i class="icon-large icon-text-strike"></i> icon-text-strike<
+					<i class="icon-large icon-text-height"></i> icon-text-height<
+					<i class="icon-large icon-text-width"></i> icon-text-width<
+					<i class="icon-large icon-text-resize"></i> icon-text-resize<
+					<i class="icon-large icon-left-indent"></i> icon-left-indent<
+					<i class="icon-large icon-indent-left"></i> icon-indent-left<
+					<i class="icon-large icon-right-indent"></i> icon-right-indent<
+					<i class="icon-large icon-indent-left"></i> icon-indent-right<
+					<i class="icon-large icon-n-left"></i> icon-n-left<
+					<i class="icon-large icon-n-center"></i> icon-n-center<
+					<i class="icon-large icon-n-right"></i> icon-n-right<
+					<i class="icon-large icon-justify"></i> icon-justify<
+					<i class="icon-large icon-n-justify"></i> icon-n-justify<
+					<i class="icon-large icont"></i> icont<
+					<i class="icon-large icon-text-smaller"></i> icon-text-smaller<
+					<i class="icon-large icon-text-bigger"></i> icon-text-bigger<
+					<i class="icon-large icon-embed"></i> icon-embed<
+					<i class="icon-large icon-embed-close"></i> icon-embed-close<
+					<i class="icon-large icon-adjust"></i> icon-adjust<
+					<i class="icon-large icon-message-full"></i> icon-message-full<
+					<i class="icon-large icon-message-empty"></i> icon-message-empty<
+					<i class="icon-large icon-message-in"></i> icon-message-in<
+					<i class="icon-large icon-message-out"></i> icon-message-out<
+					<i class="icon-large icon-message-plus"></i> icon-message-plus<
+					<i class="icon-large icon-message-minus"></i> icon-message-minus<
+					<i class="icon-large icon-message-ban"></i> icon-message-ban<
+					<i class="icon-large icon-message-flag"></i> icon-message-flag<
+					<i class="icon-large icon-message-lock"></i> icon-message-lock<
+					<i class="icon-large icon-message-new"></i> icon-message-new<
+					<i class="icon-large icon-inbox"></i> icon-inbox<
+					<i class="icon-large icon-inbox-plus"></i> icon-inbox-plus<
+					<i class="icon-large icon-inbox-minus"></i> icon-inbox-minus<
+					<i class="icon-large icon-inbox-lock"></i> icon-inbox-lock<
+					<i class="icon-large icon-inbox-in"></i> icon-inbox-in<
+					<i class="icon-large icon-inbox-out"></i> icon-inbox-out<
+					<i class="icon-large icon-computer-locked"></i> icon-computer-locked<
+					<i class="icon-large icon-computer-service"></i> icon-computer-service<
+					<i class="icon-large icon-computer-proces"></i> icon-computer-proces<
+					<i class="icon-large icon-phone"></i> icon-phone<
+					</section>
+			    	<section>
+					<i class="icon-large icon-database-lock"></i> icon-database-lock<
+					<i class="icon-large icon-database-plus"></i> icon-database-plus<
+					<i class="icon-large icon-database-minus"></i> icon-database-minus<
+					<i class="icon-large icon-database-ban"></i> icon-database-ban<
+					<i class="icon-large icon-folder-open"></i> icon-folder-open<
+					<i class="icon-large icon-folder-plus"></i> icon-folder-plus<
+					<i class="icon-large icon-folder-minus"></i> icon-folder-minus<
+					<i class="icon-large icon-folder-lock"></i> icon-folder-lock<
+					<i class="icon-large icon-folder-flag"></i> icon-folder-flag<
+					<i class="icon-large icon-folder-new"></i> icon-folder-new<
+					<i class="icon-large icon-check"></i> icon-check<
+					<i class="icon-large icon-edit"></i> icon-edit<
+					<i class="icon-large icon-new-window"></i> icon-new-window<
+					<i class="icon-large icon-more-windows"></i> icon-more-windows<
+					<i class="icon-large icon-show-big-thumbnails"></i> icon-show-big-thumbnails<
+					<i class="icon-large icon-th-large"></i> icon-th-large<
+					<i class="icon-large icon-show-thumbnails"></i> icon-show-thumbnails<
+					<i class="icon-large icon-th"></i> icon-th<
+					<i class="icon-large icon-show-thumbnails-withes"></i> icon-show-thumbnails-withes<
+					<i class="icon-large icon-tht"></i> icon-tht<
+					<i class="icon-large icon-showes"></i> icon-showes<
+					<i class="icon-large icon-plat"></i> icon-plat<
+					<i class="icon-large icon-picture"></i> icon-picture<
+					<i class="icon-large icon-imac"></i> icon-imac<
+					<i class="icon-large icon-macbook"></i> icon-macbook<
+					<i class="icon-large icon-ipad"></i> icon-ipad<
+					<i class="icon-large icon-iphone"></i> icon-iphone<
+					<i class="icon-large icon-iphone-transfer"></i> icon-iphone-transfer<
+					<i class="icon-large icon-iphone-exchange"></i> icon-iphone-exchange<
+					<i class="icon-large icon-ipod"></i> icon-ipod<
+					<i class="icon-large icon-ipod-shuffle"></i> icon-ipod-shuffle<
+					<i class="icon-large icon-ear-plugs"></i> icon-ear-plugs<
+					<i class="icon-large icon-albums"></i> icon-albums<
+					<i class="icon-large icon-step-backward"></i> icon-step-backward<
+					<i class="icon-large icon-fast-backward"></i> icon-fast-backward<
+					<i class="icon-large icon-rewind"></i> icon-rewind<
+					<i class="icon-large icon-backward"></i> icon-backward<
+					<i class="icon-large icon-play"></i> icon-play<
+					<i class="icon-large icon-pause"></i> icon-pause<
+					<i class="icon-large icon-stop"></i> icon-stop<
+					<i class="icon-large icon-forward"></i> icon-forward<
+					<i class="icon-large icon-fast-forward"></i> icon-fast-forward<
+					<i class="icon-large icon-step-forward"></i> icon-step-forward<
+					<i class="icon-large icon-eject"></i> icon-eject<
+					<i class="icon-large icon-facetime-video"></i> icon-facetime-video<
+					<i class="icon-large icon-download-alt"></i> icon-download-alt<
+					<i class="icon-large icon-mute"></i> icon-mute<
+					<i class="icon-large icon-volume-off"></i> icon-volume-off<
+					<i class="icon-large icon-volume-down"></i> icon-volume-down<
+					<i class="icon-large icon-volume-up"></i> icon-volume-up<
+					<i class="icon-large icon-screenshot"></i> icon-screenshot<
+					<i class="icon-large icon-move"></i> icon-move<
+					<i class="icon-large icon-more"></i> icon-more<
+					<i class="icon-large icon-brightness-reduce"></i> icon-brightness-reduce<
+					<i class="icon-large icon-brightness-increase"></i> icon-brightness-increase<
+					<i class="icon-large icon-circle-plus"></i> icon-circle-plus<
+					<i class="icon-large icon-plus-sign"></i> icon-plus-sign<
+					</section>
+			    	<section>
+					<i class="icon-large icon-circle-minus"></i> icon-circle-minus<
+					<i class="icon-large icon-minus-sign"></i> icon-minus-sign<
+					<i class="icon-large icon-circle-remove"></i> icon-circle-remove<
+					<i class="icon-large icon-remove-sign"></i> icon-remove-sign<
+					<i class="icon-large icon-circle-ok"></i> icon-circle-ok<
+					<i class="icon-large icon-ok-sign"></i> icon-ok-sign<
+					<i class="icon-large icon-circle-question-mark"></i> icon-circle-question-mark<
+					<i class="icon-large icon-question-sign"></i> icon-question-sign<
+					<i class="icon-large icon-circle-info"></i> icon-circle-info<
+					<i class="icon-large icon-info-sign"></i> icon-info-sign<
+					<i class="icon-large icon-circle-exclamation-mark"></i> icon-circle-exclamation-mark<
+					<i class="icon-large icon-exclamation-sign"></i> icon-exclamation-sign<
+					<i class="icon-large icon-remove"></i> icon-remove<
+					<i class="icon-large icon-ok"></i> icon-ok<
+					<i class="icon-large icon-ban"></i> icon-ban<
+					<i class="icon-large icon-download"></i> icon-download<
+					<i class="icon-large icon-upload"></i> icon-upload<
+					<i class="icon-large icon-shopping-cart"></i> icon-shopping-cart<
+					<i class="icon-large icon-lock"></i> icon-lock<
+					<i class="icon-large icon-unlock"></i> icon-unlock<
+					<i class="icon-large icon-electricity"></i> icon-electricity<
+					<i class="icon-large icon-cart-out"></i> icon-cart-out<
+					<i class="icon-large icon-cart-in"></i> icon-cart-in<
+					<i class="icon-large icon-left-arrow"></i> icon-left-arrow<
+					<i class="icon-large icon-right-arrow"></i> icon-right-arrow<
+					<i class="icon-large icon-down-arrow"></i> icon-down-arrow<
+					<i class="icon-large icon-up-arrow"></i> icon-up-arrow<
+					<i class="icon-large icon-resize-small"></i> icon-resize-small<
+					<i class="icon-large icon-resize-full"></i> icon-resize-full<
+					<i class="icon-large icon-circle-arrow-left"></i> icon-circle-arrow-left<
+					<i class="icon-large icon-circle-arrow-right"></i> icon-circle-arrow-right<
+					<i class="icon-large icon-circle-arrow-top"></i> icon-circle-arrow-top<
+					<i class="icon-large icon-circle-arrow-up"></i> icon-circle-arrow-up<
+					<i class="icon-large icon-circle-arrow-down"></i> icon-circle-arrow-down<
+					<i class="icon-large icon-play-button"></i> icon-play-button<
+					<i class="icon-large icon-play-circle"></i> icon-play-circle<
+					<i class="icon-large icon-unshare"></i> icon-unshare<
+					<i class="icon-large icon-share"></i> icon-share<
+					<i class="icon-large icon-thin-right-arrow"></i> icon-thin-right-arrow<
+					<i class="icon-large icon-chevron-right"></i> icon-chevron-right<
+					<i class="icon-large icon-thin-arrow-left"></i> icon-thin-arrow-left<
+					<i class="icon-large icon-chevron-left"></i> icon-chevron-left<
+					<i class="icon-large icon-bluetooth"></i> icon-bluetooth<
+					<i class="icon-large icon-euro"></i> icon-euro<
+					<i class="icon-large icon-usd"></i> icon-usd<
+					<i class="icon-large icon-bp"></i> icon-bp<
+					<i class="icon-large icon-moon"></i> icon-moon<
+					<i class="icon-large icon-sun"></i> icon-sun<
+					<i class="icon-large icon-cloud"></i> icon-cloud<
+					<i class="icon-large icon-direction"></i> icon-direction<
+					<i class="icon-large icon-brush"></i> icon-brush<
+					<i class="icon-large icon-pen"></i> icon-pen<
+					<i class="icon-large icon-zoom-in"></i> icon-zoom-in<
+					<i class="icon-large icon-zoom-out"></i> icon-zoom-out<
+					<i class="icon-large icon-pin"></i> icon-pin<
+					<i class="icon-large icon-riflescope"></i> icon-riflescope<
+					<i class="icon-large icon-rotation-lock"></i> icon-rotation-lock<
+					<i class="icon-large icon-flash"></i> icon-flash<
+					<i class="icon-large icon-google-maps"></i> icon-google-maps<
+					</section>
+			    	<section>
+						<i class="icon-large icon-map-marker"></i> icon-map-marker<
+						<i class="icon-large icon-anchor"></i> icon-anchor<
+						<i class="icon-large icon-conversation"></i> icon-conversation<
+						<i class="icon-large icon-chat"></i> icon-chat<
+						<i class="icon-large icon-male"></i> icon-male<
+						<i class="icon-large icon-female"></i> icon-female<
+						<i class="icon-large icon-asterisk"></i> icon-asterisk<
+						<i class="icon-large icon-divide"></i> icon-divide<
+						<i class="icon-large icon-snorkel-diving"></i> icon-snorkel-diving<
+						<i class="icon-large icon-scuba-diving"></i> icon-scuba-diving<
+						<i class="icon-large icon-oxygen-bottle"></i> icon-oxygen-bottle<
+						<i class="icon-large icon-fins"></i> icon-fins<
+						<i class="icon-large icon-fishes"></i> icon-fishes<
+						<i class="icon-large icon-boat"></i> icon-boat<
+						<i class="icon-large icon-delete-point"></i> icon-delete-point<
+						<i class="icon-large icon-qrcode"></i> icon-qrcode<
+						<i class="icon-large icon-barcode"></i> icon-barcode<
+						<i class="icon-large icon-pool"></i> icon-pool<
+						<i class="icon-large icon-buoy"></i> icon-buoy<
+						<i class="icon-large icon-spade"></i> icon-spade<
+						<i class="icon-large icon-bank"></i> icon-bank<
+						<i class="icon-large icon-vcard"></i> icon-vcard<
+						<i class="icon-large icon-electrical-plug"></i> icon-electrical-plug<
+						<i class="icon-large icon-flag"></i> icon-flag<
+						<i class="icon-large icon-credit-card"></i> icon-credit-card<
+						<i class="icon-large icon-keyboard-wireless"></i> icon-keyboard-wireless<
+						<i class="icon-large icon-keyboard-wired"></i> icon-keyboard-wired<
+						<i class="icon-large icon-shield"></i> icon-shield<
+						<i class="icon-large icon-ring"></i> icon-ring<
+						<i class="icon-large icon-cake"></i> icon-cake<
+						<i class="icon-large icon-drink"></i> icon-drink<
+						<i class="icon-large icon-beer"></i> icon-beer<
+						<i class="icon-large icon-fast-food"></i> icon-fast-food<
+						<i class="icon-large icon-cutlery"></i> icon-cutlery<
+						<i class="icon-large icon-pizza"></i> icon-pizza<
+						<i class="icon-large icon-birthday-cake"></i> icon-birthday-cake<
+						<i class="icon-large icon-tablet"></i> icon-tablet<
+						<i class="icon-large icon-settings"></i> icon-settings<
+						<i class="icon-large icon-bullets"></i> icon-bullets<
+						<i class="icon-large icon-cardio"></i> icon-cardio<
+						<i class="icon-large icon-pants"></i> icon-pants<
+						<i class="icon-large icon-sweater"></i> icon-sweater<
+						<i class="icon-large icon-fabric"></i> icon-fabric<
+						<i class="icon-large icon-leather"></i> icon-leather<
+						<i class="icon-large icon-scissors"></i> icon-scissors<
+						<i class="icon-large icon-podium"></i> icon-podium<
+						<i class="icon-large icon-skull"></i> icon-skull<
+						<i class="icon-large icon-celebration"></i> icon-celebration<
+						<i class="icon-large icon-tea-kettle"></i> icon-tea-kettle<
+						<i class="icon-large icon-french-press"></i> icon-french-press<
+						<i class="icon-large icon-coffe-cup"></i> icon-coffe-cup<
+						<i class="icon-large icon-pot"></i> icon-pot<
+						<i class="icon-large icon-grater"></i> icon-grater<
+						<i class="icon-large icon-kettle"></i> icon-kettle<
+						<i class="icon-large icon-hospital"></i> icon-hospital<
+						<i class="icon-large icon-hospital-h"></i> icon-hospital-h<
+						<i class="icon-large icon-grater"></i> icon-grater<
+						<i class="icon-large icon-kettle"></i> icon-kettle<
+					</section>
+			    	<section>
+						<i class="icon-large icon-hospital"></i> icon-hospital<
+						<i class="icon-large icon-hospital-h"></i> icon-hospital-h<
+						<i class="icon-large icon-microphone"></i> icon-microphone<
+						<i class="icon-large icon-webcam"></i> icon-webcam<
+						<i class="icon-large icon-temple-christianity-church"></i> icon-temple-christianity-church<
+						<i class="icon-large icon-temple-islam"></i> icon-temple-islam<
+						<i class="icon-large icon-temple-hindu"></i> icon-temple-hindu<
+						<i class="icon-large icon-temple-buddhist"></i> icon-temple-buddhist<
+						<i class="icon-large icon-electrical-socket-eu"></i> icon-electrical-socket-eu<
+						<i class="icon-large icon-electrical-socket-us"></i> icon-electrical-socket-us<
+						<i class="icon-large icon-bomb"></i> icon-bomb<
+						<i class="icon-large icon-comment"></i> icon-comment<
+						<i class="icon-large icon-comments"></i> icon-comments<
+						<i class="icon-large icon-flower"></i> icon-flower<
+						<i class="icon-large icon-baseball"></i> icon-baseball<
+						<i class="icon-large icon-rugby"></i> icon-rugby<
+						<i class="icon-large icon-ax"></i> icon-ax<
+						<i class="icon-large icon-table-tennis"></i> icon-table-tennis<
+						<i class="icon-large icon-bog"></i> icon-bog<
+						<i class="icon-large icon-tree-conifer"></i> icon-tree-conifer<
+						<i class="icon-large icon-tree-deciduous"></i> icon-tree-deciduous<
+						<i class="icon-large icon-sort"></i> icon-sort<
+						<i class="icon-large icon-filter"></i> icon-filter<
+						<i class="icon-large icon-gamepad"></i> icon-gamepad<
+						<i class="icon-large icon-playing-dices"></i> icon-playing-dices<
+						<i class="icon-large icon-calculator"></i> icon-calculator<
+						<i class="icon-large icon-tie"></i> icon-tie<
+						<i class="icon-large icon-wallet"></i> icon-wallet<
+						<i class="icon-large icon-share"></i> icon-share<
+						<i class="icon-large icon-sampler"></i> icon-sampler<
+						<i class="icon-large icon-piano"></i> icon-piano<
+						<i class="icon-large icon-web-browser"></i> icon-web-browser<
+						<i class="icon-large icon-blog"></i> icon-blog<
+						<i class="icon-large icon-dashboard"></i> icon-dashboard<
+						<i class="icon-large icon-certificate"></i> icon-certificate<
+						<i class="icon-large icon-bell"></i> icon-bell<
+						<i class="icon-large icon-candle"></i> icon-candle<
+						<i class="icon-large icon-pin-classic"></i> icon-pin-classic<
+						<i class="icon-large icon-iphone-shake"></i> icon-iphone-shake<
+						<i class="icon-large icon-pin-flag"></i> icon-pin-flag<
+						<i class="icon-large icon-turtle"></i> icon-turtle<
+						<i class="icon-large icon-rabbit"></i> icon-rabbit<
+						<i class="icon-large icon-globe"></i> icon-globe<
+						<i class="icon-large icon-briefcase"></i> icon-briefcase<
+						<i class="icon-large icon-hdd"></i> icon-hdd<
+						<i class="icon-large icon-thumbs-up"></i> icon-thumbs-up<
+						<i class="icon-large icon-thumbs-down"></i> icon-thumbs-down<
+						<i class="icon-large icon-hand-right"></i> icon-hand-right<
+						<i class="icon-large icon-hand-left"></i> icon-hand-left<
+						<i class="icon-large icon-hand-up"></i> icon-hand-up<
+						<i class="icon-large icon-hand-down"></i> icon-hand-down<
+						<i class="icon-large icon-fullscreen"></i> icon-fullscreen<
+						<i class="icon-large icon-shopping-bag"></i> icon-shopping-bag<
+						<i class="icon-large icon-book-open"></i> icon-book-open<
+						<i class="icon-large icon-nameplate"></i> icon-nameplate<
+						<i class="icon-large icon-nameplate-alt"></i> icon-nameplate-alt<
+						<i class="icon-large icon-vases"></i> icon-vases<
+					</section>
+			    	<section>
+						<i class="icon-large icon-announcement"></i> icon-announcement<
+						<i class="icon-large icon-bullhorn"></i> icon-bullhorn<
+						<i class="icon-large icon-dumbbell"></i> icon-dumbbell<
+						<i class="icon-large icon-suitcase"></i> icon-suitcase<
+						<i class="icon-large icon-file-import"></i> icon-file-import<
+						<i class="icon-large icon-file-export"></i> icon-file-export<
+						<i class="icon-large icon-pinterest"></i> icon-pinterest<
+						<i class="icon-large icon-dropbox"></i> icon-dropbox<
+						<i class="icon-large icon-jloud"></i> icon-jloud<
+						<i class="icon-large icon-yahoo"></i> icon-yahoo<
+						<i class="icon-large icon-blogger"></i> icon-blogger<
+						<i class="icon-large icon-picasa"></i> icon-picasa<
+						<i class="icon-large icon-amazon"></i> icon-amazon<
+						<i class="icon-large icon-tumblr"></i> icon-tumblr<
+						<i class="icon-large icon-wordpress"></i> icon-wordpress<
+						<i class="icon-large icon-instapaper"></i> icon-instapaper<
+						<i class="icon-large icon-evernote"></i> icon-evernote<
+						<i class="icon-large icon-xing"></i> icon-xing<
+						<i class="icon-large icon-zootool"></i> icon-zootool<
+						<i class="icon-large icon-dribbble"></i> icon-dribbble<
+						<i class="icon-large icon-deviantart"></i> icon-deviantart<
+						<i class="icon-large icon-read-it-later"></i> icon-read-it-later<
+						<i class="icon-large icon-linked-in"></i> iconked-in<
+						<i class="icon-large icon-forrst"></i> icon-forrst<
+						<i class="icon-large icon-pinboard"></i> icon-pinboard<
+						<i class="icon-large icon-behance"></i> icon-behance<
+						<i class="icon-large icon-github"></i> icon-github<
+						<i class="icon-large icon-youtube"></i> icon-youtube<
+						<i class="icon-large icon-skitch"></i> icon-skitch<
+						<i class="icon-large icon-quora"></i> icon-quora<
+						<i class="icon-large icon-google-plus"></i> icon-google-plus<
+						<i class="icon-large icon-spootify"></i> icon-spootify<
+						<i class="icon-large icon-stumbleupon"></i> icon-stumbleupon<
+						<i class="icon-large icon-readability"></i> icon-readaby<
+						<i class="icon-large icon-facebook"></i> icon-facebook<
+						<i class="icon-large icon-twitter-t"></i> icon-twitter-t<
+						<i class="icon-large icon-twitter"></i> icon-twitter<
+						<i class="icon-large icon-buzz"></i> icon-buzz<
+						<i class="icon-large icon-vimeo"></i> icon-vimeo<
+						<i class="icon-large icon-flickr"></i> icon-kr<
+						<i class="icon-large icon-last-fm"></i> icon-last-fm<
+						<i class="icon-large icon-rss"></i> icon-rss<
+						<i class="icon-large icon-skype"></i> icon-skype<
+					</section>
 				</section>
 
 			</div>
 
 		</div>
 
+
+		<div id="breadcrumbs" class="ui-widget-content">
+			<ul>
+				<li>start sinks</li>
+			</ul>
+		</div>
+
+		<div id="bearing">
+			<ul>
+				<li>bottoms up</li>
+			</ul>
+		</div>
+
+		<div id="patchwork">
+				<center>
+					<span id="runway" class="glyphicon glyphicon-road"></span>
+					<i class="icon-large icon-tea-kettle"></i>
+				</center>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-
 			Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
-				loop: false,
+				loop: true,
 				center: true,
-				autoSlide: Reveal.getQueryHash().tempo || 60000, // deck-wide default for autoplay interval, in milliseconds; may be specified in slideshow's URL by appending ?tempo=30000 to set advancing of fragments or slides every 30 seconds
+				autoSlide: Reveal.getQueryHash().tempo || 10000, // deck-wide default for autoplay interval, in milliseconds; may be specified in slideshow's URL by appending ?tempo=30000 to set advancing of fragments or slides every 30 seconds
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 				transitionSpeed: 'slow',
-				
+
 				// Parallax scrolling
 				parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				parallaxBackgroundSize: '2100px 900px'
-			});
+				parallaxBackgroundSize: '2100px 900px',
 
+				
+				// // Mathjax config -- enable if default values need to be altered
+				// math: {
+				// 	mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+				// 	config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+				// },
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+			
+
+
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+    			MathJax.Hub.Rerender();  // prevent display errors in equation formatting
+    			console.log("Slide: "+(event.indexh)+"-"+event.indexv);
+    			console.log($(".slides section:nth-child("+(event.indexh)+") aside.notes").text());
+    			var slID = event.currentSlide.id;
+    			$("#breadcrumbs>ul").prepend('<li><a href="#/'+(event.indexh)+'/'+(event.indexv)+'"><span class="tab">'+slID+'</span></a></li>');
+    			console.log(slID)
+
+			} );
+
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				setTimeout(
+			   		function() {
+						MathJax.Hub.Rerender(document.querySelector(".slides .present")) 
+			   		}, 100);   // prevent display errors in equation formatting
+			}  );
 		</script>
+
+		<script src="js/UI.js"></script>
+		<!--script src="js/eventListeners.js"></script-->
+
+		<script>
+		$(function() {
+    		$( "#breadcrumbs" ).draggable();
+  		});
+  		</script>
 
 	</body>
 </html>
