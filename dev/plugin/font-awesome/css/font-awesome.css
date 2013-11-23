@@ -26,6 +26,9 @@
   line-height: 0.75em;
   vertical-align: -15%;
 }
+.fa-1p5x {
+  font-size: 1.5em;
+}
 .fa-2x {
   font-size: 2em;
 }
@@ -77,6 +80,9 @@
 .fa.pull-right {
   margin-left: .3em;
 }
+
+/* ctrlpt */
+
 .fa-spin {
   -webkit-animation: spin 6s infinite linear;
   -moz-animation: spin 6s infinite linear;
@@ -170,6 +176,31 @@
   }
 }
 
+
+.fa-spin-2omega {
+  -webkit-animation: spin 3s infinite linear;
+  -moz-animation: spin 3s infinite linear;
+  -o-animation: spin 3s infinite linear;
+  animation: spin 3s infinite linear;
+}
+
+.fa-spin-ccw-2omega {
+  -webkit-animation: spin-ccw 3s infinite linear;
+  -moz-animation: spin-ccw 3s infinite linear;
+  -o-animation: spin-ccw 3s infinite linear;
+  animation: spin-ccw 3s infinite linear;
+}
+
+
+
+.fa-rotate-45 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);

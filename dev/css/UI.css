@@ -1,20 +1,20 @@
 i {
-	opacity:.75;
+	opacity:.8;
 }
 
 .dash {
 	border:1px dashed gray;	
 }
 
-
 #defrag {
-	position:fixed;
+	position:relative;
+	display:block;
 	width:2px;
 	height:10px;
-	bottom:30px;
-	left:60px;
-	background:aqua;
-	opacity: .6;
+	margin-left:-80px;
+	background:rgba(0,0,0,.4);
+	border:1px dashed aqua;
+	opacity: .8;
 	z-index:50;
 }
 
@@ -25,17 +25,59 @@ i {
 /*  border:1px dashed #eeeeee;*/
 }
 
-
-#eraser {
-    bottom: 45px;
-    right: 175px;
+#spCB {
+    padding:10px;
     z-index: 210;
 }
+
+#spCT {
+    padding:5px;
+    z-index: 210;
+}
+
+#spLC {
+    padding:5px;
+    z-index: 210;
+}
+
+#spRC {
+    padding:5px;
+    z-index: 210;
+}
+
+
+#eraser {
+    z-index: 210;
+}
+
+#Dpad {
+     z-index: 209;
+}
+
 
 #crosshair {
     padding:20px;
     z-index: 210;
 }
+
+#scopeoscope {
+    padding:20px;
+    z-index: 210;
+}
+
+#timevortex {
+    padding:30px;
+    padding-bottom:28px;
+    z-index: 10;
+}
+
+#tardis {
+    padding:58.5px;
+    padding-bottom:57.5px;
+    z-index: 10;
+}
+
+
 
 #ofcourse {
     padding:7.5px;
@@ -47,59 +89,52 @@ i {
     z-index: 210;
 }
 
-#poolup {
-    bottom: 75px;
-    left: 200px;
-    z-index: 210;
-}
-
-
 #retarget {
     min-height:10px; 
-    padding:5px;
-    z-index: 200;
+    padding:7.5px;
+    z-index: 220;
 }
 
 #desplash {
     min-height:10px; 
-    padding:5px;
-    z-index: 200;
+    padding:7.5px;
+    z-index: 230;
 }
 
 #chatsoff {
-    bottom: 75px;
-    left: 75px;
+	padding:5px;
     z-index: 210;
 }
 
+#anticyclone {
+	padding:10px;
+    z-index: 210;
+}
+
+#cyclone {
+	padding:10px;
+    z-index: 212;
+}
+
 #eyesight {
-    top: 10px;
-    right: 10px;
+	padding:7.5px;
     z-index: 210;
 }
 
 #inspector {
-    top: 25px;
-    right: 25px;
+	padding:7.5px;
     z-index: 210;
 }
 
-#controlpad {
-    bottom: 20px;
-    right: 200px;
-    z-index: 209;
-}
+
+
 
 #defile {
-    bottom: 120px;
-    left: 120px;
     z-index: 210;
 }
 
 #offofflink {
-    bottom: 100px;
-    left: 100px;
-    z-index: 210;
+    z-index: 211;
 }
 
 
@@ -108,7 +143,7 @@ i {
 	position:fixed;
 	display:block;
 	opacity: 0.9;
-	background:rgba(0,0,0,0);
+	background:rgba(0,0,0,.3);
 	color:aqua;
 /*	border:1px dashed #eeeeee;*/
 }
@@ -119,8 +154,6 @@ i {
 }
 
 #slipstream {
-	left:10px;
-	top:30%;
 	min-width:150px;
 	min-height:10%;
 	font-size: 12px;
@@ -140,10 +173,11 @@ i {
 	z-index:50;
 }
 
-#pooldeck {
-	min-width:40px;
-	max-height:80%;
-	font-size: 12px;
-	overflow:hidden;
-	z-index:0;
+.indicator {
+	opacity:.3;
 }
+
+.indicator:hover {
+	opacity:.8;
+}
+

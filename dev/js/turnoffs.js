@@ -8,6 +8,27 @@ $( document ).on( 'click', function( event ) {
 
 
 
+
+	// $( "#defile" ).position({
+	//   	my: "left bottom",
+	//   	at: "left bottom",
+	//   	of: "aside[class='controls']"
+	// });
+
+	// $( "#offofflink" ).position({
+	//   	my: "left bottom",
+	//   	at: "left top",
+	//   	of: "aside[class='controls']"
+	// });
+
+	// $( "#pooldeck" ).position({
+	//  	my: "left center",
+	//   	at: "right center",
+	//   	of: "#poolup"
+	// });
+
+
+
 // function compensation() {
 // 				setTimeout( function() {
 // 				zoomCurrent = $('.slides').css('zoom');

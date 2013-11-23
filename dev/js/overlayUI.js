@@ -14,29 +14,54 @@ $('.slide-number').click(function() {
 	Reveal.toggleOverview();
 	});
 
+
 $(function() {
 	$( ".indicator" ).draggable();
 	$( "#slipstream" ).draggable().resizable();
 	// $( "canvas[class='playback']" ).draggable();
 });
 
+
 $('.spin-up').hover(
        function(){ $(this).addClass('fa-spin') },
        function(){ $(this).removeClass('fa-spin') }
 );
+
+
 
 $('.spin-up-ccw').hover(
        function(){ $(this).addClass('fa-spin-ccw') },
        function(){ $(this).removeClass('fa-spin-ccw') }
 );
 
-$('#controlpad').click(function() {
+
+$('.inflate').hover(
+       function(){ $(this).addClass('fa-1p5x') },
+       function(){ $(this).removeClass('fa-1p5x') }
+);
+
+
+$('#Dpad').click(function() {
 	$( "canvas[class='playback']" ).toggle();
 	$( "aside[class='controls']" ).toggle();
 	});
 
 $('#eraser').click(function() {
 	$( "#overlayUI" ).toggle();
+	});
+
+$('#spCB').click(function() {
+	$( "#eraser" ).toggle();
+	$( "#Dpad" ).toggle();
+	});
+
+$('#spCT').click(function() {
+	$( "#anticyclone" ).toggle();
+	$( "#cyclone" ).toggle();
+	});
+
+$('#crosshair').click(function() {
+	$( "#slipstream" ).toggle();
 	});
 
 $('#desplash').click(function() {
@@ -49,19 +74,63 @@ $('#retarget').click(function() {
 
 
 
+
+
 function setUIpositions( ) {
+
+
+
+
+
+	$( "#crosshair" ).position({
+	  	my: "left top",
+	  	at: "left top",
+	  	of: ".reveal"
+	});
+
+	$( "#scopeoscope" ).position({
+	  	my: "right top",
+	  	at: "right top",
+	  	of: ".reveal"
+	});
+
+	$( "#timevortex" ).position({
+	  	my: "left bottom",
+	  	at: "left bottom",
+	  	of: ".reveal"
+	});
+
+	$( "#tardis" ).position({
+	  	my: "right bottom",
+	  	at: "right bottom",
+	  	of: ".reveal"
+	});
+
+
+	$( "#eyesight" ).position({
+	  	my: "right top",
+	  	at: "right top",
+	  	of: "#scopeoscope"
+	});
+
+	$( "#inspector" ).position({
+	  	my: "left bottom",
+	  	at: "left bottom",
+	  	of: "#scopeoscope"
+	});
+
 
 	$( "#defrag" ).position({
 	  	my: "left center",
 	  	at: "right center",
-	  	// of: "canvas[class='playback']"
 	  	of: "#crosshair"
 	});
 
+
 	$( "#desplash" ).position({
-	 	my: "left center",
-	  	at: "right center",
-	  	of: "#defrag"
+	 	my: "right bottom",
+	  	at: "right bottom",
+	  	of: "#crosshair"
 	});
 
 	$( "#splashline" ).position({
@@ -70,10 +139,26 @@ function setUIpositions( ) {
 	  	of: "#desplash"
 	});
 
+
+	$( "#ofcourse" ).position({
+	  	my: "left top",
+	  	at: "left top",
+	  	of: "#crosshair"
+	});
+
+
+
+	$( "#contextclue" ).position({
+	  	my: "left bottom",
+	  	at: "left bottom",
+	  	of: "#crosshair"
+	});
+
+
 	$( "#retarget" ).position({
-	  	my: "center bottom",
-	  	at: "center top",
-	  	of: "#defrag"
+	  	my: "right top",
+	  	at: "right top",
+	  	of: "#crosshair"
 	});
 
 	$( "#targetline" ).position({
@@ -82,29 +167,75 @@ function setUIpositions( ) {
 	  	of: "#retarget"
 	});
 
-	$( "#crosshair" ).position({
-	  	my: "left top",
-	  	at: "left top",
+
+
+
+
+
+	$( "#spCB" ).position({
+	  	my: "center bottom",
+	  	at: "center bottom",
 	  	of: ".reveal"
 	});
 
-	$( "#ofcourse" ).position({
+	$( "#spCT" ).position({
+	  	my: "center top",
+	  	at: "center top",
+	  	of: ".reveal"
+	});
+
+	$( "#spLC" ).position({
+	  	my: "left center",
+	  	at: "left center",
+	  	of: ".reveal"
+	});
+	
+	$( "#spRC" ).position({
+	  	my: "right center",
+	  	at: "right center",
+	  	of: ".reveal"
+	});
+
+	$( "#anticyclone" ).position({
+	  	my: "right center",
+	  	at: "left center",
+	  	of: "#spCT"
+	});
+
+	$( "#cyclone" ).position({
+	  	my: "left center",
+	  	at: "right center",
+	  	of: "#spCT"
+	});
+
+
+
+
+	$( "#slipstream" ).position({
 	  	my: "left top",
-	  	at: "left top",
+	  	at: "right bottom",
 	  	of: "#crosshair"
 	});
 
-	$( "#contextclue" ).position({
-	  	my: "left bottom",
-	  	at: "left bottom",
-	  	of: "#crosshair"
+	$( "#chatsoff" ).position({
+	  	my: "left center",
+	  	at: "right center",
+	  	of: "#timevortex"
 	});
 
-	// $( "#pooldeck" ).position({
-	//  	my: "left center",
-	//   	at: "right center",
-	//   	of: "#poolup"
-	// });
+	$( "#Dpad" ).position({
+	  	my: "left center",
+	  	at: "right center",
+	  	of: "#spCB"
+	});
+
+	$( "#eraser" ).position({
+		my: "right center",
+	  	at: "left center",
+	  	of: "#spCB"
+	});
+
+
 }
 
 

@@ -20,6 +20,7 @@ function sortFragments( fragments ) {
 
 }
 
+var fragWidth = 60;
 
 
 Reveal.addEventListener( 'slidechanged', function( event ) {
@@ -31,7 +32,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 	if (slideTarget) {
 		document.getElementById('targetline').innerHTML = slideTarget;
 		} else {
-			document.getElementById('targetline').innerHTML = "untargeted";
+			document.getElementById('targetline').innerHTML = "section has no title";
 		}
 
 
@@ -44,16 +45,16 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 		var lastFrag = (fragments[totalFrags-1]);
 		var maxIndex = lastFrag.getAttribute( 'data-fragment-index' );
 		var fragSets = maxIndex-minIndex+1;
-		$('#defrag').css("width",fragSets*10+2+"px");
+		$('#defrag').css("width",fragSets*fragWidth+2+"px");
 		console.log(fragSets);
 	} else {$('#defrag').css("width","2px")}
 
-	alreadyScene = event.currentSlide.querySelector( '.firstsplash' );
+	alreadyScene = event.currentSlide.querySelector( '.prefacing' );
 	if (alreadyScene) {
 		var subsplash = alreadyScene.title;
 		document.getElementById('splashline').innerHTML = subsplash;
 		} else {
-			document.getElementById('splashline').innerHTML = "no action";
+			document.getElementById('splashline').innerHTML = "no element with class prefacing";
 		}
 
 	setUIpositions();
@@ -84,12 +85,14 @@ Reveal.addEventListener( 'fragmentshown', function( event ) {
 	
 	var bandwidth = $('#defrag').css("width");
 	if (parseInt(bandwidth) > 11) {
-		$('#defrag').css("width",parseInt(bandwidth)-10+"px");
+		$('#defrag').css("width",parseInt(bandwidth)-fragWidth+"px");
 	}
 
 	var subsplash = event.fragment.title;
 	if(subsplash) {
 		document.getElementById('splashline').innerHTML = subsplash;
+		} else {
+			document.getElementById('splashline').innerHTML = "revealed fragment has no title";
 		}
 
 	setUIpositions();
@@ -100,7 +103,7 @@ Reveal.addEventListener( 'fragmentshown', function( event ) {
 	var titles = fraglist.forEach( function (element) {
 		if (element.title.length!=0) {
 		$("#slipstream>ul").prepend('<li>'+ element.title + '</li>');}
-		else {$("#slipstream>ul").prepend('<li>untitled</li>');}
+		else {$("#slipstream>ul").prepend('<li>associated fragment without title</li>');}
 	});
 
 

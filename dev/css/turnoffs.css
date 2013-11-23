@@ -29,7 +29,20 @@
     z-index: 210;
 }
 
+#poolup {
+    bottom: 75px;
+    left: 200px;
+    z-index: 210;
+}
 
+
+#pooldeck {
+	min-width:40px;
+	max-height:80%;
+	font-size: 12px;
+	overflow:hidden;
+	z-index:0;
+}
 
 #updraft {
 	position:fixed;

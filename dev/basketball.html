@@ -72,7 +72,7 @@
 
 			<div class="slides">
 
-				<section id="null" title="null">
+				<section id="NULL" title="null">
 				<h1>Null</h1>
 				
 							<span class="glyphicon glyphicon-tint"></span><br>
@@ -88,10 +88,10 @@
 							<span class="glyphicon glyphicon-globe"></span><br>
 				</section>
 
-				<section id="fragTest" title="Leading Slide Title">
+				<section id="Section_Nickname" title="Multiword Title of Section">
 				
 					<ul>
-						<li title="ready to splash" class="firstsplash animation-hide-after-fragment-revelation">-1th</li>
+						<li title="Title of element with prefacing class" class="prefacing animation-hide-after-fragment-revelation">-1th</li>
 						<li title="1st fragment title" class="fragment" data-fragment-index="0">0th</li>
 						<li title="2nd fragment title" class="fragment" data-fragment-index="1">1st</li>
 						<li title="Another 1st" class="fragment" data-fragment-index="0">0th</li>
@@ -100,14 +100,11 @@
 						<li title="That makes 3 of us, too" class="fragment"  data-fragment-index="2">2nd</li>
 						<li title="" class="fragment" data-fragment-index="2">2nd</li>
 						<li title="What about me?" class="fragment"  data-fragment-index="3">3rd</li>
-						<li title="Mystery revealer" class="fragment" data-fragment-index="4">Index last</li>
+						<li title="Mystery revealed" class="fragment" data-fragment-index="4">Index last</li>
 					</ul>
 				</section>
 
 				<section id="Dataset" title="30 years of January" data-transition="zoom" data-background-image="img/halfunderwater.gif" >
-					<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AA.png" title="January {N:winter/S:summer} over 30 years [1981-2010]; u,v,w,0 fields from ESRL datasets">
-
-					<div class="fragment" style="bottom: 0%; height: 52px; color: #111; background: rgb(152, 242, 61); -webkit-transform: rotate(-10deg) translate3d(15%, 0, 0);" data-fragment-index="0">Span across controls to urgent forward</div>
 
 					<aside class="notes">
 						<ul class="tickertape">
@@ -117,16 +114,21 @@
 							<li>4 DDD</li>
 						</ul>
 					</aside>
+
+					<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AA.png" title="January {N:winter/S:summer} over 30 years [1981-2010]; u,v,w,0 fields from ESRL datasets">
+
+					<div class="fragment" style="bottom: 0%; height: 52px; color: #111; background: rgb(152, 242, 61); -webkit-transform: rotate(-10deg) translate3d(15%, 0, 0);" data-fragment-index="0">Span across controls to urgent forward</div>
+
 				</section>
 				
 				<section id="Projection" title="Polar Projection" data-transition="zoom">
 					<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AB.png" title="Proxy for Polar Stereographic Projection (N hemisphere): Blank map w. Pressure Scale, Latitudes and Longitudes, Compass, Projection Sphere and Overhead Thumbnail">
+					
 					<aside class="notes">Aside keeps notes separate from on slide content. On-screen notes can be toggled, are also displayed in console log and experimental speaker notes display by pressing S.</aside>
 				</section>
 				
 				<section id="PotTemp" title="Potential Temperature Build-up" data-transition="concave">
-					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/3"><img class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AL.png"></a>
-
+					
 					<aside class="headsup">
 						Mainline point
 					</aside>
@@ -140,9 +142,13 @@
 						</ul>
 					</aside>
 
+
+
+					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/3"><img class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AL.png"></a>
+
 				</section>
 				
-				<section id="PT_bld" data-transition="fade">
+				<section id="PT_bld" title="Potential Temperature Buildup" data-transition="fade">
 					<aside class="notes">
 						<ul class="tickertape">
 							<li>1 AAA</li>
@@ -152,67 +158,69 @@
 						</ul>
 					</aside>
 
-					<div style="position: absolute; z-index: 3" id="backdrop">
+					<div class="prefacing" title="Preface backdrop separate spectrum to sidebar" id="backdrop" style="position: absolute; z-index: 3" >
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp11.PNG" max-width="100%"> 
 					</div>
-					<div style="position: absolute; width: 771px; height: 460px; z-index: 6; left:2px; top:2px;" id="rotato33ccw"> 
+
+					<div class="fragment" title="Fragment w/ img inside, can you reveal #IMAGEREF caption without mouseover?" style="position: absolute; width: 771px; height: 460px; z-index: 6; left:2px; top:2px;" id="rotato33ccw"> 
 							<img src="http://web.mit.edu/wdmc/www/trailer/img/FI-az-500mb-5s-loop.jpg" width="771" height="460" title="#IMAGEREF caption" class="lazy-load"> 
 							<p class="caption"></p>
 				     </div>
 
-				     <div style="position: absolute; width: 975px; height: 273px; z-index: 6; left:100px; top:477px;" id="null9">    
+				     <div class="fragment" title="Div carrying the fragment, image inside also has title" style="position: absolute; width: 975px; height: 273px; z-index: 6; left:100px; top:477px;" id="null9">    
 	     					<img src="http://web.mit.edu/wdmc/www/trailer/img/potT-sect.gif" title="500mb potential temperature field to isosurface, position just under the greatest slope (overlay laboratory profile on dome on boundary)">
 					</div>
 				</section>
 				
 				<section data-transition="fade">
-					<section id="PT_iso">
-						<div style="position: absolute; width: 771px; height: 460px; z-index: 6; left:0px; top:0px;" id="rotato180">
+					<section id="PT_iso" title="Potential temperature buildup">
+						<div class="prefacing" title="Example prefacing text (Filename: FI-potT-polar-oh-fade.gif)" style="position: absolute; width: 771px; height: 460px; z-index: 6; left:0px; top:0px;" id="rotato180">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-potT-polar-oh-fade.gif" width="771" height="460">    
 		    			</div>
-						<div style="position: absolute; z-index: 3" >
+						<div class="fragment" title="Fragment title (Filename: frontsIDVtmp001.PNG)" style="position: absolute; z-index: 3" >
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp001.PNG" max-width="100%"> 
 						</div>
 					</section>
-					<section>
-						<img class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AO.png">
+					<section id="ProxyTrimtab" title="Temporary slide, combine with above">
+						<img class="prefacing proxys" title="Prefacing example (This is a proxy)" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AO.png">
 					</section>
 				</section>
 				
-				<section id="Uwind" data-transition="concave">
-					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/2"><img class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AC.png"></a>
+				<section id="Uwind" title="Defining U-wind" data-transition="concave">
+					<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/2"><img class="prefacing" title="Preface example (this is a link)" class="proxys" src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AC.png"></a>
 				</section>
 				
-				<section id="Ufield" data-transition="fade">
-					<div style="position: absolute; width: 975px;  z-index: 6; left:20px; top:5px;" id="null9">    
+				<section id="Ufield" title="Overlaying U-wind" data-transition="fade">
+					<div class="prefacing" title="Isosurfaces at 24, 42, 64 m/s" style="position: absolute; width: 975px;  z-index: 6; left:20px; top:5px;" id="null9">    
 						<!-- original dims: 972x577 -->
 				     	<img src="http://web.mit.edu/wdmc/www/trailer/img/corner-u-stack.gif" width="842" height="500">
 				 	</div>
 
-					<div style="position: absolute; width: 975px; height: 273px; z-index: 6; left:20px; top:500px;" id="null9">
+					<div class="fragment" title="Side view of same data" style="position: absolute; width: 975px; height: 273px; z-index: 6; left:20px; top:500px;" id="null9">
 						<!-- original dims: 975x273 -->    
 				    	<img src="http://web.mit.edu/wdmc/www/trailer/img/sectional-u-stack.gif" width="842" height="236">
 				    </div>
-				    <div style="position:absolute; left:300px;top:500px; width:100px;z-index:100">
+
+				    <div class="template" style="position:absolute; left:300px;top:500px; width:100px;z-index:100">
 				    	<a href="http://web.mit.edu/wdmc/Public/gfd/synth/hadleyidv.html#/4">
 				    		<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AS.png" max-width="10%">
 				    	</a>
 				    </div>
 				</section>
 
-				<section id="U_iso24" data-transition="fade">
+				<section id="U_iso24" title="U-wind isosurface @ 24 m/s" data-transition="fade">
 					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:556px; top:460px;" id="null10">    
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u24-rs.gif" width="467" height="279">
 					</div>
-					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:89px; top:460px;" id="null9">    
+					<div class="fragment" style="position: absolute; width: 467px; height: 279px; z-index: 6; left:89px; top:460px;" id="null9">    
 						    <img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u24-rs.gif" width="467" height="279">
 					    </div>
-					<div style="position: absolute; z-index: 3" id="backdrop">
+					<div class="fragment" style="position: absolute; z-index: 3" id="backdrop">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp002.PNG" max-width="100%"> 
 					</div>
 				</section>
 
-				<section id="U_iso42" data-transition="fade">
+				<section id="U_iso42" title="U wind at 42 m/s" data-transition="fade">
 					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:556px; top:460px;" id="null10">    
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u42-rs.gif" width="467" height="279">
 					</div>
@@ -224,7 +232,7 @@
 					</div>
 				</section>
 
-				<section id="U_iso64" data-transition="fade">
+				<section id="U_iso64" title="U wind at 64 m/s" data-transition="fade">
 					<div style="position: absolute; width: 467px; height: 279px; z-index: 6; left:556px; top:460px;" id="null10">    
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u64-rs.gif" width="467" height="279">
 					</div>
@@ -236,83 +244,87 @@
 					</div>
 				</section>
 
-				<section id="three3" data-transition="zoom">
-					<div style="position: absolute; width: 339px; height: 202px; z-index: 6; left:678px; top:313px;" id="null3">    
+				<section id="three3" title="3x3 view" data-transition="zoom">
+					<div class="prefacing" title="First view is.." style="position: absolute; width: 339px; height: 202px; z-index: 6; left:678px; top:313px;" id="null3">    
  						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u64-rs.gif" width="339" height="202"> 
     				</div>
-					<div style="position: absolute; width: 339px; height: 202px; z-index: 6; left:346px; top:313px;" id="null2">    
+					<div class="fragment" title="Second display" style="position: absolute; width: 339px; height: 202px; z-index: 6; left:346px; top:313px;" id="null2">    
  						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u42-rs.gif" width="339" height="202"> 
     				</div>
-					<div style="position: absolute; width: 339px; height: 202px; z-index: 6; left:677px; top:492px;" id="null6">    
+					<div class="fragment" title="Third shown" style="position: absolute; width: 339px; height: 202px; z-index: 6; left:677px; top:492px;" id="null6">    
  						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u64-rs.gif" width="339" height="202">  
   					</div>
-					<div style="position: absolute; width: 339px; height: 202px; z-index: 6; left:347px; top:492px;" id="null5">    
+					<div class="fragment" title="Fourth shown" style="position: absolute; width: 339px; height: 202px; z-index: 6; left:347px; top:492px;" id="null5">    
  						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u42-rs.gif" width="339" height="202"> 
     				</div>
-					<div style="position: absolute; width: 339px; height: 202px; z-index: 6; left:7px; top:492px;" id="null4">    
+					<div class="fragment" title="Fifth shown" style="position: absolute; width: 339px; height: 202px; z-index: 6; left:7px; top:492px;" id="null4">    
  						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u24-rs.gif" width="339" height="202"> 
     				</div>
-					<div style="position: absolute; width: 339px; height: 202px; z-index: 4; left:6px; top:313px;" id="null">    
+					<div class="fragment" title="Sixth shown" style="position: absolute; width: 339px; height: 202px; z-index: 4; left:6px; top:313px;" id="null">    
     					<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u24-rs.gif" width="339" height="202"> 
     				</div>
-					<div style="position: absolute; z-index: 3" id="backdrop">
+					<div class="fragment" title="Seventh displayed" style="position: absolute; z-index: 3" id="backdrop">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp61.PNG" max-width="100%"> 
 					</div>
 				</section>
 
-				<section id="wobbler" data-transition="fade">
-					<div style="position: absolute; width: 410px; height: 244px; z-index: 6; left:609px; top:527px" id="null">    
-    					<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-peak-wobble-rs.gif" width="410" height="244">      
-    				</div>		    
-					<div style="position: absolute; z-index: 3" id="backdrop">
+				<section id="wobbler" title="Wobblegif about steepest slope" data-transition="fade">
+
+					<div class="prefacing" title="steepest slopes" style="position: absolute; z-index: 3" id="backdrop">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp71.PNG" max-width="100%"> 
 					</div>
+
+					<div class="fragment" title="pivot view about steepest" style="position: absolute; width: 410px; height: 244px; z-index: 6; left:609px; top:527px" id="null">    
+    					<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-peak-wobble-rs.gif" width="410" height="244">      
+    				</div>
+
+
 				</section>
 
 				<section data-transition="none">
-					<section id="over64">
+					<section id="over64" title="Overview of 64 m/s isosurface">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp81.PNG" max-width="100%"> 
 						</div>
 					</section>
-					<section id="angle64">
+					<section id="angle64" title="Angle view of 64 m/s">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u64.gif" width="1024" height="611">
 						</div>
 					</section>
-					<section id="side64">
+					<section id="side64" title="Side view of 64 m/s">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u64.gif" width="1024" height="611">
 					</section>
 				</section>
 
 				<section data-transition="none">
-					<section id="over42">
+					<section id="over42" title="Over view of 42 m/s">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp111.PNG" max-width="100%">
 						</div>
 					</section>
-					<section id="angle42">
+					<section id="angle42" title="angle view of 42 m/s">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u42.gif" width="1024" height="611">
 						</div>
 					</section>
-					<section id="side42">
+					<section id="side42" title="side view of 42 m/s">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u42.gif" width="1024" height="611">
 					</section>
 				</section>
 
 				<section data-transition="none">
-					<section id="over24">
+					<section id="over24" title="over view of 24 m/s">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp141.PNG" max-width="100%">
 						</div>
 					</section>
-					<section id="angle24">
+					<section id="angle24" title="angle view of 24 m/s">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0C-potT-u24.gif" width="1024" height="611">
 						</div>
 					</section>
-					<section id="side24">
+					<section id="side24" title="side view of 24 m/s">
 						<div style="position: absolute; z-index: 3" id="backdrop">
 							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-0S-potT-u24.gif" width="1024" height="611">
 						</div>
@@ -320,19 +332,19 @@
 				</section>
 
 				<section data-transition="cube">
-					<section id="zonalAvg">
-						<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp11.PNG" max-width="100%">
+					<section id="zonalAvg" title="Zonal average across longitudes">
+						<img class="prefacing" title="zonal average of potential temperature" src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp11.PNG" max-width="100%">
 					</section>
-					<section id="stratos">
+					<section id="stratos" title="Combine this slide with above for Stratosview">
 						<img src="http://web.mit.edu/wdmc/Public/gfd/synth/image/idv/AR.png" max-width="100%">
 					</section>
 				</section>
 
-				<section id="seasonal" data-transition="zoom">
-					<img src="http://web.mit.edu/wdmc/www/trailer/img/theta-jet-12-month-loop.gif" width="700" height="700" title="#IMAGEREF caption">
+				<section id="seasonal" title="Seasonal variation of the potential temperature and jet" data-transition="zoom">
+					<img class="prefacing" title="Northern hemisphere" src="http://web.mit.edu/wdmc/www/trailer/img/theta-jet-12-month-loop.gif" width="700" height="700" title="#IMAGEREF caption">
 				</section>
 
-				<section id="Lorenz">
+				<section id="Lorenz" title="Theory sub">
 					<h3>The Lorenz Equations</h3>
 
 					<div class="fragment">
@@ -348,27 +360,86 @@
 
 		</div>
 
-		
-		<div id="crosshair" class="indicator">
-			<i id="spindle" class="spin-up fa fa-crosshairs fa-inverse fa-2x"></i>
+
+
+		<div id="spCB" class="indicator">
+			<i id="spindle" class="fa fa-crosshairs fa-rotate-45 fa-inverse"></i>
 		</div>
 
-		<div id="defrag"></div>
+		<div id="spCT" class="indicator">
+			<i id="spindle" class="fa fa-crosshairs fa-rotate-45 fa-inverse"></i>
+		</div>
+
+		<div id="spLC" class="indicator">
+			<i id="spindle" class="fa fa-crosshairs fa-rotate-45 fa-inverse"></i>
+		</div>
+
+		<div id="spRC" class="indicator">
+			<i id="spindle" class="fa fa-crosshairs fa-rotate-45 fa-inverse"></i>
+		</div>
+
+
+
+
+
+
+
+		
+
+
+
+		
 
 		<!-- toggles overlayUI below -->
-		<div id="eraser" class="indicator">
+		<div id="eraser" class="indicator" style="display:none;">
 			<i class="fa fa-eraser fa-inverse"></i>
 		</div>
+		
+		<!-- toggles Reveal navigation arrows and clock -->
+		<div id="Dpad" class="indicator" style="display:none;">
+			<i class="fa fa-gamepad fa-inverse fa-flip-horizontal"></i>
+		</div>
+		
+
+
 
 		<div id="overlayUI">
+
+
+			<div id="crosshair" class="indicator">
+				<i id="spindle" class="fa fa-crosshairs fa-inverse fa-1p5x"></i>
+			</div>
+
+			<div id="scopeoscope" class="indicator">
+				<i id="spindle" class="fa fa-crosshairs fa-inverse fa-1p5x"></i>
+			</div>
+
+			<div id="timevortex" class="indicator" style="opacity:0">
+				<i id="heartbeat" class="fa fa-crosshairs fa-inverse fa-1p5x"></i>
+			</div>
+
+			<div id="tardis" class="indicator" style="opacity:0">
+				<i id="spindle" class="fa fa-crosshairs fa-inverse"></i>
+			</div>
+
+
 
 			<div id="ofcourse" class="indicator">
 				<i id="coursing" class="spin-up-ccw fa fa-book fa-inverse"></i>
 			</div>
 
 			<div id="contextclue" class="indicator">
-				<i id="coursehairs" class="fa fa-globe fa-inverse"></i>
+				<i id="environment" class="fa fa-bullseye fa-inverse"></i>
 			</div>
+
+			<div id="cyclone" class="indicator" style="display:none;">
+				<i id="basketballL" class="fa fa-dribbble fa-spin-ccw-2omega fa-inverse"></i>
+			</div>
+
+			<div id="anticyclone" class="indicator" style="display:none;">
+				<i id="basketballR" class="fa fa-dribbble fa-spin-2omega fa-inverse"></i>
+			</div>
+
 
 			
 			
@@ -382,35 +453,33 @@
 			</div>
 
 
+			<div id="offofflink" class="indicator">
+				<i class="fa fa-external-link fa-inverse"></i>
+			</div>
 
 			<div id="defile" class="indicator">
 				<i class="fa fa-external-link fa-rotate-180 fa-inverse"></i>
 			</div>
 
-			<div id="offofflink" class="indicator">
-				<i class="fa fa-external-link fa-inverse"></i>
-			</div>
 
 
 
-			
-			<div id="controlpad" class="indicator">
-				<i class="fa fa-gamepad fa-inverse fa-flip-horizontal"></i>
-			</div>
-			<!-- toggles Reveal navigation arrows and clock -->
 
 
 			<div id="retarget" class="indicator">
-				<i class="fa fa-bullseye fa-inverse"></i>
+				<i class="fa fa-dot-circle-o fa-inverse"></i>
 			</div>
 
 			<div id="targetline" class="indicated">default target</div>
 
 
 
+			<div id="defrag"></div>
+
+
 
 			<div id="desplash" class="indicator">
-				<i class="fa fa-bullhorn fa-inverse"></i>
+				<i class="fa fa-undo fa-spin-ccw fa-inverse"></i>
 			</div>
 			
 			<div id="splashline" class="indicated">
@@ -420,14 +489,14 @@
 
 
 			<div id="chatsoff" class="indicator">
-				<i id="chatter" class="fa fa-comment-o fa-inverse"></i>
+				<i id="chatter" class="fa fa-comment fa-inverse"></i>
 			</div>
 
 			<div id="chatterbox" class="indicated">
 			</div>
 
 
-			<div id="slipstream" class="ui-widget-content">
+			<div id="slipstream" class="indicated dash ui-widget-content" style="display:none;">
 				<ul>
 					<li>sinking feeling</li>
 				</ul>
@@ -473,7 +542,7 @@
 
 		<script src="js/overlayUI.js"></script>
 		<script src="js/eventListeners.js"></script>
-		<script src="js/turnoffs.js"></script>
+		<!--script src="js/turnoffs.js"></script-->
 
 	</body>
 
