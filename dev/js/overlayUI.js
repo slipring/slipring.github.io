@@ -14,32 +14,21 @@ $('.slide-number').click(function() {
 	Reveal.toggleOverview();
 	});
 
-
 $(function() {
 	$( ".indicator" ).draggable();
 	$( "#slipstream" ).draggable().resizable();
-	// // $( "canvas[class='playback']" ).draggable();
-	// $( "#controlpad" ).draggable();
- 	// $( "#eraser" ).draggable(); 
-	// $( "#patchwork" ).draggable();
-	// $( "#eyesight" ).draggable();
-	// $( "#contextclue" ).draggable();
-	// $( "#ofcourse" ).draggable();
-	// $( "#retarget" ).draggable();
-	// $( "#desplash" ).draggable();
-	// $( "#chatsoff" ).draggable();
-	// $( "#defile" ).draggable();
-	// $( "#offofflink" ).draggable();
-	// $( "#poolup" ).draggable();
-	// $( "#primemover" ).draggable();
-	// $( "#subprimemover" ).draggable();
+	// $( "canvas[class='playback']" ).draggable();
 });
 
-
-$('#coursing').hover(
+$('.spin-up').hover(
        function(){ $(this).addClass('fa-spin') },
        function(){ $(this).removeClass('fa-spin') }
-)
+);
+
+$('.spin-up-ccw').hover(
+       function(){ $(this).addClass('fa-spin-ccw') },
+       function(){ $(this).removeClass('fa-spin-ccw') }
+);
 
 $('#controlpad').click(function() {
 	$( "canvas[class='playback']" ).toggle();
@@ -58,12 +47,15 @@ $('#retarget').click(function() {
 	$( "#targetline" ).toggle();
 	});
 
+
+
 function setUIpositions( ) {
 
 	$( "#defrag" ).position({
 	  	my: "left center",
 	  	at: "right center",
-	  	of: "canvas[class='playback']"
+	  	// of: "canvas[class='playback']"
+	  	of: "#crosshair"
 	});
 
 	$( "#desplash" ).position({
@@ -90,21 +82,40 @@ function setUIpositions( ) {
 	  	of: "#retarget"
 	});
 
-	$( "#pooldeck" ).position({
-	 	my: "left center",
-	  	at: "right center",
-	  	of: "#poolup"
+	$( "#crosshair" ).position({
+	  	my: "left top",
+	  	at: "left top",
+	  	of: ".reveal"
 	});
 
+	$( "#ofcourse" ).position({
+	  	my: "left top",
+	  	at: "left top",
+	  	of: "#crosshair"
+	});
+
+	$( "#contextclue" ).position({
+	  	my: "left bottom",
+	  	at: "left bottom",
+	  	of: "#crosshair"
+	});
+
+	// $( "#pooldeck" ).position({
+	//  	my: "left center",
+	//   	at: "right center",
+	//   	of: "#poolup"
+	// });
 }
+
 
 
 setUIpositions();
 
+
+
 $( window ).resize(function() {
 	setUIpositions();
 });
-
 
 
 $(function() {

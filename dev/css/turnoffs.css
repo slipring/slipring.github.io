@@ -1,3 +1,35 @@
+#primemover {
+	top: 30px;
+	right:50px;
+	z-index:50px;
+}
+
+#subprimemover {
+	top: 40px;
+	right:60px;
+	z-index:50px;
+}
+
+
+#crosshairO {
+    top: 25px;
+    left: 25px;
+    z-index: 210;
+}
+
+#crosshairI {
+    top: 32.5px;
+    left: 32.5px;
+    z-index: 210;
+}
+
+#crosshairIO {
+    top: 9.5px;
+    left: 11px;
+    z-index: 210;
+}
+
+
 
 #updraft {
 	position:fixed;
