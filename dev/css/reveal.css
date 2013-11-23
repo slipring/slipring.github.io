@@ -1867,6 +1867,9 @@ body {
 .reveal aside.notes {
 	display: none;
 }
+.reveal aside.headsup {
+	display: none;
+}
 
 
 /*********************************************

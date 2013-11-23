@@ -2300,7 +2300,7 @@ var Reveal = (function(){
 					element.classList.add( 'visible' );
 				} );
 
-				// Notify subscribers of the change
+				// Notify subscribers of the change  // ctrlpt 
 				dispatchEvent( 'fragmentshown', { fragment: fragments[0], fragments: fragments } );
 
 				updateControls();
