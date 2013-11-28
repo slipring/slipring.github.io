@@ -1155,6 +1155,8 @@ var Reveal = (function(){
 
 	}
 
+	/* ctrlpt #015 */
+
 	/**
 	 * Retrieves the vertical index which was stored using
 	 * #setPreviousVerticalIndex() or 0 if no previous index
