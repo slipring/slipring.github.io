@@ -348,15 +348,33 @@ body {
 	        box-sizing: border-box;
 }
 
+/* ctrlpt #001 : clarify table style; */
+
+.reveal table{
+   margin: auto;
+   border-collapse: collapse;
+   border-spacing: 0; 
+ }
+ 
+ .reveal table th{
+   text-shadow: rgb(255,255,255) 1px 1px 2px;
+   font-weight: bold; 
+ }
+ 
 .reveal table th,
 .reveal table td {
 	text-align: left;
 	padding-right: .3em;
+	border-bottom: 1px solid;
 }
 
 .reveal table th {
-	font-weight: bold;
+	text-shadow: rgb(255,255,255) 1px 1px 2px;
 }
+
+.reveal table tr:last-child td{
+    border-bottom: none;
+  }
 
 .reveal sup {
 	vertical-align: super;
@@ -441,7 +459,7 @@ body {
 		.reveal .controls div.navigate-right.fragmented {
 			opacity: 0.3;
 		}
-
+				/* ctrlpt #004 */
 	.reveal .controls div.navigate-up {
 		left: 42px;
 
@@ -471,7 +489,8 @@ body {
 .reveal .progress {
 	position: fixed;
 	display: none;
-	height: 3px;
+/*	height: 3px;*/  /* ctrlpt #004*/
+	height: 7px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -504,7 +523,7 @@ body {
 .reveal .slide-number {
 	position: fixed;
 	display: block;
-	right: 15px;
+	right: 15px;   /* ctrlpt #005 */
 	bottom: 15px;
 	opacity: 0.5;
 	z-index: 31;
@@ -662,7 +681,7 @@ body {
 /*********************************************
  * DEFAULT TRANSITION
  *********************************************/
-
+	
 .reveal .slides>section[data-transition=default].past,
 .reveal .slides>section.past {
 	display: block;
@@ -684,6 +703,7 @@ body {
 	        transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
+	/* ctrlpt #003 */
 .reveal .slides>section>section[data-transition=default].past,
 .reveal .slides>section>section.past {
 	display: block;

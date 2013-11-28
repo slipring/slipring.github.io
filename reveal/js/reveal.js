@@ -69,7 +69,7 @@ var Reveal = (function(){
 			// Number of milliseconds between automatically proceeding to the
 			// next slide, disabled when set to 0, this value can be overwritten
 			// by using a data-autoslide attribute on your slides
-			autoSlide: 0,
+			autoSlide: 0,     // ctrlpt #005 //
 
 			// Stop auto-sliding after user input
 			autoSlideStoppable: true,
@@ -2330,7 +2330,7 @@ var Reveal = (function(){
 	 *
 	 * @return {Boolean} true if a change was made in any
 	 * fragments visibility as part of this call
-	 */
+	 */						// ctrlpt #007 //
 	function navigateFragment( index, offset ) {
 
 		if( currentSlide && config.fragments ) {
