@@ -348,33 +348,15 @@ body {
 	        box-sizing: border-box;
 }
 
-/* ctrlpt #001 : clarify table style; */
-
-.reveal table{
-   margin: auto;
-   border-collapse: collapse;
-   border-spacing: 0; 
- }
- 
- .reveal table th{
-   text-shadow: rgb(255,255,255) 1px 1px 2px;
-   font-weight: bold; 
- }
- 
 .reveal table th,
 .reveal table td {
 	text-align: left;
 	padding-right: .3em;
-	border-bottom: 1px solid;
 }
 
 .reveal table th {
-	text-shadow: rgb(255,255,255) 1px 1px 2px;
+	font-weight: bold;
 }
-
-.reveal table tr:last-child td{
-    border-bottom: none;
-  }
 
 .reveal sup {
 	vertical-align: super;
@@ -459,7 +441,7 @@ body {
 		.reveal .controls div.navigate-right.fragmented {
 			opacity: 0.3;
 		}
-				/* ctrlpt #004 */
+
 	.reveal .controls div.navigate-up {
 		left: 42px;
 
@@ -489,8 +471,7 @@ body {
 .reveal .progress {
 	position: fixed;
 	display: none;
-/*	height: 3px;*/  /* ctrlpt #004*/
-	height: 9px;
+	height: 3px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -523,7 +504,7 @@ body {
 .reveal .slide-number {
 	position: fixed;
 	display: block;
-	right: 15px;   /* ctrlpt #005 */
+	right: 15px;
 	bottom: 15px;
 	opacity: 0.5;
 	z-index: 31;
@@ -681,7 +662,7 @@ body {
 /*********************************************
  * DEFAULT TRANSITION
  *********************************************/
-	
+
 .reveal .slides>section[data-transition=default].past,
 .reveal .slides>section.past {
 	display: block;
@@ -703,7 +684,6 @@ body {
 	        transform: translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0);
 }
 
-	/* ctrlpt #003 */
 .reveal .slides>section>section[data-transition=default].past,
 .reveal .slides>section>section.past {
 	display: block;
@@ -859,53 +839,6 @@ body {
 	     -o-transform: translate(0, 150%);
 	        transform: translate(0, 150%);
 }
-
-
-/*********************************************
- * SKYLINEAR TRANSITION: 						ctrlpt #016
- *********************************************/
-
-.reveal.skylinear section {
-	-webkit-backface-visibility: hidden;
-	   -moz-backface-visibility: hidden;
-	    -ms-backface-visibility: hidden;
-	        backface-visibility: hidden;
-}
-
-.reveal .slides>section[data-transition=skylinear].past,
-.reveal.skylinear .slides>section.past {
-	-webkit-transform: translate(-150%, 0);
-	   -moz-transform: translate(-150%, 0);
-	    -ms-transform: translate(-150%, 0);
-	     -o-transform: translate(-150%, 0);
-	        transform: translate(-150%, 0);
-}
-.reveal .slides>section[data-transition=skylinear].future,
-.reveal.skylinear .slides>section.future {
-	-webkit-transform: translate(150%, 0);
-	   -moz-transform: translate(150%, 0);
-	    -ms-transform: translate(150%, 0);
-	     -o-transform: translate(150%, 0);
-	        transform: translate(150%, 0);
-}
-
-.reveal .slides>section>section[data-transition=skylinear].past,
-.reveal.skylinear .slides>section>section.past {
-	-webkit-transform: translate(0, 150%);
-	   -moz-transform: translate(0, 150%);
-	    -ms-transform: translate(0, 150%);
-	     -o-transform: translate(0, 150%);
-	        transform: translate(0, 150%);
-}
-.reveal .slides>section>section[data-transition=skylinear].future,
-.reveal.skylinear .slides>section>section.future {
-	-webkit-transform: translate(0, -150%);
-	   -moz-transform: translate(0, -150%);
-	    -ms-transform: translate(0, -150%);
-	     -o-transform: translate(0, -150%);
-	        transform: translate(0, -150%);
-}
-
 
 
 /*********************************************
