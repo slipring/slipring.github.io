@@ -2044,6 +2044,13 @@ var Reveal = (function(){
 			routes.right = left;
 		}
 
+		// reverse vertical controls for dtu    // ctrlpt #017
+		if( config.dtu ) {
+			var up = routes.up;
+			routes.up = routes.down;
+			routes.down = up;
+		}
+
 		return routes;
 
 	}
