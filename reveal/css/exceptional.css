@@ -1,0 +1,8 @@
+.dash {
+	border:1px dashed gray !important;	 
+}
+
+	#wrapper .dash {
+		border:4px dashed black !important;	 
+	}
+

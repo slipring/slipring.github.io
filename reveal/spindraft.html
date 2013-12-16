@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>TeMpLaTeX</title>	<!-- 60 characters or less -->
+		<title>Spindraft</title>	<!-- 60 characters or less -->
 		<meta name="title" content="" />         
 		<meta name="description" content="" /> <!-- 160 characters or less -->
 		<meta name="author" content="" />
@@ -39,21 +39,16 @@
 
 	</head>
 
+
+
 	<body>
 
 		<div class="reveal">
-
 			<div class="slides">
-
-				<section>
-					<h2>reveal.js Math Plugin</h2>
-					<p>A thin wrapper for MathJax</p>
-				</section>
-
 				<section id="themes">
 					<h2>Themes</h2>
 					<p>
-						Reveal.js comes with a few themes built in: <br>
+						Built in: <br>
 						<a href="?#/themes">Default</a> -
 						<a href="?theme=sky#/themes">Sky</a> -
 						<a href="?theme=beige#/themes">Beige</a> -
@@ -65,20 +60,27 @@
 						<a href="?theme=simple.css#/themes">Simple</a> -
 						<a href="?theme=solarized.css#/themes">Solarized</a>
 					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
 				</section>
 
-
+				<!--<section>
+					<span class="fragment fade-in">
+    			 		   <span class="fragment fade-out">I'll fade in, then out</span>
+  					</span>
+  					<p class="fragment highlight-current-blue">blue only once</p>
+				</section> -->
 
 				<section>
-					<section>
-						<img src="../pool/scale.png" alt=""> 
-					</section> 
+					<div id="wrapper" style="position:relative;">
+						<div style="position:absolute;">
+							<img style="background:none; border:none;box-shadow:none;" src="http://127.0.0.1/loop/fronts_transparent-4step-13sloop.gif">
+						</div>
+						<div class="fragment fade-in" style="position:absolute;">
+							<img style="background:none; border:none;box-shadow:none;" src="http://127.0.0.1/loop/fronts_transparent-2step-15sloop.gif">
+						</div>
+					</div>
+				</section>
 
+				<section>
 					<section>
 						\[\begin{aligned} 
 						tan(\gamma) = \frac{dz}{dy} = \frac{\frac{\partial p_1}{\partial y}-\frac{\partial p_2}{\partial y}}{g(\rho_1 - \rho_2)} \\
@@ -137,87 +139,73 @@
 				</section>
 
 				<section>
-					<section>
-						<h3>The Lorenz Equations</h3>
-
-						<div class="fragment">
-							\[\begin{aligned}
-							\dot{x} &amp; = \sigma(y-x) \\
-							\dot{y} &amp; = \rho x - y - xz \\
-							\dot{z} &amp; = -\beta z + xy
-							\end{aligned} \]
-						</div>
-					</section>
-
-					<section>
-						<h3>The Cauchy-Schwarz Inequality</h3>
-
-						<div class="fragment">
-							\[ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \]
-						</div>
-					</section>
-
-					<section>
-						<h3>A Cross Product Formula</h3>
-
-						<div class="fragment">
-							\[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-							\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-							\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
-							\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
-							\end{vmatrix}  \]
-						</div>
-					</section>
-
-					<section>
-						<h3>The probability of getting \(k\) heads when flipping \(n\) coins is</h3>
-
-						<div class="fragment">
-							\[P(E)   = {n \choose k} p^k (1-p)^{ n-k} \]
-						</div>
-					</section>
-
-					<section>
-						<h3>An Identity of Ramanujan</h3>
-
-						<div class="fragment">
-							\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-							1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-							{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
-						</div>
-					</section>
-
-					<section>
-						<h3>A Rogers-Ramanujan Identity</h3>
-
-						<div class="fragment">
-							\[  1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
-							\prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\]
-						</div>
-					</section>
-
-					<section>
-						<h3>Maxwell&#8217;s Equations</h3>
-
-						<div class="fragment">
-							\[  \begin{aligned}
-							\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
-							\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
-							\nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
-							\]
-						</div>
-					</section>
+					http://www.youtube.com/watch?v=rkU-vd07eQk
+					Polar Front (MITgcm simulation):
+					Uploaded on Feb 10, 2011
+					A 3-d visualization of a collapsing dense fluid cylinder in a rotating lab tank. The Coriolis parameter f is set at 2 s-1 and gravity is set at 10 m/s^2. The denser fluid is depicted as an isosurface of potential temperature colored in light blue and fixed at -5˚C. This feature is analogous to the cold air located near the Earth's poles. A cross section of U-wind (west-east wind) is also visible. White contours are positive U and red contours are negative U. The contour interval is at 0.5 cm/s, with highest values near 5 cm/s. The temperature gradient in this environment results in upper-level wind shear, giving rise to a high wind speed outlined in a dark blue isosurface with value 2.5 cm/s. This strong upper level flow is similar to the jet stream phenomenon of the Earth's atmosphere - animation credit: R. Kowch
 				</section>
 
+				<section>
+					\[\begin{aligned}
+
+						\between \\
+
+					\end{aligned} \]
+				</section>
+				
+				<section>
+					http://www.youtube.com/watch?v=wMmeRPBslNI
+					Polar Front (observations)
+					Uploaded on Feb 10, 2011
+					A 3-D display of temperature and wind from the Global Forecast System (GFS) model in May 2010 -- NOAA's National Centers for Environmental Prediction (NCEP). The data is restricted to the Northern Hemisphere (note the continents outlined at the bottom). The light blue isosurface is for potential temperature at 315 K, and slopes upward near the North Pole, showing the dome of cold air over the Pole. The vertical cross section spans the 0˚ and 180˚ longitude lines, and displays U-wind contours. Negative values (in red) depict wind flowing "out of" the section while positive values (in white) show wind flowing "into" the section. The jet stream is easily visible with the dark blue isosurface, outlining a 40 m/s wind speed - animation credit: R. Kowch.
+				</section>
+
+				<section>
+					<h3>Thermal Wind Balance, Eq.(7.24) [Ch.7, pg. 29]</h3>
+					<img src="http://127.0.0.1/pool/thermal-wind-eq.png">
+					
+						\[\begin{aligned}
+
+						\frac{\partial u_g}{\partial p}, \frac{\partial v_g}{\partial p} = \frac{R}{fp} \left( \left( \frac{\partial T}{\partial y} \right)_p, - \left(\frac{\partial T}{\partial x} \right)_p \right) \\
+
+						\end{aligned} \]
+
+
+					<!--\begin{equation} 
+						\label{whateverequation} 
+						\begin{split}
+						x &= start of long equation \\
+						  &= second half of long equation
+						\end{split}
+						\end{equation} -->
+				</section>
+
+				<section>
+					<div id="wrapper" style="position:relative;">
+						<div style="position:absolute;">
+							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-potT-polar-oh-fade.gif" /> <!--<cruft width="771" height="460"> -->
+						</div>				
+						<!-- **proxy bridge: rotate the graphic 180 before next reveal -->
+						<div class="fragment fade-in" style="position:absolute;">
+							<img src="http://127.0.0.1/pool/209.png" />
+						</div>
+					</div>
+				</section>
+
+				<section>  <!--background to another, pressure scale, sized with cruft above -->
+					<div id="wrapper" style="position:relative;">
+						<div style="position:absolute;z-index:30;">
+							<img src="http://web.mit.edu/wdmc/Public/gfd/img/anigif/FI-potT-polar-oh-fade.gif" width="771" height="460"/>
+						</div>
+						<div style="position:absolute;">
+							<img src="http://web.mit.edu/wdmc/Public/gfd/img/frontsIDV/frontsIDVtmp001.PNG" max-width="100%" />
+						</div>
+					</div>
+				</section>
+
+
 			</div>
-
 		</div>
-
-
-		<div class="cast-on" style="display: block; position: absolute; bottom: 14px; left: 50%; margin-left: -230px; z-index: 20;">
-			<a href="http://slid.es" style="color: #fff; font-family: Helvetica; padding: 4px 8px; border: 2px solid #fff; text-decoration: none; font-size: 12px; margin-right: 15px; position: relative; top: -6px;">process of adding the very first stitches onto the knitting needles before starting to knit</a>
-		</div>
-
 
 
 		<script src="lib/js/head.min.js"></script>
@@ -231,6 +219,7 @@
 				history: true,
 				transition: 'linear',
 				fragments: true,
+				center:false,
 				autoSlide: Reveal.getQueryHash().mspf || 24000,  // ctrlpt #012
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none/skylinear(ctrlpt #016)

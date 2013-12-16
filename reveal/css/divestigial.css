@@ -1,0 +1,7 @@
+	#overother .dash {
+		border:1px dashed white !important;	 
+	}
+
+	#underother .dash {
+		border:1px dashed gray !important;	 
+	}
