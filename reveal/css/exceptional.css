@@ -6,3 +6,25 @@
 		border:4px dashed black !important;	 
 	}
 
+
+
+
+#newsletter_button_fixed {
+position: fixed;
+top: 39%;
+right: 0px;
+cursor: pointer;
+background-image: url(http://127.0.0.1/assets/exnews.png);
+width: 66px;
+height: 217px;
+z-index: 10000;
+}
+
+
+.blog_site_btn {
+position: fixed;
+left: 0px;
+top: 40%;
+left: -4px;
+}
+

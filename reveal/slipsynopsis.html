@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Spindraft</title>	<!-- 60 characters or less -->
+		<meta name="title" content="" />         
+		<meta name="description" content="" /> <!-- 160 characters or less -->
+		<meta name="author" content="" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- ctrlpt #014 : #008-->
+
+		<!-- <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css" media="screen" /> -->
+		<link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.icon-large.css" />
+		<link rel="stylesheet" href="plugin/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="plugin/jquery-ui/themes/dot-luv/jquery-ui.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="plugin/jqChart/css/jquery.jqChart.css" /> -->
+			<!-- <link rel="stylesheet" type="text/css" href="plugin/jqChart/css/jquery.jqGauges.css" /> -->
+			<!-- <link rel="stylesheet" type="text/css" href="plugin/jqChart/css/jquery.jqGeoMap.css" /> -->
+	    <!-- <link rel="stylesheet" type="text/css" href="plugin/jqChart/css/jquery.jqRangeSlider.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="plugin/jqplot/jquery.jqplot.css" /> -->
+
+		<link rel="stylesheet" href="css/reveal.css" />
+		<link rel="stylesheet" href="css/theme/chalkboard.css" id="theme" />
+		<link rel="stylesheet" href="css/anticipatory.css" />
+		<link rel="stylesheet" href="css/exceptional.css" />
+		<!-- <link rel="stylesheet" href="css/divestigial.css" /> -->
+		
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,    // ctrlpt #009
+				progress: true,
+				history: true,
+				transition: 'linear',
+				fragments: true,
+				center:false,
+				autoSlide: Reveal.getQueryHash().mspf || 24000,  // ctrlpt #012
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none/skylinear(ctrlpt #016)
+				transitionSpeed: 'default',  // ctrlpt #011
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				math: {
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async: true },
+					// { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },   // ctrlpt #008  : #014
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+		
+		<!--<script language="javascript" type="text/javascript" src="lib/js/h5utils.js"></script>-->
+		<script language="javascript" type="text/javascript" src="lib/js/jquery-1.10.2.js"></script>
+		<!--<script language="javascript" type="text/javascript" src="plugin/bootstrap/js/bootstrap.min.js"></script-->
+		<!--<script language="javascript" type="text/javascript" src="plugin/sizzle/src/sizzle.js"></script>
+		<script language="javascript" type="text/javascript" src="plugin/underscore/underscore-min.js"></script>-->
+		<script language="javascript" type="text/javascript" src="plugin/spritely/src/jquery.spritely.js"></script>
+		<script language="javascript" type="text/javascript" src="plugin/vticker/jquery.vticker.js"></script>
+		<script language="javascript" type="text/javascript" src="plugin/jquery-ui/ui/jquery-ui.js"></script>
+		<!--<script language="javascript" type="text/javascript" src="lib/js/jquery.cycle.all.js"></script>-->
+
+		<!--<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoader.js"></script>-->
+		<!--<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderImage.js"></script>-->
+		<!--<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderSound.js"></script>-->
+		<!--<script language="javascript" type="text/javascript" src="plugin/PxLoader/PxLoaderVideo.js"></script>-->
+	    
+	    <!--<script src="plugin/jqChart/js/jquery.jqChart.min.js" type="text/javascript"></script>-->
+	    	<!--<script src="plugin/jqChart/js/jquery.jqGauges.min.js" type="text/javascript"></script>-->
+	    	<!--<script src="plugin/jqChart/js/jquery.jqGeoMap.min.js" type="text/javascript"></script>-->
+	    <!--<script src="plugin/jqChart/js/jquery.jqRangeSlider.min.js" type="text/javascript"></script>-->
+	    <!--<script src="plugin/jqChart/js/jquery.mousewheel.js" type="text/javascript"></script>-->
+		
+		<!-- <script language="javascript" type="text/javascript" src="plugin/jbrowser/jquery.browser.js"></script>-->
+		<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="plugin/jqplot/excanvas.js"></script><![endif]-->
+		<!--<script language="javascript" type="text/javascript" src="plugin/jqplot/jquery.jqplot.js"></script>-->
+		<!--<script language="javascript" type="text/javascript" src="plugin/jqplot/plugins/jqplot.logAxisRenderer.js"></script>-->
+
+		<script defer src="js/overlayUI.js"></script>
+		<script defer src="js/eventListeners.js"></script>
+		<!--script defer src="js/divestigial.js"></script-->
+
+	</body>
+</html>
