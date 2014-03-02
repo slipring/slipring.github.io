@@ -7,7 +7,8 @@
 		}).on("mouseout", function () {
 		$(this).attr("src", $(this).data("src"));
 	});
-})();
+}());
+
 
 
 $('.slide-number').click(function() {

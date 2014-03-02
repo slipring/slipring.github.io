@@ -8,6 +8,26 @@ $( document ).on( 'click', function( event ) {
 
 
 
+// // Get a handle to our canvas
+// var ctx = document.getElementById('overlay').getContext("2d");
+
+// // Choose font
+// ctx.font = "Bold 36px 'Helvetica'";
+
+// // Draw black rectangle
+// ctx.fillStyle = "blue"; 
+// ctx.fillRect(0,0,360,70); 
+
+// // Punch out the text!
+// ctx.globalCompositeOperation = 'destination-out'; 
+// ctx.fillText("WEATHER in a TANK", 20, 50);
+
+// <!-- <canvas id="overlay" width="500" height="70" style=""></canvas> -->
+
+
+
+
+
 
 	// $( "#defile" ).position({
 	//   	my: "left bottom",
