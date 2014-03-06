@@ -1,5 +1,0 @@
-$(function () {
-            $("#Worldwrapper")
-                .resizable()
-                .draggable();           
-        });
