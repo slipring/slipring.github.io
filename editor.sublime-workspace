@@ -68,7 +68,10 @@
 	"buffers":
 	[
 		{
+			"contents": "",
 			"file": "js/spriteHadley.js",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -76,7 +79,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "triggerHadley.js",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -84,7 +90,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "css/deckHadley.css",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -92,7 +101,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "preloadHadley.js",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -100,7 +112,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "spriteH1.html",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -119,12 +134,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 88,
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"contents": "",
 			"file": "js/jquery.spritely.js",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -140,7 +158,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "css/stylesheet.css",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -148,7 +169,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "css/theme/light.css",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -156,7 +180,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "css/revealEXP.css",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -164,7 +191,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "js/revealEXP.js",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -172,7 +202,10 @@
 			}
 		},
 		{
+			"contents": "",
 			"file": "idvHadley.html",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
 				"buffer_size": 0,
@@ -454,7 +487,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -585,7 +618,7 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 83.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -612,7 +645,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1890.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -622,15 +655,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 88,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								88,
+								88
 							]
 						],
 						"settings":
@@ -639,7 +672,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 770.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -647,7 +680,7 @@
 			]
 		},
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -673,7 +706,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7158.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -690,8 +723,8 @@
 						"selection":
 						[
 							[
-								9573,
-								9573
+								2131,
+								2131
 							]
 						],
 						"settings":
@@ -701,7 +734,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 713.0,
+						"translation.y": 739.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -729,7 +762,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -784,7 +817,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -811,7 +844,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4278.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -838,7 +871,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 821.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -1,0 +1,36 @@
+#overother .dash {
+	border:1px dashed white !important;	 
+}
+
+#underother .dash {
+	border:1px dashed gray !important;	 
+}
+
+
+.dash {
+	border:1px dashed gray !important;	 
+}
+
+#wrapper .dash {
+	border:4px dashed black !important;	 
+}
+
+#newsletter_button_fixed {
+	position: fixed;
+	top: 39%;
+	right: 0px;
+	cursor: pointer;
+	background-image: url(http://coriolis.no-ip.org/www/assets/exnews.png);
+	width: 66px;
+	height: 217px;
+	z-index: 10000;
+}
+
+
+.blog_site_btn {
+position: fixed;
+left: 0px;
+top: 40%;
+left: -4px;
+}
+

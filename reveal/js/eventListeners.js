@@ -7,12 +7,8 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 
 
 Reveal.addEventListener( 'fragmentshown', function( event ) {
-
-
 	setTimeout(
 	   		function() {
 				MathJax.Hub.Rerender(document.querySelector(".slides .present")) 
 	   		}, 100);   // ctrlpt #010
-
-
 } );
